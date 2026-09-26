@@ -1,13 +1,28 @@
-ORIGINAL-CODE LICENSING STATUS: AUTHOR AUTHORIZATION PENDING
+MIT License
 
-This local anonymous candidate does not assert a new blanket open-source grant.
-An explicit license for project-original code was not present in the supplied
-source. MIT authorization has been requested from the rights holder and is not
-assumed. Resolve this item before distributing this candidate publicly.
+Copyright (c) 2026 Anonymous EVRP-TW-D/B Authors
 
-Third-party components retain their existing copyright and license texts under
-licenses/ and their original third_party directories. Those terms remain valid
-and are not replaced by this notice. Data, derived data, model weights and result
-records are separate materials; see THIRD_PARTY_NOTICES.md and docs/LICENSING.md.
-No commercial Gurobi license, credentials or source data access entitlement is
-included. This notice is a status declaration, not an invented license.
+Permission is hereby granted, free of charge, to any person obtaining a copy
+of this software and associated documentation files (the "Software"), to deal
+in the Software without restriction, including without limitation the rights
+to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
+copies of the Software, and to permit persons to whom the Software is
+furnished to do so, subject to the following conditions:
+
+The above copyright notice and this permission notice shall be included in all
+copies or substantial portions of the Software.
+
+THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
+IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
+FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
+AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
+LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
+OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
+SOFTWARE.
+
+Scope: this grant covers project-original software and documentation only.
+Third-party software retains its identified licenses and notices. Source and
+derived datasets, pretrained model tensors, and source-derived result records
+are separate materials, not Software under this grant. Their terms and
+attribution are specified in docs/LICENSING.md and THIRD_PARTY_NOTICES.md.
+No Gurobi license, credential, or third-party data entitlement is included.

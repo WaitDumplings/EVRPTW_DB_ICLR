@@ -2321,8 +2321,8 @@
     },
     {
       "path": "LICENSE",
-      "bytes": 845,
-      "sha256": "a23b0cb7f5b24bb0f974170acea82d196af57ad85f5749531a8fdb1e20dcd811"
+      "bytes": 1539,
+      "sha256": "be630af31b5a3188e8777867a099c773b65240e3bd6a5ac88a9729b66ad6a5ef"
     },
     {
       "path": "README.md",
@@ -2336,8 +2336,8 @@
     },
     {
       "path": "THIRD_PARTY_NOTICES.md",
-      "bytes": 5756,
-      "sha256": "742dc5122f06d38f852d056a82c677f532d9082b403767cb0a672e8f677594d0"
+      "bytes": 5896,
+      "sha256": "31e418c6881fc12031d93d296ddcaf2d4ad8d0f004ec4d01e6dd87e5bbd702f1"
     },
     {
       "path": "configs/demo/generation.json",
@@ -2501,8 +2501,8 @@
     },
     {
       "path": "docs/LICENSING.md",
-      "bytes": 7436,
-      "sha256": "b1acaca2b2901376113e04dcdace257da66812b724b736884a987dbf3805cd03"
+      "bytes": 8885,
+      "sha256": "19dda53ddb6bc43c4deb3f12b1567dece6130b4e4052b539ebf19de2ae3680e1"
     },
     {
       "path": "docs/QUICKSTART.md",
@@ -2758,6 +2758,11 @@
       "path": "generate.sh",
       "bytes": 311,
       "sha256": "4ee6e5692a7626c7186e0f58d8af8e3c859931634f7aeda4318071ed32a1dacb"
+    },
+    {
+      "path": "licenses/PROJECT_WEIGHTS_CC_BY_NC_4_0.txt",
+      "bytes": 19347,
+      "sha256": "41003d4a74749c0220e33dd415042164b5a1093ed401f36277234f772d22d3d0"
     },
     {
       "path": "licenses/TERRAN.Apache-2.0.txt",

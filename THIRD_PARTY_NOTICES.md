@@ -1,6 +1,6 @@
 # Third-party notices
 
-This anonymous research distribution retains third-party attribution. Mention of a provider or method does not imply endorsement. Project-authored code, upstream software, derived datasets and model weights have distinct rights; see [docs/LICENSING.md](docs/LICENSING.md).
+This anonymous research distribution retains third-party attribution. Mention of a provider or method does not imply endorsement. Project-original software and documentation use the root MIT license; the authors' rights in project-trained inference tensors and metadata use CC BY-NC 4.0. Upstream software and source-derived data retain their separate terms; see [docs/LICENSING.md](docs/LICENSING.md).
 
 ## Included upstream software
 
@@ -16,7 +16,7 @@ The original license texts remain authoritative. External packages installed as 
 
 **Microsoft US Building Footprints.** Building geometry is provided by Microsoft under ODbL; see the [official repository and data license](https://github.com/microsoft/USBuildingFootprints). Building candidates are transformed into latent customer/access locations, with public NSI-derived attributes where indicated. No imagery is distributed.
 
-**U.S. Army Corps of Engineers, National Structure Inventory.** Public structure attributes support customer-layer construction. [NSI 2022 technical documentation](https://www.hec.usace.army.mil/confluence/nsi/technicalreferences/2022/technical-documentation) and [public/restricted field explanation](https://www.hec.usace.army.mil/confluence/nsi/technicalreferences/2022/frequently-asked-questions). No rights to restricted fields are asserted; historical snapshot terms remain an explicitly recorded limitation.
+**U.S. Army Corps of Engineers, National Structure Inventory.** Public NSI 2026 Base structure attributes support customer-layer construction. All fields selected by the source adapter are in the [2026 public schema](https://www.hec.usace.army.mil/confluence/nsi/technicalreferences/2026/technical-documentation). No restricted fields or Data Use Agreement rights are asserted. These modeled structure attributes are not verified building-level observations, and the project does not relicense NSI material under MIT or CC0.
 
 **U.S. Census Bureau.** The full generator uses Census city and block-group geography. [TIGER/Line® Shapefiles](https://www.census.gov/geographies/mapping-files/time-series/geo/tiger-line-file.html). TIGER/Line is a registered trademark of the U.S. Census Bureau. Boundaries are for statistical use and are not legal land descriptions; the Census Bureau is the source, not an endorser of this derived benchmark.
 

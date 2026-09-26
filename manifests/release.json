@@ -22,7 +22,7 @@
     "plot_format": "standalone_svg",
     "default_optimizer_steps": 8,
     "training_scope": "Separate demo/train fixture; not paper training",
-    "documentation": "docs/ACCEPTANCE.md"
+    "documentation": "docs/QUICK_DEMOS.md"
   },
   "reviewer_entrypoints": {
     "generation": "bash generate.sh",
@@ -37,10 +37,15 @@
     "live_online_generation_validation": "NOT RUN",
     "plot_format": "standalone_svg",
     "documentation": "README.md",
-    "source_preparation_acceptance": "manifests/reviewer_workflows_acceptance.json",
     "training_console": "One demo overview, one loss line per epoch, final checkpoint path; details in loss.jsonl and summary.json",
     "evaluation_data_bundle": "review-core",
     "training_scope": "Tiny-sample runnable framework demonstration; shared training components, not full dataset/batch training, convergence or paper performance."
   },
-  "hosting_status": "Private version control and anonymous reviewer access are separate; no anonymous endpoint certified."
+  "hosting_status": "Private version control and anonymous reviewer access are separate; no anonymous endpoint certified.",
+  "full_dataset_release_plan": {
+    "stage": "camera-ready",
+    "status": "planned; not yet publicly hosted",
+    "hosting_url": null,
+    "persistent_identifier": null
+  }
 }

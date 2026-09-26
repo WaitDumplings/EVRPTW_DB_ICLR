@@ -2326,8 +2326,8 @@
     },
     {
       "path": "README.md",
-      "bytes": 7409,
-      "sha256": "d02da7b271ae42b1e684f03d3bbb339be52afbb7a46ebecbb5f472f986a52b26"
+      "bytes": 7399,
+      "sha256": "cd4e55f9160ebba0fc7db0eaf17c18564a8134d3e0445b7dcd2bc9bbcfa4bf45"
     },
     {
       "path": "REVIEW.md",
@@ -2470,11 +2470,6 @@
       "sha256": "c2b723a5f3c7bb01dde342098544a34be51e67c573ed009c54066d3c1afadd6a"
     },
     {
-      "path": "docs/ACCEPTANCE.md",
-      "bytes": 15078,
-      "sha256": "e0d99aec350cc7ed48233db903adea4bfe691b176fe0ad9c2cfd2f2269c20b6a"
-    },
-    {
       "path": "docs/AI_USE.md",
       "bytes": 1232,
       "sha256": "ced8dbef27d39cce46638b308e59472dcf0975db19a1acfc5f4cf85e98644743"
@@ -2496,8 +2491,8 @@
     },
     {
       "path": "docs/DATA_AVAILABILITY.md",
-      "bytes": 7024,
-      "sha256": "96bab6be801d4f4feb15bf433ff70f6b21ff023435e3a18a5cdd824157dac7c4"
+      "bytes": 7410,
+      "sha256": "0bf9fa503d26a21d746e93da899e6128a5c64a770a96918bfef2fb8c5a9d6435"
     },
     {
       "path": "docs/GENERATION.md",
@@ -2506,8 +2501,8 @@
     },
     {
       "path": "docs/LICENSING.md",
-      "bytes": 6840,
-      "sha256": "8f73ea721372dea623dca5053bacdb4c4cbc241d36f722c78d1b06c24198567a"
+      "bytes": 7436,
+      "sha256": "b1acaca2b2901376113e04dcdace257da66812b724b736884a987dbf3805cd03"
     },
     {
       "path": "docs/QUICKSTART.md",
@@ -2516,8 +2511,8 @@
     },
     {
       "path": "docs/QUICK_DEMOS.md",
-      "bytes": 6030,
-      "sha256": "c49e2067ff0b42c2bb2730353102b0c84766e693be3f0609fd3a707fb9546aa6"
+      "bytes": 5966,
+      "sha256": "5e614b76ae4f1db91fa3157d9ebf697d0e914d1ced26d291819cea6d460f7add"
     },
     {
       "path": "docs/REPRODUCING_RESULTS.md",
@@ -2525,9 +2520,9 @@
       "sha256": "48bfc28148c5b9a9df4e3e4fa637bbdfc5ec1bf1a6b2922aef61e77f1f66ee59"
     },
     {
-      "path": "docs/REVIEW_AUDIT.md",
-      "bytes": 4188,
-      "sha256": "283baa01490eebce779760bfcecbc25cc5f74132d48c035b5d5abe895b26c30d"
+      "path": "docs/TESTING.md",
+      "bytes": 1585,
+      "sha256": "080b0c5fb0056b44098168a3bbf3a58c0b6f119978f22a25c44b874781e0e08a"
     },
     {
       "path": "docs/TRAINING_AND_EVALUATION.md",
@@ -2780,24 +2775,9 @@
       "sha256": "820243863426b8f6ce5385a8e4bbe14f2da8675beec6d463e481c74bf251a491"
     },
     {
-      "path": "manifests/acceptance.json",
-      "bytes": 6592,
-      "sha256": "569ee25cb30d8fdda7fc598c78540bac45daccb71e46183fcaa8d572199fd0de"
-    },
-    {
-      "path": "manifests/quick_demo_acceptance.json",
-      "bytes": 4884,
-      "sha256": "fb4b498e35db9ff54ee983a635add38d789ae871dcd4226ce6ccea8c58c89a21"
-    },
-    {
       "path": "manifests/release.json",
-      "bytes": 2229,
-      "sha256": "03bfb80a2ede8c5752b94e240a59403afac465b192faf5eebeec706bc2d57242"
-    },
-    {
-      "path": "manifests/reviewer_workflows_acceptance.json",
-      "bytes": 24021,
-      "sha256": "f3e386c96a447103fbaf7c3ab200b78d96ff3a0624d4cfe4ce9336f1fd0f4bd8"
+      "bytes": 2321,
+      "sha256": "52ab6277605e74cdd51a887ff0c4829f2dc8aa34e90df1e9d6d869f03af384d9"
     },
     {
       "path": "pyproject.toml",

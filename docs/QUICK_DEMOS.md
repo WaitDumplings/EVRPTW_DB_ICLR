@@ -50,4 +50,4 @@ A missing or incompatible checkpoint is an error, with no random-weight fallback
 
 ## Evidence and scope
 
-[ACCEPTANCE.md](ACCEPTANCE.md) separates executed CPU checks from unexecuted online/full-cohort paths. The final delivery report binds the tested extracted archive hashes. All demos are local; none reproduces the full paper training or benchmark protocol. Complete historical result records and frozen BKS remain outside the three-bundle delivery.
+See [TESTING.md](TESTING.md) for test commands and prerequisites. All demos are local; none reproduces the full paper training or benchmark protocol. Complete historical result records and frozen BKS remain outside the three-bundle delivery. File manifests provide package checksums.

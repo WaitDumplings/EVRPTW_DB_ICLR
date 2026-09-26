@@ -2,6 +2,15 @@
 
 The root [LICENSE](../LICENSE) governs only the scope stated there. It does not replace upstream software licenses, grant rights over provider data, or automatically license trained weights and derived datasets. Private version-control storage does not establish permission for public redistribution. Public provider pages were checked on 2026-09-25; their current wording does not establish the acquisition terms of every historical snapshot.
 
+Licenses are assigned by component, not by taking a single license
+"intersection". A license for original software cannot replace source-data or
+third-party software terms. ODbL distinguishes independent databases in a
+collection from a derivative database; its share-alike grant cannot simply be
+replaced by an additional noncommercial restriction. The classification of the
+combined road and delivery materials depends on their actual provenance and
+transformations, not just whether they share a ZIP file. See
+[ODbL sections 2.3, 4.4 and 4.5](https://opendatacommons.org/licenses/odbl/1-0/).
+
 ## Software
 
 | Component | Source and preserved terms |

@@ -23,6 +23,14 @@ The current three bundles cannot reconstruct the complete paper tables or figure
 
 A complete scientific rerun additionally needs the exact frozen CLE/source/calibration snapshots and full train/validation/test manifests, all intended checkpoint identities, the final evaluation protocol and compute budgets. Provider links below obtain data sources; current downloads are not guaranteed to reproduce older frozen snapshots. Do not substitute newly downloaded maps, change station rosters, regenerate matrices or silently fill missing result rows and call the result the paper corpus.
 
+## Planned full dataset release
+
+We plan to release the complete dataset publicly with the camera-ready version.
+The hosting location and persistent identifier will be added when available.
+The current review packages contain the documented subsets; no full-dataset
+download link or DOI is available yet. Source-specific licensing obligations
+continue to apply to the planned release.
+
 ## Source acquisition
 
 | Provider | Input role and access |

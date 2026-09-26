@@ -104,6 +104,6 @@ Follow [full Stage 1 and Stage 2](docs/GENERATION.md#full-stage-1-and-full-stage
 
 ---
 
-[Data and format](docs/DATASET.md) · [Eight solvers](docs/BASELINES.md) · [Tests and acceptance](docs/ACCEPTANCE.md) · [Data availability](docs/DATA_AVAILABILITY.md) · [Licensing and attribution](docs/LICENSING.md)
+[Data and format](docs/DATASET.md) · [Eight solvers](docs/BASELINES.md) · [Running tests](docs/TESTING.md) · [Data availability](docs/DATA_AVAILABILITY.md) · [Licensing and attribution](docs/LICENSING.md)
 
 The delivery contains source, review materials and genuine weights. Full historical experiment records are excluded. Detailed reproduction boundaries and pending publication checks remain in the linked documentation.

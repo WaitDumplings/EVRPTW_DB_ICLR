@@ -44,6 +44,7 @@
   "hosting_status": "Private version control and anonymous reviewer access are separate; no anonymous endpoint certified.",
   "full_dataset_release_plan": {
     "stage": "camera-ready",
+    "platform": "Hugging Face",
     "status": "planned; not yet publicly hosted",
     "hosting_url": null,
     "persistent_identifier": null

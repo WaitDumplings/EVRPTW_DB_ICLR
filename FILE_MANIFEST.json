@@ -2491,8 +2491,8 @@
     },
     {
       "path": "docs/DATA_AVAILABILITY.md",
-      "bytes": 7410,
-      "sha256": "0bf9fa503d26a21d746e93da899e6128a5c64a770a96918bfef2fb8c5a9d6435"
+      "bytes": 7431,
+      "sha256": "592866eed10b370bd9a8ef733e1c071ff8b0130b4b1f11ecfe8931f27ecd85f7"
     },
     {
       "path": "docs/GENERATION.md",
@@ -2776,8 +2776,8 @@
     },
     {
       "path": "manifests/release.json",
-      "bytes": 2321,
-      "sha256": "52ab6277605e74cdd51a887ff0c4829f2dc8aa34e90df1e9d6d869f03af384d9"
+      "bytes": 2353,
+      "sha256": "b4c32a628a13cc9daab1124127870bd06627a0995686ca210cd8cb6fdbaa8619"
     },
     {
       "path": "pyproject.toml",

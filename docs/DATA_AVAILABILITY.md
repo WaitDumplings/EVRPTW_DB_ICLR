@@ -25,8 +25,9 @@ A complete scientific rerun additionally needs the exact frozen CLE/source/calib
 
 ## Planned full dataset release
 
-We plan to release the complete dataset publicly with the camera-ready version.
-The hosting location and persistent identifier will be added when available.
+We plan to release the complete dataset publicly on Hugging Face with the
+camera-ready version.
+The Hugging Face dataset URL and version identifier will be added when available.
 The current review packages contain the documented subsets; no full-dataset
 download link or DOI is available yet. Source-specific licensing obligations
 continue to apply to the planned release.

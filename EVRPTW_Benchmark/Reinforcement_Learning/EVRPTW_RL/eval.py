@@ -1,0 +1,167 @@
+from __future__ import annotations
+
+import argparse
+import csv
+import json
+import sys
+from pathlib import Path
+
+import torch
+
+REPO_ROOT = Path(__file__).resolve().parents[3]
+sys.path.insert(0, str(REPO_ROOT))
+sys.path.insert(0, str(REPO_ROOT / "EVRPTW_Core"))
+
+from EVRPTW_Benchmark.Reinforcement_Learning.common.evaluation import select_min_verified_objective
+from EVRPTW_Benchmark.Reinforcement_Learning.common.objective import objective_from_checkpoint
+from EVRPTW_Benchmark.Reinforcement_Learning.common.candidate_protocol import independent_candidate_batch
+
+from ..common import Stage2TaskPool, make_envs
+from .model import EVRPTWRLPolicy
+from .rollout import rollout
+
+
+def parse_args() -> argparse.Namespace:
+    parser = argparse.ArgumentParser(description="Evaluate EVRPTW-RL.")
+    parser.add_argument("--dataset-path", type=Path, required=True)
+    parser.add_argument("--family-root", type=Path)
+    parser.add_argument("--checkpoint", type=Path, required=True)
+    parser.add_argument("--objective-config", type=Path)
+    parser.add_argument("--scale", default="Cus100")
+    parser.add_argument("--split-ids", default="test")
+    parser.add_argument("--track-ids", default="test1_new_seed")
+    parser.add_argument("--city-slugs")
+    parser.add_argument("--decode-type", choices=("greedy", "sampling"), default="sampling")
+    parser.add_argument("--candidates", type=int, default=100)
+    parser.add_argument("--candidate-chunk-size", type=int, default=1)
+    parser.add_argument("--batch-size", type=int, default=8)
+    parser.add_argument("--limit", type=int)
+    parser.add_argument("--seed", type=int, default=1234)
+    parser.add_argument("--device", default="cuda" if torch.cuda.is_available() else "cpu")
+    parser.add_argument("--output-dir", type=Path, required=True)
+    return parser.parse_args()
+
+
+def main() -> None:
+    args = parse_args()
+    if args.decode_type == "greedy" and args.candidates != 1:
+        raise ValueError("greedy evaluation has exactly one candidate")
+    checkpoint = torch.load(args.checkpoint, map_location=args.device, weights_only=False)
+    model_args = checkpoint.get("args", {})
+    objective_config = objective_from_checkpoint(
+        checkpoint, override=getattr(args, "objective_config", None)
+    )
+    policy = EVRPTWRLPolicy(
+        embedding_dim=int(model_args.get("embedding_dim", 128)),
+        structure2vec_rounds=int(model_args.get("structure2vec_rounds", 3)),
+        graph_aggregation=model_args.get("graph_aggregation", "sum"),
+    ).to(args.device)
+    policy.load_state_dict(checkpoint["model"])
+    policy.eval()
+    pool = Stage2TaskPool(
+        dataset_path=args.dataset_path,
+        objective_config=objective_config,
+        family_root=args.family_root,
+        scale=args.scale,
+        split_ids=args.split_ids,
+        track_ids=args.track_ids,
+        city_slugs=args.city_slugs,
+        seed=args.seed,
+    )
+    instances = list(pool.first(limit=args.limit))
+    args.output_dir.mkdir(parents=True, exist_ok=True)
+    rows: list[dict] = []
+    routes_path = args.output_dir / "routes.jsonl"
+    with routes_path.open("w", encoding="utf-8") as route_stream:
+        for batch_start in range(0, len(instances), args.batch_size):
+            batch_instances = instances[batch_start : batch_start + args.batch_size]
+            def solve_one(instance, candidate_seed):
+                envs = make_envs(
+                    [instance],
+                    n_traj=1,
+                    info_level="full",
+                    objective_config=objective_config,
+                    reward_distance_scale_km=model_args.get(
+                        "reward_distance_scale_km"
+                    ),
+                )
+                with torch.no_grad():
+                    single = rollout(
+                        policy,
+                        envs,
+                        decode_type=args.decode_type,
+                        max_steps=max(env.unwrapped.max_steps for env in envs),
+                        seed=candidate_seed,
+                        station_visit_penalty=float(
+                            model_args.get("station_visit_penalty", 0.3)
+                        ),
+                        incomplete_penalty=float(
+                            model_args.get("incomplete_penalty", 100.0)
+                        ),
+                    )
+                return single.infos[0], single.runtime_s
+            result = independent_candidate_batch(
+                batch_instances,
+                candidate_count=args.candidates,
+                candidate_chunk_size=args.candidate_chunk_size,
+                base_seed=args.seed,
+                instance_offset=batch_start,
+                solve_one=solve_one,
+            )
+            for instance, info in zip(batch_instances, result.infos):
+                selected, routes, verification = select_min_verified_objective(
+                    instance, info, objective_config=objective_config
+                )
+                row = {
+                    "instance_id": instance.instance_id,
+                    "solver": "EVRPTW-RL",
+                    "decode_type": args.decode_type,
+                    "candidate_count": args.candidates,
+                    "selected_traj_idx": selected,
+                    "environment_success": bool(info["success"][selected]),
+                    "verifier_passed": bool(verification["passed"]),
+                    "objective_distance_km": float(
+                        verification["objective_distance_km"]
+                    ),
+                    "vehicle_count": len(routes),
+                    "charging_visit_count": int(
+                        verification["charging_visit_count"]
+                    ),
+                    "runtime_s": result.runtime_s / max(len(batch_instances), 1),
+                }
+                row.update(objective_config.fields(
+                    row["objective_distance_km"], verification["vehicles_started"]
+                ))
+                rows.append(row)
+                route_stream.write(
+                    json.dumps(
+                        {
+                            **row,
+                            "routes": routes,
+                            "violations": verification["violations"],
+                        },
+                        sort_keys=True,
+                    )
+                    + "\n"
+                )
+    summary_path = args.output_dir / "summary.csv"
+    with summary_path.open("w", encoding="utf-8", newline="") as stream:
+        writer = csv.DictWriter(stream, fieldnames=list(rows[0]) if rows else [])
+        if rows:
+            writer.writeheader()
+            writer.writerows(rows)
+    print(
+        json.dumps(
+            {
+                "instances": len(rows),
+                "verifier_passed": sum(row["verifier_passed"] for row in rows),
+                "summary": str(summary_path),
+                "routes": str(routes_path),
+            },
+            sort_keys=True,
+        )
+    )
+
+
+if __name__ == "__main__":
+    main()

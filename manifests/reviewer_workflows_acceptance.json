@@ -1,0 +1,685 @@
+{
+  "schema": "reviewer_workflows_acceptance_v1",
+  "phase": "source_preparation",
+  "environment": {
+    "python": "3.11.13",
+    "torch": "2.5.1+cpu",
+    "network": "blocked after dependency installation",
+    "cpu_threads": 1
+  },
+  "generation": {
+    "schema": "simple_generation_entry_acceptance_v1",
+    "local_cached_entry": "PASS",
+    "exact_count_3": "PASS",
+    "one_vs_two_workers_scientific_equality": "PASS",
+    "spaces_in_paths": "PASS",
+    "dry_run_no_files_network_key": "PASS",
+    "original_stage2_provenance_and_approval_gates": "UNCHANGED",
+    "live_online_download_and_stage1": "NOT RUN",
+    "full_existing_cle_reader_adapter": "PASS",
+    "full_existing_city_road100_generation": {
+      "status": "PASS",
+      "count": 1,
+      "customer_count": 100,
+      "charging_station_count": 20,
+      "elapsed_s": 18.373779877088964,
+      "stage1": "NOT RUN (read-only existing full CLE)"
+    },
+    "api_source_check": {
+      "afdc_documentation": "https://developer.nlr.gov/docs/transportation/alt-fuel-stations-v1/all/",
+      "afdc_signup": "https://developer.nlr.gov/signup/",
+      "amazon_registry": "https://registry.opendata.aws/amazon-last-mile-challenges/",
+      "amazon_five_objects_head": "HTTP 200; no body download",
+      "amazon_three_json_bytes": 2271556331,
+      "amazon_head_objects": [
+        {
+          "object": "License.txt",
+          "status": 200,
+          "content_length": 19342
+        },
+        {
+          "object": "Readme.txt",
+          "status": 200,
+          "content_length": 422
+        },
+        {
+          "object": "route_data.json",
+          "status": 200,
+          "content_length": 78972162
+        },
+        {
+          "object": "package_data.json",
+          "status": 200,
+          "content_length": 375437806
+        },
+        {
+          "object": "travel_times.json",
+          "status": 200,
+          "content_length": 1817146363
+        }
+      ]
+    },
+    "edited_files": {
+      "generate.sh": "4ee6e5692a7626c7186e0f58d8af8e3c859931634f7aeda4318071ed32a1dacb",
+      "scripts/review_generate.py": "3390543259d352a12ee481e659154fb2a0a2f0d675715d15651c6c9a789e8ebe",
+      "scripts/generate_demo.py": "602eca074c1a8316946e30dd02bfb7aae0c2efbc1e812361bbc5c7a4d2ac4404",
+      "EVRPTW_Dataset_Generator/scripts/prepare_us_city.py": "583a6727d42883afec4db8fe8bfb7f6df6b356ca690fd3338357fc5b41cca308",
+      "EVRPTW_Dataset_Generator/scripts/generate_us_city_cle.py": "2d0e8af780fffb4958d914b5d89246ecffb7ddc6c1f14e0ac74d67c1566a59f1",
+      "tests/test_generate_entry.py": "37863491dff9e87393db3897c2e15d14ccb16dc856c4f9288b86562f6da8d529",
+      "docs/GENERATION.md": "7e08d3de6eeb28ff54013ccd9e01801996e7bb993f245f650801a8caa4709f05"
+    },
+    "tests": "tests/test_generate_entry.py: 15 cases PASS; tests/test_route_plot.py: 45 cases PASS"
+  },
+  "training": {
+    "status": "PASS",
+    "models": [
+      {
+        "model": "am",
+        "epochs": 5,
+        "optimizer_steps": 10,
+        "all_losses_and_gradients_finite": true,
+        "all_updates_change_parameters": true,
+        "strict_load": "PASS",
+        "inference_rollout": "PASS",
+        "inference_candidates": 4,
+        "environment_success_count": 4,
+        "inference_seconds": 0.2671878400724381,
+        "training_seconds": 11.611517128068954,
+        "state_tensor_count": 65,
+        "parameter_count": 742912,
+        "epoch_stages": [
+          "hard",
+          "hard",
+          "hard",
+          "hard",
+          "hard"
+        ]
+      },
+      {
+        "model": "evrptw_rl",
+        "epochs": 5,
+        "optimizer_steps": 10,
+        "all_losses_and_gradients_finite": true,
+        "all_updates_change_parameters": true,
+        "strict_load": "PASS",
+        "inference_rollout": "PASS",
+        "inference_candidates": 4,
+        "environment_success_count": 4,
+        "inference_seconds": 1.1321812870446593,
+        "training_seconds": 18.072576253209263,
+        "state_tensor_count": 15,
+        "parameter_count": 232704,
+        "epoch_stages": [
+          "hard",
+          "hard",
+          "hard",
+          "hard",
+          "hard"
+        ]
+      },
+      {
+        "model": "rrnco",
+        "epochs": 5,
+        "optimizer_steps": 10,
+        "all_losses_and_gradients_finite": true,
+        "all_updates_change_parameters": true,
+        "strict_load": "PASS",
+        "inference_rollout": "PASS",
+        "inference_candidates": 4,
+        "environment_success_count": 4,
+        "inference_seconds": 1.2140203139279038,
+        "training_seconds": 42.943014852004126,
+        "state_tensor_count": 572,
+        "parameter_count": 4605005,
+        "epoch_stages": [
+          "hard",
+          "hard",
+          "hard",
+          "hard",
+          "hard"
+        ]
+      },
+      {
+        "model": "drl_ts",
+        "epochs": 5,
+        "optimizer_steps": 10,
+        "all_losses_and_gradients_finite": true,
+        "all_updates_change_parameters": true,
+        "strict_load": "PASS",
+        "inference_rollout": "PASS",
+        "inference_candidates": 4,
+        "environment_success_count": 4,
+        "inference_seconds": 0.7560260209720582,
+        "training_seconds": 16.618782255100086,
+        "state_tensor_count": 94,
+        "parameter_count": 760064,
+        "epoch_stages": [
+          "soft",
+          "soft",
+          "hard",
+          "hard",
+          "hard"
+        ]
+      },
+      {
+        "model": "terran",
+        "epochs": 5,
+        "optimizer_steps": 10,
+        "all_losses_and_gradients_finite": true,
+        "all_updates_change_parameters": true,
+        "strict_load": "PASS",
+        "inference_rollout": "PASS",
+        "inference_candidates": 4,
+        "environment_success_count": 4,
+        "inference_seconds": 0.24659537803381681,
+        "training_seconds": 7.241060839034617,
+        "state_tensor_count": 64,
+        "parameter_count": 2076420,
+        "epoch_stages": [
+          "legacy_ppo",
+          "legacy_ppo",
+          "legacy_ppo",
+          "legacy_ppo",
+          "legacy_ppo"
+        ]
+      }
+    ],
+    "train_py_sha256": "0889dcc4b2ff25b00137aa5586058a5fe9874895e91af67671f099e004ba55db",
+    "note": "All five full five-epoch native training runs preceded input validation tightening; native mathematics unchanged. Final validation covered separately and one-epoch checkpoint metadata rerun."
+  },
+  "input_validation": {
+    "status": "PASS",
+    "checks": [
+      {
+        "check": "valid 2x canonical train Road100; verified hashes",
+        "pass": true
+      },
+      {
+        "check": "file_tamper",
+        "pass": true,
+        "rejection": "Training instance SHA256 disagrees with its manifest"
+      },
+      {
+        "check": "invalid_digest",
+        "pass": true,
+        "rejection": "Every training instance requires a valid lowercase SHA256 digest"
+      },
+      {
+        "check": "instance_id_mismatch",
+        "pass": true,
+        "rejection": "Canonical instance_id disagrees with its training manifest"
+      },
+      {
+        "check": "family_id_mismatch",
+        "pass": true,
+        "rejection": "Canonical family_id disagrees with its training manifest"
+      },
+      {
+        "check": "view_id_mismatch",
+        "pass": true,
+        "rejection": "Instance view_id disagrees with its training manifest"
+      },
+      {
+        "check": "test_split",
+        "pass": true,
+        "rejection": "Only original core/train instances may be used, never evaluation views"
+      },
+      {
+        "check": "validation_cohort",
+        "pass": true,
+        "rejection": "Only original core/train instances may be used, never evaluation views"
+      },
+      {
+        "check": "euclidean_metadata",
+        "pass": true,
+        "rejection": "Every instance must explicitly declare road representation"
+      },
+      {
+        "check": "wrong_row_scale",
+        "pass": true,
+        "rejection": "Training view row has inconsistent identity, scale, representation, or cohort"
+      },
+      {
+        "check": "wrong_row_representation",
+        "pass": true,
+        "rejection": "Training view row has inconsistent identity, scale, representation, or cohort"
+      },
+      {
+        "check": "wrong_row_source_cohort",
+        "pass": true,
+        "rejection": "Training view row has inconsistent identity, scale, representation, or cohort"
+      },
+      {
+        "check": "view_count_mismatch",
+        "pass": true,
+        "rejection": "Manifest view_count disagrees with its actual view rows"
+      },
+      {
+        "check": "matrix_missing",
+        "pass": true,
+        "rejection": "Missing or invalid canonical road matrix: running_time_path_distance_km"
+      },
+      {
+        "check": "matrix_wrong_shape",
+        "pass": true,
+        "rejection": "Missing or invalid canonical road matrix: distance_matrix_km"
+      },
+      {
+        "check": "matrix_negative",
+        "pass": true,
+        "rejection": "Missing or invalid canonical road matrix: running_time_shortest_matrix_s"
+      },
+      {
+        "check": "matrix_nonfinite",
+        "pass": true,
+        "rejection": "Missing or invalid canonical road matrix: running_time_path_energy_kwh"
+      },
+      {
+        "check": "scale_8_mismatch",
+        "pass": true,
+        "rejection": "Manifest customer_count must equal --scale; no scale substitution is allowed"
+      },
+      {
+        "check": "scale_500_mismatch",
+        "pass": true,
+        "rejection": "Manifest customer_count must equal --scale; no scale substitution is allowed"
+      },
+      {
+        "check": "scale_1000_mismatch",
+        "pass": true,
+        "rejection": "Manifest customer_count must equal --scale; no scale substitution is allowed"
+      }
+    ],
+    "train_py_sha256": "0889dcc4b2ff25b00137aa5586058a5fe9874895e91af67671f099e004ba55db"
+  },
+  "trained_checkpoint_evaluation": {
+    "schema": "five_model_train_evaluate_pipeline_v1",
+    "status": "PASS",
+    "training_epochs": 5,
+    "optimizer_steps_per_model": 10,
+    "evaluation_instance": "examples/evaluation/road_100.json",
+    "evaluation_instance_sha256": "a4492cdfc16754ac4e7e6f57a98f40972b3fbcf6421cba691c596e194997320a",
+    "training_data_use": "Two separate genuine core/train Road-100 instances, one pass per epoch",
+    "checkpoint_selection": "The actual final checkpoint from each initial five-epoch run; no checkpoint substitutions or seed retries",
+    "evaluation_seed": 1234,
+    "candidates_per_model": 4,
+    "device": "cpu",
+    "threads": 1,
+    "runs": [
+      {
+        "model": "am",
+        "exit_code": 0,
+        "wall_seconds": 2.4365650929976255,
+        "method": "AM-EVRPTW",
+        "checkpoint_epoch": 5,
+        "checkpoint_optimizer_steps": 10,
+        "checkpoint_sha256": "60ff6b3e5fa99bdd888f904e56692384695d0ad15332e3d7cbb7e83604558806",
+        "instance_id": "iv_4073f1928fa0c95f3de64257",
+        "customer_count": 100,
+        "strict_load": "PASS",
+        "status": "VERIFIED",
+        "independent_verifier_passed": true,
+        "complete_and_feasible": true,
+        "environment_success_count": 4,
+        "candidates": 4,
+        "seed": 1234,
+        "max_steps": 484,
+        "vehicle_count": 13,
+        "objective_cost_usd": 5644.461027845513,
+        "objective_distance_km": 1760.9773779213428,
+        "timing": {
+          "native_setup_and_decode_s": 0.24219023319892585,
+          "selection_and_verification_s": 0.002735053887590766,
+          "inference_end_to_end_s": 0.3002283510286361,
+          "plot_s": 0.00482534896582365,
+          "total_with_plot_s": 0.3089972429443151
+        },
+        "result_sha256": "1192e4d8fb858ec5c17325d0d782ab63f1c4539086e9a464946694d51463d881",
+        "svg_exists": true,
+        "svg_xml_valid": true,
+        "svg_element_count": 802,
+        "svg_route_geometry_count": 157,
+        "svg_has_viewbox": true,
+        "svg_sha256": "fee93b5fe87328ebbe428eafa882933bcf492c7119d7b5e525c948ab2eebdf91",
+        "svg_bytes": 82814,
+        "acceptance": "PASS"
+      },
+      {
+        "model": "evrptw_rl",
+        "exit_code": 0,
+        "wall_seconds": 3.116982992971316,
+        "method": "EVRPTW-RL",
+        "checkpoint_epoch": 5,
+        "checkpoint_optimizer_steps": 10,
+        "checkpoint_sha256": "144c4a6b65001d05f00a2d0ae9dcb2b513fc95839b34e10073a1cc40407a10c4",
+        "instance_id": "iv_4073f1928fa0c95f3de64257",
+        "customer_count": 100,
+        "strict_load": "PASS",
+        "status": "VERIFIED",
+        "independent_verifier_passed": true,
+        "complete_and_feasible": true,
+        "environment_success_count": 4,
+        "candidates": 4,
+        "seed": 1234,
+        "max_steps": 484,
+        "vehicle_count": 8,
+        "objective_cost_usd": 3599.4784499123543,
+        "objective_distance_km": 1913.7486584186554,
+        "timing": {
+          "native_setup_and_decode_s": 0.6141908098943532,
+          "selection_and_verification_s": 0.0024628678802400827,
+          "inference_end_to_end_s": 0.8999054369051009,
+          "plot_s": 0.005720442859455943,
+          "total_with_plot_s": 0.90669358195737
+        },
+        "result_sha256": "4a5a9449cad96e3a7439a17c13c660d1006d6935e3c8927244b39fdc970b32f7",
+        "svg_exists": true,
+        "svg_xml_valid": true,
+        "svg_element_count": 796,
+        "svg_route_geometry_count": 169,
+        "svg_has_viewbox": true,
+        "svg_sha256": "974b0d5acfd7b65413144cd7d180a2302024364c28597e7a6b555b3fa91b2e8f",
+        "svg_bytes": 84301,
+        "acceptance": "PASS"
+      },
+      {
+        "model": "rrnco",
+        "exit_code": 0,
+        "wall_seconds": 4.43281305488199,
+        "method": "RRNCO",
+        "checkpoint_epoch": 5,
+        "checkpoint_optimizer_steps": 10,
+        "checkpoint_sha256": "18156a1f0a71d62e1b670f1ea70a522e36f51251a7f9f669001071842ef82558",
+        "instance_id": "iv_4073f1928fa0c95f3de64257",
+        "customer_count": 100,
+        "strict_load": "PASS",
+        "status": "VERIFIED",
+        "independent_verifier_passed": true,
+        "complete_and_feasible": true,
+        "environment_success_count": 3,
+        "candidates": 4,
+        "seed": 1234,
+        "max_steps": 484,
+        "vehicle_count": 9,
+        "objective_cost_usd": 4058.4733495097603,
+        "objective_distance_km": 2212.670932851732,
+        "timing": {
+          "native_setup_and_decode_s": 1.8053808298427612,
+          "selection_and_verification_s": 0.002648665104061365,
+          "inference_end_to_end_s": 2.175380250904709,
+          "plot_s": 0.005825791973620653,
+          "total_with_plot_s": 2.2021683380007744
+        },
+        "result_sha256": "ec0bdb806100b69511408ab32e5656c6af8ce2b91781d0d4219b0f687c1032c5",
+        "svg_exists": true,
+        "svg_xml_valid": true,
+        "svg_element_count": 976,
+        "svg_route_geometry_count": 256,
+        "svg_has_viewbox": true,
+        "svg_sha256": "e3b2ca7bd2a584e2fb46c79d6d65bd7d0067b79293e50732e5be3b28f42a0e15",
+        "svg_bytes": 107396,
+        "acceptance": "PASS"
+      },
+      {
+        "model": "drl_ts",
+        "exit_code": 0,
+        "wall_seconds": 3.2897034909110516,
+        "method": "DRL-TS",
+        "checkpoint_epoch": 5,
+        "checkpoint_optimizer_steps": 10,
+        "checkpoint_sha256": "1ee58abd8ca091752d40a22011677521c0ed64f9d2eca915b06957624d95333b",
+        "instance_id": "iv_4073f1928fa0c95f3de64257",
+        "customer_count": 100,
+        "strict_load": "PASS",
+        "status": "VERIFIED",
+        "independent_verifier_passed": true,
+        "complete_and_feasible": true,
+        "environment_success_count": 4,
+        "candidates": 4,
+        "seed": 1234,
+        "max_steps": 484,
+        "vehicle_count": 7,
+        "objective_cost_usd": 3169.096145283707,
+        "objective_distance_km": 1803.3760482668877,
+        "timing": {
+          "native_setup_and_decode_s": 0.7839437590446323,
+          "selection_and_verification_s": 0.002521237824112177,
+          "inference_end_to_end_s": 1.088424928020686,
+          "plot_s": 0.004842527909204364,
+          "total_with_plot_s": 1.096756676910445
+        },
+        "result_sha256": "f93fa6f329db70178afd0b0ee4c21c8381dd39a12ec08fc94c648f9067e5bc6b",
+        "svg_exists": true,
+        "svg_xml_valid": true,
+        "svg_element_count": 766,
+        "svg_route_geometry_count": 157,
+        "svg_has_viewbox": true,
+        "svg_sha256": "ce053772389abed30d95659da88033d5e7b99b4fb17b9a37b9cab17bacaff11b",
+        "svg_bytes": 80927,
+        "acceptance": "PASS"
+      },
+      {
+        "model": "terran",
+        "exit_code": 0,
+        "wall_seconds": 2.477756266016513,
+        "method": "TERRAN",
+        "checkpoint_epoch": 5,
+        "checkpoint_optimizer_steps": 10,
+        "checkpoint_sha256": "c87d5f089b04ec4e1e3d69c43586cf5792037a33f8c179aaa2475628889c3ee6",
+        "instance_id": "iv_4073f1928fa0c95f3de64257",
+        "customer_count": 100,
+        "strict_load": "PASS",
+        "status": "VERIFIED",
+        "independent_verifier_passed": true,
+        "complete_and_feasible": true,
+        "environment_success_count": 4,
+        "candidates": 4,
+        "seed": 1234,
+        "max_steps": 484,
+        "vehicle_count": 3,
+        "objective_cost_usd": 1403.6755904698412,
+        "objective_distance_km": 1072.652955636382,
+        "timing": {
+          "native_setup_and_decode_s": 0.2543969771359116,
+          "selection_and_verification_s": 0.0020451750606298447,
+          "inference_end_to_end_s": 0.33115261793136597,
+          "plot_s": 0.0044307049829512835,
+          "total_with_plot_s": 0.34521637996658683
+        },
+        "result_sha256": "2817d56f2fed02c5445ff724d528b02fded4f5785ef8f93cdad58f7f05583a5e",
+        "svg_exists": true,
+        "svg_xml_valid": true,
+        "svg_element_count": 700,
+        "svg_route_geometry_count": 136,
+        "svg_has_viewbox": true,
+        "svg_sha256": "4226c643f8b7953075f687df30f7b7349b5ba75727d7b7a0e907fcc254ddc511",
+        "svg_bytes": 74553,
+        "acceptance": "PASS"
+      }
+    ],
+    "scope": "Bounded execution, checkpoint interoperability, independent feasibility verification and SVG artifact checks. These short runs are not full paper training or benchmark quality results.",
+    "evidence_scope": "Earlier five-model evaluation on the equivalent canonical-format export; measured results retained."
+  },
+  "real_checkpoint_two_argument_evaluation": {
+    "exit_code": 0,
+    "wall_s": 3.1734363278374076,
+    "rss_kib": 449084,
+    "status": "PASS",
+    "command": "python eval_plot.py --ckpt ../review-checkpoints/am_evrptw_road_100.pt --inst_path examples/evaluation/road_100.json",
+    "complete_and_feasible": true,
+    "independent_verifier": "PASS",
+    "standalone_svg": "PASS",
+    "customer_count": 100,
+    "automatic_max_steps": 484,
+    "candidates": 30,
+    "evidence_scope": "Earlier canonical-export input acceptance; retained as measured. Main README now loads review-core directly."
+  },
+  "repository_tests": {
+    "status": "PASS",
+    "passed": 73,
+    "elapsed_s": 7.91
+  },
+  "final_archive_acceptance": "Recorded externally in delivery report after final packaging; avoids circular checksums.",
+  "console_simplification": {
+    "schema": "concise_training_stdout_acceptance_v1",
+    "status": "PASS",
+    "command": [
+      "python",
+      "train.py",
+      "--model",
+      "evrptw_rl",
+      "--scale",
+      "100"
+    ],
+    "wall_seconds": 21.253895186819136,
+    "stdout_lines": [
+      "EVRPTW-RL training demo | 2 Road-100 instances | 5 epochs | CPU",
+      "epoch=1/5 loss=-13.821564",
+      "epoch=2/5 loss=-23655.804688",
+      "epoch=3/5 loss=-18676.819336",
+      "epoch=4/5 loss=-23258.016602",
+      "epoch=5/5 loss=-17436.884277",
+      "Saved checkpoint: outputs/<automatic_directory>/demo_checkpoint.pt"
+    ],
+    "checks": [
+      {
+        "check": "default_training_exit",
+        "status": "PASS",
+        "exit_code": 0
+      },
+      {
+        "check": "stdout_exactly_seven_lines",
+        "status": "PASS",
+        "line_count": 7
+      },
+      {
+        "check": "one_demo_overview",
+        "status": "PASS"
+      },
+      {
+        "check": "five_epoch_loss_only_lines",
+        "status": "PASS"
+      },
+      {
+        "check": "final_checkpoint_path_line",
+        "status": "PASS"
+      },
+      {
+        "check": "one_fresh_auto_output_directory",
+        "status": "PASS"
+      },
+      {
+        "check": "five_epochs_ten_actual_updates",
+        "status": "PASS"
+      },
+      {
+        "check": "detailed_jsonl_metrics_preserved",
+        "status": "PASS",
+        "field_names": [
+          "baseline_kind",
+          "environment_success_rate",
+          "environment_transitions",
+          "epoch",
+          "grad_norm_before_clip",
+          "loss",
+          "mean_objective_usd",
+          "mean_training_cost_normalized",
+          "optimizer_step",
+          "parameter_tensors_changed",
+          "parameter_update_l2",
+          "seconds",
+          "stage",
+          "view_id"
+        ]
+      },
+      {
+        "check": "strict_reload_current_checkpoint",
+        "status": "PASS"
+      },
+      {
+        "check": "prior_checkpoint_every_tensor_identical",
+        "status": "PASS",
+        "tensor_count": 15,
+        "different_tensor_keys": []
+      },
+      {
+        "check": "every_epoch_loss_exactly_equal_prior",
+        "status": "PASS",
+        "current": [
+          -13.821563720703125,
+          -23655.8046875,
+          -18676.8193359375,
+          -23258.0166015625,
+          -17436.88427734375
+        ],
+        "prior": [
+          -13.821563720703125,
+          -23655.8046875,
+          -18676.8193359375,
+          -23258.0166015625,
+          -17436.88427734375
+        ]
+      },
+      {
+        "check": "every_step_loss_exactly_equal_prior",
+        "status": "PASS"
+      },
+      {
+        "check": "existing_output_refused_with_omit_hint",
+        "status": "PASS",
+        "exit_code": 2
+      },
+      {
+        "check": "refusal_preserves_checkpoint_and_json_outputs",
+        "status": "PASS",
+        "checkpoint_sha256": "810c1612ea26441ffe4162367acd72457b307805d25b7b2ff50ccb1433d64c39"
+      },
+      {
+        "check": "prior_checkpoint_unchanged",
+        "status": "PASS"
+      },
+      {
+        "check": "public_training_source_unchanged",
+        "status": "PASS",
+        "train_py_sha256": "fa8664af075756cfa9b577a9741eeee06cd5566fa97caebbd1de419d9a010477"
+      }
+    ],
+    "scope": "One default five-epoch CPU EVRPTW-RL run, exact prior-model/loss equivalence, existing-output protection and concise console messages.",
+    "implementation_comparison": {
+      "status": "PASS",
+      "normalization": "Remove print expressions and normalize FileExistsError text only",
+      "remaining_ast_identical": true,
+      "training_algorithm_data_and_artifact_schema_changed": false,
+      "before_sha256": "0889dcc4b2ff25b00137aa5586058a5fe9874895e91af67671f099e004ba55db",
+      "after_sha256": "fa8664af075756cfa9b577a9741eeee06cd5566fa97caebbd1de419d9a010477"
+    }
+  },
+  "core_path_evaluation": {
+    "status": "PASS",
+    "command": [
+      "python",
+      "eval_plot.py",
+      "--ckpt",
+      "../review-checkpoints/am_evrptw_road_100.pt",
+      "--inst_path",
+      "../review-core/materialized/families/mf_f00002829bd8a1180a26e4cb/views/iv_4073f1928fa0c95f3de64257/view_manifest.json"
+    ],
+    "input_kind": "materialized_view_path",
+    "instance_id": "iv_4073f1928fa0c95f3de64257",
+    "customer_count": 100,
+    "candidates": 30,
+    "checkpoint_sha256": "4f978383a4642b723bdd899bb0d9d78cdf5ac40054ede728f408561ae830e943",
+    "verification_passed": true,
+    "svg_parsed": true,
+    "vehicle_count": 1,
+    "objective_cost_usd": 441.32062041235804,
+    "objective_distance_km": 182.4533064700663,
+    "timing": {
+      "native_setup_and_decode_s": 0.9255854829680175,
+      "selection_and_verification_s": 0.001351707149296999,
+      "inference_end_to_end_s": 0.9805885029491037,
+      "plot_s": 0.003861005185171962,
+      "total_with_plot_s": 0.9881597650237381
+    }
+  }
+}

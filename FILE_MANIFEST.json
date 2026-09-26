@@ -1,0 +1,2928 @@
+{
+  "schema": "anonymous_bundle_files_v1",
+  "release_id": "anonymous-review-audited-v1",
+  "root": "evrptw-db",
+  "excludes_self": true,
+  "files": [
+    {
+      "path": ".env.example",
+      "bytes": 100,
+      "sha256": "361bbcbc49ad074bc90c8cf55285428695e973a7d6c05c006ec5e59cedbe6a7a"
+    },
+    {
+      "path": ".gitignore",
+      "bytes": 80,
+      "sha256": "727e97715da0e0ede861dfd6f919c1a4046dab07eefaf81c4f9cbcde4f585989"
+    },
+    {
+      "path": "EVRPTW_Benchmark/Exact/Gurobi_Solver/gurobi_solver.py",
+      "bytes": 45769,
+      "sha256": "5926b846d172798e17380f536a8332b2e0ed5432d66d449710155ec473bf901c"
+    },
+    {
+      "path": "EVRPTW_Benchmark/Exact/Gurobi_Solver/requirements.txt",
+      "bytes": 223,
+      "sha256": "1d1f88bd28da5f283a431400c02db531ef6cec941962e5092a953c2fb8d82daf"
+    },
+    {
+      "path": "EVRPTW_Benchmark/Exact/Gurobi_Solver/route_validator.py",
+      "bytes": 9127,
+      "sha256": "9e2a1688ac8d22814d6eeb427b24e784ff174ac2b217ab02e6fff3ad6c5751f8"
+    },
+    {
+      "path": "EVRPTW_Benchmark/Exact/Gurobi_Solver/run_gurobi.py",
+      "bytes": 42686,
+      "sha256": "b3bb11db6dac3c1ef5688013fb0f433a10a091a47f4967ed3b8ee58d30d3a86b"
+    },
+    {
+      "path": "EVRPTW_Benchmark/Exact/Gurobi_Solver/run_single_cus500.py",
+      "bytes": 22935,
+      "sha256": "850f275284c7b06c27a4a7ed540cc29ed4e82c1d10b256f72e4328ce2884bb40"
+    },
+    {
+      "path": "EVRPTW_Benchmark/Exact/Gurobi_Solver/stage2_adapter.py",
+      "bytes": 10629,
+      "sha256": "5aa771cb093102def39682a5e825b91d1f5e83579e80de147004c43640729c37"
+    },
+    {
+      "path": "EVRPTW_Benchmark/Exact/Gurobi_Solver/tests/test_callback_incumbent.py",
+      "bytes": 5245,
+      "sha256": "e6a9cec620f98f79cb81d43f379915fffc003696c90fe6fe6e3bf8d54206eb71"
+    },
+    {
+      "path": "EVRPTW_Benchmark/Exact/Gurobi_Solver/tests/test_checkpoint_contract.py",
+      "bytes": 10977,
+      "sha256": "cca50e0111f2795cad5572c561515b6cadc9af4b42ad3e3ce30d1b4a80a5dbcf"
+    },
+    {
+      "path": "EVRPTW_Benchmark/Exact/Gurobi_Solver/tests/test_single_background.py",
+      "bytes": 2831,
+      "sha256": "5e237a129008ce4fb5a4032474c42d292f57eec5680e0a6c61f18a76940c3a69"
+    },
+    {
+      "path": "EVRPTW_Benchmark/Exact/Gurobi_Solver/tests/test_single_cost_logging.py",
+      "bytes": 8735,
+      "sha256": "56bf461b6d7004cb1c960b78c71f52ea518423f59ca4313aea6a9a57720d8aa2"
+    },
+    {
+      "path": "EVRPTW_Benchmark/Exact/Gurobi_Solver/tests/test_stage2_gurobi.py",
+      "bytes": 8275,
+      "sha256": "994b07b24733848d9dcace4939974006823efe094e7a84ea89a12ba02ddd16fa"
+    },
+    {
+      "path": "EVRPTW_Benchmark/MetaHeuristics/ALNS_Solver/instance_adapter.py",
+      "bytes": 3408,
+      "sha256": "abb3fb38ba9be5e804f6581de8d71ad2041825f9a09ee156aa3635dc2b3487b3"
+    },
+    {
+      "path": "EVRPTW_Benchmark/MetaHeuristics/ALNS_Solver/requirements.txt",
+      "bytes": 58,
+      "sha256": "6365fa94bc20200d0078ce493e9d7d089fbd85265e1fdb9e251ce2d130c0b5e7"
+    },
+    {
+      "path": "EVRPTW_Benchmark/MetaHeuristics/ALNS_Solver/run_alns.py",
+      "bytes": 25391,
+      "sha256": "766bd5a78174f4b139b0a603520ecccfa34c04e5546ed84d7e22ed8a851a23ea"
+    },
+    {
+      "path": "EVRPTW_Benchmark/MetaHeuristics/ALNS_Solver/solver.py",
+      "bytes": 99190,
+      "sha256": "931366b71c98e993a6afef8fdd05f5211499df825566845e57160ec023ce5564"
+    },
+    {
+      "path": "EVRPTW_Benchmark/MetaHeuristics/ALNS_Solver/tests/test_cost_operator_selection.py",
+      "bytes": 7093,
+      "sha256": "5d155eea5c664746f55d627315e61e0cfda5a5731a9f772ef89461d046817fe7"
+    },
+    {
+      "path": "EVRPTW_Benchmark/MetaHeuristics/VNS_TS_Solver/requirements.txt",
+      "bytes": 58,
+      "sha256": "6365fa94bc20200d0078ce493e9d7d089fbd85265e1fdb9e251ce2d130c0b5e7"
+    },
+    {
+      "path": "EVRPTW_Benchmark/MetaHeuristics/VNS_TS_Solver/run_vns_ts.py",
+      "bytes": 34629,
+      "sha256": "be759e24cfedf6909e8361d4b68ffca824a3c35827495d86d07801a33ec9386c"
+    },
+    {
+      "path": "EVRPTW_Benchmark/MetaHeuristics/VNS_TS_Solver/solver.py",
+      "bytes": 95775,
+      "sha256": "48e432bd57b75b503bddbe793aef79c4f83b9827fe9a7ba1d70c8322ebecb0ad"
+    },
+    {
+      "path": "EVRPTW_Benchmark/MetaHeuristics/VNS_TS_Solver/tests/test_cost_candidate_selection.py",
+      "bytes": 5311,
+      "sha256": "601192e394f839a7088f963c171ef823959de8d1b5beecfca133899c97a449d6"
+    },
+    {
+      "path": "EVRPTW_Benchmark/MetaHeuristics/VNS_TS_Solver/tests/test_solver_optimization_equivalence.py",
+      "bytes": 34642,
+      "sha256": "30ca539668b3a4f698a0c32c39c03ffaf7b8c5e21fcfe73831138e49fa317b5a"
+    },
+    {
+      "path": "EVRPTW_Benchmark/MetaHeuristics/VNS_TS_Solver/vnst_adapter.py",
+      "bytes": 5623,
+      "sha256": "498d89ad4e740c0f2ae53dbf1248d5afc3dcc8792487d62dfd4ddbe1f5081be1"
+    },
+    {
+      "path": "EVRPTW_Benchmark/MetaHeuristics/benchmark_common.py",
+      "bytes": 44018,
+      "sha256": "6d5f8ae774d432e108ae90c298ef77b6e2fc0f400622c38893d2593104023ed6"
+    },
+    {
+      "path": "EVRPTW_Benchmark/MetaHeuristics/benchmark_output.py",
+      "bytes": 23956,
+      "sha256": "6b0e68b1e3ffe887a3bdcb26c98e567ce8ae19794b8c9c35974ca23eb89ce855"
+    },
+    {
+      "path": "EVRPTW_Benchmark/MetaHeuristics/tests/runner_ab_harness.py",
+      "bytes": 5083,
+      "sha256": "f17f8cdf14be67ae294527c41aecdcb7f1b1eb88e7fbfcf09133709f9a08c6e7"
+    },
+    {
+      "path": "EVRPTW_Benchmark/MetaHeuristics/tests/test_alns_strict_optimizations.py",
+      "bytes": 21624,
+      "sha256": "c648bdd92ee585e7ee5882a0aac72158eaca6c519a64d09be6713556ef1ab952"
+    },
+    {
+      "path": "EVRPTW_Benchmark/MetaHeuristics/tests/test_cost_distance_mapping.py",
+      "bytes": 6272,
+      "sha256": "46304eebed12f3da539666f17a6fe2386419873e555d358840bd1a97f133040b"
+    },
+    {
+      "path": "EVRPTW_Benchmark/MetaHeuristics/tests/test_cost_objective_v2.py",
+      "bytes": 3203,
+      "sha256": "34ab3c6b5c8abf0bb3be40e043e750589db0b7a80e91cbe63d51ae0b9fe8d084"
+    },
+    {
+      "path": "EVRPTW_Benchmark/MetaHeuristics/tests/test_runner_optimizations.py",
+      "bytes": 38261,
+      "sha256": "2bc351618170a6e3cdbcb98ab20c707d67ae9b3a85855f830eee2bcbf409c599"
+    },
+    {
+      "path": "EVRPTW_Benchmark/MetaHeuristics/tests/test_stage2_metaheuristics.py",
+      "bytes": 10730,
+      "sha256": "4577583572f97814d58ce144874d90b01b3e5e7575bd321f8909b4db8ca3c361"
+    },
+    {
+      "path": "EVRPTW_Benchmark/Reinforcement_Learning/AM_EVRPTW/__init__.py",
+      "bytes": 177,
+      "sha256": "99a771e3e703623fd25dd7e78120df876bfb455cbeab2066af70451e8a20e353"
+    },
+    {
+      "path": "EVRPTW_Benchmark/Reinforcement_Learning/AM_EVRPTW/data.py",
+      "bytes": 177,
+      "sha256": "f5c0c08c701a15e4753aebaaa41eb146044e646b2551394b343f8592dda08e22"
+    },
+    {
+      "path": "EVRPTW_Benchmark/Reinforcement_Learning/AM_EVRPTW/distributed_train.py",
+      "bytes": 3586,
+      "sha256": "037639dd0638db9852515d2febcb33239e232573d3863d978fe062559961792d"
+    },
+    {
+      "path": "EVRPTW_Benchmark/Reinforcement_Learning/AM_EVRPTW/eval.py",
+      "bytes": 6933,
+      "sha256": "743a887063bd52238aab39c49fa3ebcd73b8a84bb0c57bcab364934416e234ed"
+    },
+    {
+      "path": "EVRPTW_Benchmark/Reinforcement_Learning/AM_EVRPTW/model.py",
+      "bytes": 10029,
+      "sha256": "850f092f9b56c47cb90dbb4d521890edc1980f9da85091f99526e2e6aba0c8ed"
+    },
+    {
+      "path": "EVRPTW_Benchmark/Reinforcement_Learning/AM_EVRPTW/rollout.py",
+      "bytes": 9259,
+      "sha256": "85315900e3a0d620d48e932f611fc44e8161b3804ac652d2ee1c9f02ff438f1c"
+    },
+    {
+      "path": "EVRPTW_Benchmark/Reinforcement_Learning/AM_EVRPTW/tests/test_am_model.py",
+      "bytes": 11814,
+      "sha256": "b1c6b3c62e69b3e9fb68d81a70d081dc722624df94848861405cd3e224ec8b2d"
+    },
+    {
+      "path": "EVRPTW_Benchmark/Reinforcement_Learning/AM_EVRPTW/tests/test_rollout_timing.py",
+      "bytes": 2846,
+      "sha256": "906f599d37f3902eae8bb0206f55f6339ecbe7f6992c922656f4049840d7b443"
+    },
+    {
+      "path": "EVRPTW_Benchmark/Reinforcement_Learning/AM_EVRPTW/third_party/__init__.py",
+      "bytes": 65,
+      "sha256": "3def616b4ea4abeed3e46a6dc68b497c70cbc04e1441103049def8b10aa6447e"
+    },
+    {
+      "path": "EVRPTW_Benchmark/Reinforcement_Learning/AM_EVRPTW/third_party/attention_learn_to_route/LICENSE",
+      "bytes": 1068,
+      "sha256": "e9eee47b6c6be05a17c1b1916dafcbdf571b799785422686b65b40f74688e3d0"
+    },
+    {
+      "path": "EVRPTW_Benchmark/Reinforcement_Learning/AM_EVRPTW/third_party/attention_learn_to_route/UPSTREAM.md",
+      "bytes": 401,
+      "sha256": "76665123a8d000f5b5f1198010f4377c854a788314d79808c3b288d4b7117d4c"
+    },
+    {
+      "path": "EVRPTW_Benchmark/Reinforcement_Learning/AM_EVRPTW/third_party/attention_learn_to_route/__init__.py",
+      "bytes": 81,
+      "sha256": "73926855812529ce882a3023a0aefe56f90cde21bdf0a1934884dfca0a9d4741"
+    },
+    {
+      "path": "EVRPTW_Benchmark/Reinforcement_Learning/AM_EVRPTW/third_party/attention_learn_to_route/graph_encoder.py",
+      "bytes": 7222,
+      "sha256": "25cc083b5df5dc0cc72355a30f3179e37a60a752f99d5d022a97467a9f6c6fd3"
+    },
+    {
+      "path": "EVRPTW_Benchmark/Reinforcement_Learning/AM_EVRPTW/train.py",
+      "bytes": 8732,
+      "sha256": "74c10f16e33e160578cb0349f70170caffdd98119ca72020664f0112dc23bb72"
+    },
+    {
+      "path": "EVRPTW_Benchmark/Reinforcement_Learning/DRL_TS/__init__.py",
+      "bytes": 302,
+      "sha256": "27baa18be0d286bb81793bcb350878e4974ee121de9aec703501605122dd7748"
+    },
+    {
+      "path": "EVRPTW_Benchmark/Reinforcement_Learning/DRL_TS/distributed_train.py",
+      "bytes": 2152,
+      "sha256": "89824d9cb9e08811ae9cdb1da6bc80c1c4f3398545d72d1231f87b75a3f00226"
+    },
+    {
+      "path": "EVRPTW_Benchmark/Reinforcement_Learning/DRL_TS/env.py",
+      "bytes": 1390,
+      "sha256": "a66d73544f8434a02bed6ea51ab09ae598597c1f50853d62132bcdb61423ef1c"
+    },
+    {
+      "path": "EVRPTW_Benchmark/Reinforcement_Learning/DRL_TS/eval.py",
+      "bytes": 7382,
+      "sha256": "a3e8bec40ed9440cf5deb4450df6f720cfb3f5247ef2b573fddd57ba2cf66590"
+    },
+    {
+      "path": "EVRPTW_Benchmark/Reinforcement_Learning/DRL_TS/model.py",
+      "bytes": 13249,
+      "sha256": "b90f64f8165e033324977b975a39bc65079954301ddb3df2911c95d058c216a5"
+    },
+    {
+      "path": "EVRPTW_Benchmark/Reinforcement_Learning/DRL_TS/rollout.py",
+      "bytes": 18549,
+      "sha256": "fd37e50a0c8630de0119c65ff8b56531e862147f1453f18512d43899e115b299"
+    },
+    {
+      "path": "EVRPTW_Benchmark/Reinforcement_Learning/DRL_TS/soft_env.py",
+      "bytes": 10653,
+      "sha256": "ce27f47f558f670836e9a030060161cd59c2f487872755e31438e96b8d48cf81"
+    },
+    {
+      "path": "EVRPTW_Benchmark/Reinforcement_Learning/DRL_TS/tests/test_drl_ts.py",
+      "bytes": 12284,
+      "sha256": "8e454f7d9aed72057620a2869661dd155e76c93ba91cd497abb93aa5813bc3d5"
+    },
+    {
+      "path": "EVRPTW_Benchmark/Reinforcement_Learning/DRL_TS/tests/test_edge_row_gather.py",
+      "bytes": 3847,
+      "sha256": "3f7223eba54dc1ee62adf2b5a3ca959b56e8d7ca63e88328a48198dcef4a53be"
+    },
+    {
+      "path": "EVRPTW_Benchmark/Reinforcement_Learning/DRL_TS/tests/test_soft_mask_performance.py",
+      "bytes": 8204,
+      "sha256": "687ccdcf3a3862ee5e890b4ced68cdc9f683e2cb5e113261c515f5115f6f4838"
+    },
+    {
+      "path": "EVRPTW_Benchmark/Reinforcement_Learning/DRL_TS/train.py",
+      "bytes": 16647,
+      "sha256": "aa570f2de97e240eadec6f7c731276a817ea6496ed45d85d6a94b701b0cda5c5"
+    },
+    {
+      "path": "EVRPTW_Benchmark/Reinforcement_Learning/EVRPTW_Env/__init__.py",
+      "bytes": 155,
+      "sha256": "3358428cb0fce03ea015652225fdc3756cf56e963be8ae370e71787a95176505"
+    },
+    {
+      "path": "EVRPTW_Benchmark/Reinforcement_Learning/EVRPTW_Env/env.py",
+      "bytes": 42816,
+      "sha256": "2585254cbdc63ffc8b99ccdb712af7425c2e4c117999ab99e47606045b7dfb42"
+    },
+    {
+      "path": "EVRPTW_Benchmark/Reinforcement_Learning/EVRPTW_Env/env_fast.py",
+      "bytes": 13440,
+      "sha256": "542af94d5ff07f370c8364e2149e5ab3f16a51fee75255c111c93fb9b642c0b0"
+    },
+    {
+      "path": "EVRPTW_Benchmark/Reinforcement_Learning/EVRPTW_Env/mask_jit.py",
+      "bytes": 18171,
+      "sha256": "a07fc7189e9a22278735b867f42314b24b22e8a07fcd32938a67cec64631cb67"
+    },
+    {
+      "path": "EVRPTW_Benchmark/Reinforcement_Learning/EVRPTW_Env/smoke_test_env.py",
+      "bytes": 2879,
+      "sha256": "5a3384e41a56ce83f44e27644090aa7a858ebe8fbefc86ba6283b29a92cd802c"
+    },
+    {
+      "path": "EVRPTW_Benchmark/Reinforcement_Learning/EVRPTW_Env/tests/test_canonical_contract.py",
+      "bytes": 8494,
+      "sha256": "db2dc17e8176edcc915669a2f26572bca0ced05c3eace95e71682080df5eaf54"
+    },
+    {
+      "path": "EVRPTW_Benchmark/Reinforcement_Learning/EVRPTW_Env/tests/test_ffp_mask.py",
+      "bytes": 14638,
+      "sha256": "57ad4d68adda9ce53e95bc9feebdb388afd705a75a085b3f7bacbca2fe0aca69"
+    },
+    {
+      "path": "EVRPTW_Benchmark/Reinforcement_Learning/EVRPTW_Env/tests/test_objective_cost.py",
+      "bytes": 14805,
+      "sha256": "32cf5052c25efe1b90788394e67c971fb59ff6ed419a9862d5f798c7e8ff9a38"
+    },
+    {
+      "path": "EVRPTW_Benchmark/Reinforcement_Learning/EVRPTW_RL/__init__.py",
+      "bytes": 168,
+      "sha256": "c7395aed7ebb99339125a16ff2aa87c20dcae61596e3276084ac65d3f1a40ddf"
+    },
+    {
+      "path": "EVRPTW_Benchmark/Reinforcement_Learning/EVRPTW_RL/distributed_train.py",
+      "bytes": 2455,
+      "sha256": "c29649f70d0556ac399db9b8e353889673974438c4be38d9a407d14314a1768b"
+    },
+    {
+      "path": "EVRPTW_Benchmark/Reinforcement_Learning/EVRPTW_RL/eval.py",
+      "bytes": 7025,
+      "sha256": "68b58c7c63e0bf7cb6d1c99d50befb51b2787bf0a9cbc05035c34f8b7ce8c3b3"
+    },
+    {
+      "path": "EVRPTW_Benchmark/Reinforcement_Learning/EVRPTW_RL/model.py",
+      "bytes": 10849,
+      "sha256": "39ec7ea86272c5f36cb1dbd06ed35001ffcb5b21d402d0284edd8da7a7b24e79"
+    },
+    {
+      "path": "EVRPTW_Benchmark/Reinforcement_Learning/EVRPTW_RL/rollout.py",
+      "bytes": 12360,
+      "sha256": "476f6c716e0b0a29a2398976e241811e010c752a5f1f764c557ccf95a969837f"
+    },
+    {
+      "path": "EVRPTW_Benchmark/Reinforcement_Learning/EVRPTW_RL/tests/test_evrptw_rl.py",
+      "bytes": 11314,
+      "sha256": "2e4bdf12bbbb65e666d99c41fe4e46d8fab9c31d2039d0252a3f6639c748c222"
+    },
+    {
+      "path": "EVRPTW_Benchmark/Reinforcement_Learning/EVRPTW_RL/tests/test_graph_stability.py",
+      "bytes": 10826,
+      "sha256": "a43a1fc1c123f4c6a861c5f56667a0609b6908c7d7ce28454e864730c5e064e6"
+    },
+    {
+      "path": "EVRPTW_Benchmark/Reinforcement_Learning/EVRPTW_RL/train.py",
+      "bytes": 12786,
+      "sha256": "6b476cf099b9f0236c65307a04757fe7c5bb7c8eaee390bbf52c377e17faac23"
+    },
+    {
+      "path": "EVRPTW_Benchmark/Reinforcement_Learning/RRNCO_EVRPTW/__init__.py",
+      "bytes": 175,
+      "sha256": "1c1fa7b6a7f0cb5e3ed09413a01f32896de95f3de61505dad4eb969e1608e4a7"
+    },
+    {
+      "path": "EVRPTW_Benchmark/Reinforcement_Learning/RRNCO_EVRPTW/distributed_train.py",
+      "bytes": 1431,
+      "sha256": "f821239cf9a18918bfccc5b0dd6b99cfd85b663f7328951e6977cbe1cf409f68"
+    },
+    {
+      "path": "EVRPTW_Benchmark/Reinforcement_Learning/RRNCO_EVRPTW/evaluate_checkpoint.py",
+      "bytes": 9797,
+      "sha256": "f847c8c019d42f2c1aaa585aa3f8dfde4f8003dcce913bab17678c6b15fbfc18"
+    },
+    {
+      "path": "EVRPTW_Benchmark/Reinforcement_Learning/RRNCO_EVRPTW/model.py",
+      "bytes": 24112,
+      "sha256": "a4f2367e1465e82896c12629de6b40bede59d400d0f06ed9232dcfa0e0ee9cbb"
+    },
+    {
+      "path": "EVRPTW_Benchmark/Reinforcement_Learning/RRNCO_EVRPTW/prepare_exploratory_stream.py",
+      "bytes": 2402,
+      "sha256": "c805e08c7127eeed1be46f73b6aa0a2af74200ef86cf80135d8a8fd599d8faa3"
+    },
+    {
+      "path": "EVRPTW_Benchmark/Reinforcement_Learning/RRNCO_EVRPTW/rollout.py",
+      "bytes": 1049,
+      "sha256": "531c4d372a9bfaed1e566e6759f78205aea15566a8749565eaa4a50f32d3fa8e"
+    },
+    {
+      "path": "EVRPTW_Benchmark/Reinforcement_Learning/RRNCO_EVRPTW/run_cus100_screen.sh",
+      "bytes": 3159,
+      "sha256": "3afb3e651fc41b81cf42f11488801b8d53fe7b5064f0f2afb80857dad2ed5302"
+    },
+    {
+      "path": "EVRPTW_Benchmark/Reinforcement_Learning/RRNCO_EVRPTW/run_graph_ablation.sh",
+      "bytes": 7321,
+      "sha256": "f25346d12497792ff2f1dea7624363acd16698bc37eba00f704199f5fa2e46f5"
+    },
+    {
+      "path": "EVRPTW_Benchmark/Reinforcement_Learning/RRNCO_EVRPTW/run_optimized_long_training.sh",
+      "bytes": 8584,
+      "sha256": "ac715fcfafc805ad9df2e9467bc918bc2d427a9409d38d9e651010f21b689ce8"
+    },
+    {
+      "path": "EVRPTW_Benchmark/Reinforcement_Learning/RRNCO_EVRPTW/run_single_seed_long_training.sh",
+      "bytes": 5047,
+      "sha256": "ac0196a070ffb271ec107bec701caf3112f5ed3c26a64ce448a5ec84422bb828"
+    },
+    {
+      "path": "EVRPTW_Benchmark/Reinforcement_Learning/RRNCO_EVRPTW/run_single_seed_screening.sh",
+      "bytes": 3301,
+      "sha256": "42c25bd806267373353dbcd33729f3a60a1c12030e71e4ea251f7bbd0a30d04e"
+    },
+    {
+      "path": "EVRPTW_Benchmark/Reinforcement_Learning/RRNCO_EVRPTW/summarize_screen.py",
+      "bytes": 2482,
+      "sha256": "1a10b22c78ac9af61de28695c7b0d688b0e62163e73f3e29da19510cc5799ab5"
+    },
+    {
+      "path": "EVRPTW_Benchmark/Reinforcement_Learning/RRNCO_EVRPTW/tests/test_rrnco_ev.py",
+      "bytes": 14033,
+      "sha256": "bf183000d423c0eef08a94381f7f6d9250d682e2b41ee17eb22cfc72adb2d7fc"
+    },
+    {
+      "path": "EVRPTW_Benchmark/Reinforcement_Learning/RRNCO_EVRPTW/third_party/real_routing_nco/LICENSE",
+      "bytes": 1062,
+      "sha256": "820243863426b8f6ce5385a8e4bbe14f2da8675beec6d463e481c74bf251a491"
+    },
+    {
+      "path": "EVRPTW_Benchmark/Reinforcement_Learning/RRNCO_EVRPTW/third_party/real_routing_nco/UPSTREAM.md",
+      "bytes": 412,
+      "sha256": "5b0658bf75b5d70792898d35ff8dbe6507370352a0997157b64149968814deb6"
+    },
+    {
+      "path": "EVRPTW_Benchmark/Reinforcement_Learning/RRNCO_EVRPTW/train.py",
+      "bytes": 6861,
+      "sha256": "5811a6cef7c04f3fc28b06860d21eb3d310c3f1fe549885327cdfe8a4a4eadb0"
+    },
+    {
+      "path": "EVRPTW_Benchmark/Reinforcement_Learning/TERRAN/__init__.py",
+      "bytes": 376,
+      "sha256": "ce71111db1b8da5f8f7dc082ef4a7c87a79044edfc245584f157784bb811d7ff"
+    },
+    {
+      "path": "EVRPTW_Benchmark/Reinforcement_Learning/TERRAN/async_instances.py",
+      "bytes": 7823,
+      "sha256": "740b4d97f226c30953e3b51d743f17f0b5614b12ad42e217c009b9bbe8a984cd"
+    },
+    {
+      "path": "EVRPTW_Benchmark/Reinforcement_Learning/TERRAN/benchmark_critic_stability.py",
+      "bytes": 7336,
+      "sha256": "1b687051221adc83e793fef439506ab2da55c54ab2354081ad0ac204fd3c5f82"
+    },
+    {
+      "path": "EVRPTW_Benchmark/Reinforcement_Learning/TERRAN/benchmark_generation_scales.py",
+      "bytes": 8013,
+      "sha256": "8621e042c51a77e99e5062afaf3dd3d34d232c98fa8b8a764a60c2d1183d9458"
+    },
+    {
+      "path": "EVRPTW_Benchmark/Reinforcement_Learning/TERRAN/benchmark_instance_prefetch.py",
+      "bytes": 5605,
+      "sha256": "2f8f2460b081abf2db3ef45c790cd294cccb4581d3f078d0b07e1afa7cca074b"
+    },
+    {
+      "path": "EVRPTW_Benchmark/Reinforcement_Learning/TERRAN/configs/cus100_terran.yaml",
+      "bytes": 1735,
+      "sha256": "7bbc68ec4e5630730dfbe8160c5774c70089296a8f3b52e33c0241b3608bf43f"
+    },
+    {
+      "path": "EVRPTW_Benchmark/Reinforcement_Learning/TERRAN/configs/cus100_terran_pbrs.yaml",
+      "bytes": 2128,
+      "sha256": "9fb86e95f8d370d54834f8e784c6ca69f45a50181ce83f7af7d48f0341001af5"
+    },
+    {
+      "path": "EVRPTW_Benchmark/Reinforcement_Learning/TERRAN/configs/cus15_terran.yaml",
+      "bytes": 1667,
+      "sha256": "e5ba7f2c7892d031eeb4ed6e5d1459ceb563bf545b1b6f4fd54c3acb6e8da962"
+    },
+    {
+      "path": "EVRPTW_Benchmark/Reinforcement_Learning/TERRAN/configs/cus15_terran_pbrs.yaml",
+      "bytes": 1930,
+      "sha256": "76ff6289ea86206caff572c96270e749498c2300fcada649c2e0d831e5bdd964"
+    },
+    {
+      "path": "EVRPTW_Benchmark/Reinforcement_Learning/TERRAN/configs/cus50_terran.yaml",
+      "bytes": 1727,
+      "sha256": "d30adf7ce85b72e7c1fba02e1b57dde515f153dd135634773edff94b9bc4199d"
+    },
+    {
+      "path": "EVRPTW_Benchmark/Reinforcement_Learning/TERRAN/configs/cus50_terran_pbrs.yaml",
+      "bytes": 2120,
+      "sha256": "23d0686839f973d7931dfc01415aaad42e929bdcc959478063601d8ff0076a9a"
+    },
+    {
+      "path": "EVRPTW_Benchmark/Reinforcement_Learning/TERRAN/configs/cus5_terran.yaml",
+      "bytes": 1538,
+      "sha256": "ca3abbd61cbb14a623c1689ca017cbba20e3c7ccf1749b9c2b52d155a8a6c71b"
+    },
+    {
+      "path": "EVRPTW_Benchmark/Reinforcement_Learning/TERRAN/configs/cus5_terran_dataset.yaml",
+      "bytes": 1637,
+      "sha256": "a4eb0b6d2e8e9ac7ceeb45be59f9f724aebb364739deb50e5aba35f63ecb30f2"
+    },
+    {
+      "path": "EVRPTW_Benchmark/Reinforcement_Learning/TERRAN/configs/cus5_terran_pbrs.yaml",
+      "bytes": 1801,
+      "sha256": "f7ea4b841e350f56d2f00f5d07beacbbe332261697db04ed3f8aaa65668a91b5"
+    },
+    {
+      "path": "EVRPTW_Benchmark/Reinforcement_Learning/TERRAN/configs/stable_cost_v1/cus100.yaml",
+      "bytes": 2367,
+      "sha256": "d1d6c2f06224618572ae91cd7e7657e7f93f0b01507b1b63c4bce1b184c93766"
+    },
+    {
+      "path": "EVRPTW_Benchmark/Reinforcement_Learning/TERRAN/configs/stable_cost_v1/cus1000.yaml",
+      "bytes": 2372,
+      "sha256": "2f04df3f84b542a6132ef232c9a94d047d79183fe94c367073bc6ec5f16ebf45"
+    },
+    {
+      "path": "EVRPTW_Benchmark/Reinforcement_Learning/TERRAN/configs/stable_cost_v1/cus500.yaml",
+      "bytes": 2368,
+      "sha256": "53cef8a2d6fec4f8000301c24f087b19b4860c5b27b0d2af2b3a7aec1f6f11d2"
+    },
+    {
+      "path": "EVRPTW_Benchmark/Reinforcement_Learning/TERRAN/configs/stage2_cus100_terran.yaml",
+      "bytes": 3134,
+      "sha256": "72d6b4f62b5c066b0a394145242465fb12e7f22695afefc7fcc057e22a8d8492"
+    },
+    {
+      "path": "EVRPTW_Benchmark/Reinforcement_Learning/TERRAN/critic_stability.py",
+      "bytes": 15038,
+      "sha256": "73fac47ca33bc991eb175d8d6690754f50374c252ba55bd2aa5e6c7c7572c354"
+    },
+    {
+      "path": "EVRPTW_Benchmark/Reinforcement_Learning/TERRAN/data_pool.py",
+      "bytes": 19727,
+      "sha256": "96f23c95376314864094b14d85558edce11cf73304341d81e9bf48e0ad445744"
+    },
+    {
+      "path": "EVRPTW_Benchmark/Reinforcement_Learning/TERRAN/env_factory.py",
+      "bytes": 11111,
+      "sha256": "96afab5e68ebf3a6fe3b120890a21983f130780ed8c47163adc76e0459c14889"
+    },
+    {
+      "path": "EVRPTW_Benchmark/Reinforcement_Learning/TERRAN/eval.py",
+      "bytes": 9028,
+      "sha256": "05f0132cbcb6f424dba6de1028d9d513337fabadc0060a6ff90aff1907ac6aa2"
+    },
+    {
+      "path": "EVRPTW_Benchmark/Reinforcement_Learning/TERRAN/eval_stage2.py",
+      "bytes": 8587,
+      "sha256": "cd9346a449a8ad09f72129b271b39cb586d57f0f9f5e8d78a09f345881eba890"
+    },
+    {
+      "path": "EVRPTW_Benchmark/Reinforcement_Learning/TERRAN/models/__init__.py",
+      "bytes": 172,
+      "sha256": "e40c37985d05dd6e6b08b1df44bc8a6cf5565b5fff9a942ee76f2fc5b8770173"
+    },
+    {
+      "path": "EVRPTW_Benchmark/Reinforcement_Learning/TERRAN/models/attention_model_wrapper.py",
+      "bytes": 15637,
+      "sha256": "fae1812b3a690b227d6e68644c998541521e36d6fc8b044cfeee5bffeac09ace"
+    },
+    {
+      "path": "EVRPTW_Benchmark/Reinforcement_Learning/TERRAN/models/nets/__init__.py",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "EVRPTW_Benchmark/Reinforcement_Learning/TERRAN/models/nets/attention_model/__init__.py",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "EVRPTW_Benchmark/Reinforcement_Learning/TERRAN/models/nets/attention_model/attention.py",
+      "bytes": 3605,
+      "sha256": "27381c0643d299fa33c0164c9f6f32c9e2fd9ab689fae5772fd73736b7a4f1ee"
+    },
+    {
+      "path": "EVRPTW_Benchmark/Reinforcement_Learning/TERRAN/models/nets/attention_model/attention_model.py",
+      "bytes": 3665,
+      "sha256": "7d5c96ff5d1dcabfa1eac7a1ada9951347c9a56a133dcfff55571f621b41223f"
+    },
+    {
+      "path": "EVRPTW_Benchmark/Reinforcement_Learning/TERRAN/models/nets/attention_model/context.py",
+      "bytes": 1693,
+      "sha256": "81235b6a6eaa350bd73021fbac0717a450c2ac45cee0a06a49c7a516f142e584"
+    },
+    {
+      "path": "EVRPTW_Benchmark/Reinforcement_Learning/TERRAN/models/nets/attention_model/decoder.py",
+      "bytes": 5463,
+      "sha256": "1c4c3185e5f6d47089c3ade41f4baa58092b056ef675d99039db617066f84822"
+    },
+    {
+      "path": "EVRPTW_Benchmark/Reinforcement_Learning/TERRAN/models/nets/attention_model/dynamic_embedding.py",
+      "bytes": 3397,
+      "sha256": "f0077e9a42e8c3be4aa19b16199e98cb80af9e6145c647a1dda7ed4e06fd7a77"
+    },
+    {
+      "path": "EVRPTW_Benchmark/Reinforcement_Learning/TERRAN/models/nets/attention_model/embedding.py",
+      "bytes": 2004,
+      "sha256": "9bd19dacecc371a55740fec3bb64d4f77f160e57b80ae11e69c7f707080b2fdc"
+    },
+    {
+      "path": "EVRPTW_Benchmark/Reinforcement_Learning/TERRAN/models/nets/attention_model/encoder.py",
+      "bytes": 2348,
+      "sha256": "cb121fd05c7a6e9ff16bdb2ebc6ac591ee49371990b5e1918e9d16c2deaa4330"
+    },
+    {
+      "path": "EVRPTW_Benchmark/Reinforcement_Learning/TERRAN/models/nets/attention_model/multi_head_attention.py",
+      "bytes": 8083,
+      "sha256": "b4ca964ac4953a1ba124710bdd42448e7e309fc4297c0606c814165d68b2d7cd"
+    },
+    {
+      "path": "EVRPTW_Benchmark/Reinforcement_Learning/TERRAN/models/stable_cost_critic.py",
+      "bytes": 10683,
+      "sha256": "3d48fd38939044f80af974bcdee9ae996ddb02b2c1e8c1a05ccd433c2c040797"
+    },
+    {
+      "path": "EVRPTW_Benchmark/Reinforcement_Learning/TERRAN/pbrs.py",
+      "bytes": 20056,
+      "sha256": "e2ee1ed4db611a971dddc75e15e4bf56f9129604261060785d89f93ba3f320a2"
+    },
+    {
+      "path": "EVRPTW_Benchmark/Reinforcement_Learning/TERRAN/prepare_eval_data.py",
+      "bytes": 2595,
+      "sha256": "a67d8f7fed75dd858445576054e685612088b94189c48c6ca86f9d585fc511d6"
+    },
+    {
+      "path": "EVRPTW_Benchmark/Reinforcement_Learning/TERRAN/protocol.py",
+      "bytes": 61405,
+      "sha256": "2aa5b128981984c8f6c6d83d751aaeb8d4ea8c26fe44af2314a98ae3f841be18"
+    },
+    {
+      "path": "EVRPTW_Benchmark/Reinforcement_Learning/TERRAN/requirements.txt",
+      "bytes": 67,
+      "sha256": "7c66bfa45db87db925949b01a332a92e9a6f2663615a9fd55656e632760f6dcb"
+    },
+    {
+      "path": "EVRPTW_Benchmark/Reinforcement_Learning/TERRAN/rollout.py",
+      "bytes": 41934,
+      "sha256": "3bddc64564339eb2f3e9e9ccd73191e2773151bf1b20dfe1cd372a8dff2ce194"
+    },
+    {
+      "path": "EVRPTW_Benchmark/Reinforcement_Learning/TERRAN/smoke_test_terran.py",
+      "bytes": 2572,
+      "sha256": "97381cac96cf4476e35879a873ce74ae7b4691e4f5181e5b2e8c7e406fa41d21"
+    },
+    {
+      "path": "EVRPTW_Benchmark/Reinforcement_Learning/TERRAN/stable_cli.py",
+      "bytes": 18387,
+      "sha256": "a1b996bcf359bec3b41166f9dfca729b0cc75a5faa1c61c994194be5f47ced2e"
+    },
+    {
+      "path": "EVRPTW_Benchmark/Reinforcement_Learning/TERRAN/stable_trainer.py",
+      "bytes": 36772,
+      "sha256": "40bd70412af47823fd412d92ea949607ec8b7eabca5adc10dc87e08ac502f7e8"
+    },
+    {
+      "path": "EVRPTW_Benchmark/Reinforcement_Learning/TERRAN/tests/test_cost_objective.py",
+      "bytes": 26180,
+      "sha256": "9c60c6c0cc51d905efed53d59c070a16539ffb7f6ed25856c58f9c44ac9b0068"
+    },
+    {
+      "path": "EVRPTW_Benchmark/Reinforcement_Learning/TERRAN/tests/test_critic_stability.py",
+      "bytes": 12335,
+      "sha256": "25fb56f6c7fc8ad319ccc311ade64e568eb08f3665496dc6f0749fbbe4d7f304"
+    },
+    {
+      "path": "EVRPTW_Benchmark/Reinforcement_Learning/TERRAN/tests/test_infeasible_monitoring.py",
+      "bytes": 12851,
+      "sha256": "8f0d2bce46fbbe5a45b8cca16c4e07eea0e13b410fade4a1f0209f347ad83708"
+    },
+    {
+      "path": "EVRPTW_Benchmark/Reinforcement_Learning/TERRAN/tests/test_legacy_distributed.py",
+      "bytes": 13194,
+      "sha256": "bd50266851d6698f4609cd016502594ffa0fa6ebfb8929eda376904103547648"
+    },
+    {
+      "path": "EVRPTW_Benchmark/Reinforcement_Learning/TERRAN/tests/test_performance_equivalence.py",
+      "bytes": 21988,
+      "sha256": "c70014fe63380d7c818ac22bd14d59ff620cb89d0301fe15053b7225b91f7d7f"
+    },
+    {
+      "path": "EVRPTW_Benchmark/Reinforcement_Learning/TERRAN/tests/test_reward_logging.py",
+      "bytes": 13697,
+      "sha256": "29e18e75b46978f4a82f58641aa8f17a73a100d7ad6fe9f2def028b1985432cf"
+    },
+    {
+      "path": "EVRPTW_Benchmark/Reinforcement_Learning/TERRAN/tests/test_stable_cli.py",
+      "bytes": 7585,
+      "sha256": "a1b55e49bd8c607f2f0e07ac7ddb57c6220b3808d0d9a089a5519f3c7dbd117c"
+    },
+    {
+      "path": "EVRPTW_Benchmark/Reinforcement_Learning/TERRAN/tests/test_stable_cost_eval.py",
+      "bytes": 4689,
+      "sha256": "14d827a0ffc5c4d138c43b5ce50d5bd7461f6f1e5935a000b50e0100ce203890"
+    },
+    {
+      "path": "EVRPTW_Benchmark/Reinforcement_Learning/TERRAN/tests/test_stable_cost_model.py",
+      "bytes": 7872,
+      "sha256": "8d3d6fb76df2017b5e4d09c39dccd6f208ff4cdfa0f387dee7e19b2ff7efa348"
+    },
+    {
+      "path": "EVRPTW_Benchmark/Reinforcement_Learning/TERRAN/tests/test_stable_cost_rollout.py",
+      "bytes": 10551,
+      "sha256": "8b8964715256a53a6d2b4534357ef586a6764e8c4d174fb5e74cc749c778ce03"
+    },
+    {
+      "path": "EVRPTW_Benchmark/Reinforcement_Learning/TERRAN/tests/test_stable_cost_training.py",
+      "bytes": 25429,
+      "sha256": "04de113c19c21641061b180dbe598cd430d830adb020cdca9cdeb6056ecb8d69"
+    },
+    {
+      "path": "EVRPTW_Benchmark/Reinforcement_Learning/TERRAN/tests/test_terran_canonical.py",
+      "bytes": 60494,
+      "sha256": "870d7b4ca115e4ab38602fab5e2eb46f0b4462815d1a8a1607bba3f36d69f32a"
+    },
+    {
+      "path": "EVRPTW_Benchmark/Reinforcement_Learning/TERRAN/tests/test_warm_start.py",
+      "bytes": 24100,
+      "sha256": "ececbe3850a9ff042b6ced5f8911ba8d97d9f4e9b821df8809b24c2dddf8f470"
+    },
+    {
+      "path": "EVRPTW_Benchmark/Reinforcement_Learning/TERRAN/third_party/terran/LICENSE",
+      "bytes": 11357,
+      "sha256": "c71d239df91726fc519c6eb72d318ec65820627232b2f796219e87dcf35d0ab4"
+    },
+    {
+      "path": "EVRPTW_Benchmark/Reinforcement_Learning/TERRAN/third_party/terran/UPSTREAM.md",
+      "bytes": 1168,
+      "sha256": "260b6efdf0b9c3486ce4e2fa736e3ecdfcc7841fdd0b6b27a88991a5281273e3"
+    },
+    {
+      "path": "EVRPTW_Benchmark/Reinforcement_Learning/TERRAN/train.py",
+      "bytes": 13918,
+      "sha256": "cdf4b7d23d3318d6f7da3309e1e11c5372eb11054830e68424b9f8b16ea72adf"
+    },
+    {
+      "path": "EVRPTW_Benchmark/Reinforcement_Learning/TERRAN/train_distributed.py",
+      "bytes": 22785,
+      "sha256": "0fc6d56384d66eb1ce0bf3849b8ea3ad15d15c4248568d374b9ad99dfef90eca"
+    },
+    {
+      "path": "EVRPTW_Benchmark/Reinforcement_Learning/TERRAN/trainer.py",
+      "bytes": 187438,
+      "sha256": "4bcf4cd5d31f64f88cbe4e4398e4ad212370496852b31fa5ce3603554e803110"
+    },
+    {
+      "path": "EVRPTW_Benchmark/Reinforcement_Learning/__init__.py",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "EVRPTW_Benchmark/Reinforcement_Learning/common/__init__.py",
+      "bytes": 636,
+      "sha256": "42d0754e5052a75f9a772dd79c472dc11f3bb7f7a7316e1ef6d62a56b0d91a21"
+    },
+    {
+      "path": "EVRPTW_Benchmark/Reinforcement_Learning/common/candidate_protocol.py",
+      "bytes": 3568,
+      "sha256": "ae915c26440bad1747b9f9d6212889cbc6752fef2b1ca208ca1aa873b5ae80fc"
+    },
+    {
+      "path": "EVRPTW_Benchmark/Reinforcement_Learning/common/clustered_bootstrap.py",
+      "bytes": 4591,
+      "sha256": "e1a1354d3e4ac8bd5e3d5f448e04b06ae2bd1d369efac5a8134500158a818fbb"
+    },
+    {
+      "path": "EVRPTW_Benchmark/Reinforcement_Learning/common/data_pass.py",
+      "bytes": 3336,
+      "sha256": "3dba008b85fe46ebbbb25a557d803b3baae7a88076a1bee477efd91d0b540b83"
+    },
+    {
+      "path": "EVRPTW_Benchmark/Reinforcement_Learning/common/distributed.py",
+      "bytes": 6723,
+      "sha256": "e79e3f03409445ae9aa9204c3e3173e509f30fe39f8535a3868f12b8c71ecef0"
+    },
+    {
+      "path": "EVRPTW_Benchmark/Reinforcement_Learning/common/distributed_entrypoints.py",
+      "bytes": 4172,
+      "sha256": "f0454b9589a9fcc66effe5a22a60b4636eb1be5466d60b9b4b41c199a1fb36f0"
+    },
+    {
+      "path": "EVRPTW_Benchmark/Reinforcement_Learning/common/distributed_protocol.py",
+      "bytes": 48116,
+      "sha256": "c315a155e00796a3ce488d288ebd924b0d2557e55cfce5749cd9e1cc747cfd0b"
+    },
+    {
+      "path": "EVRPTW_Benchmark/Reinforcement_Learning/common/euclidean.py",
+      "bytes": 3992,
+      "sha256": "0273b338461bab3648653dde590d593383673f44e61de20819c8d00f6bdaae8f"
+    },
+    {
+      "path": "EVRPTW_Benchmark/Reinforcement_Learning/common/evaluation.py",
+      "bytes": 5033,
+      "sha256": "59d7775003977fc5ec67b805e1e96d13d1627eca9ee3dedba5afe55e2a467656"
+    },
+    {
+      "path": "EVRPTW_Benchmark/Reinforcement_Learning/common/method_auxiliary.py",
+      "bytes": 9462,
+      "sha256": "56935311bff5862ba676cfd2ef6bf22065799d9aeefdf1a73c0106b967a17967"
+    },
+    {
+      "path": "EVRPTW_Benchmark/Reinforcement_Learning/common/objective.py",
+      "bytes": 8597,
+      "sha256": "8f4f3a5c26dc8caa6d0354542a58318a7c77dff55b43fc6d0078ac4d2ebca4fe"
+    },
+    {
+      "path": "EVRPTW_Benchmark/Reinforcement_Learning/common/protocol_entrypoints.py",
+      "bytes": 18511,
+      "sha256": "d0e1fa55bff29acf47cf2a8ee26e1ea12bf016c42b2c9562e6f0372bf76a22a8"
+    },
+    {
+      "path": "EVRPTW_Benchmark/Reinforcement_Learning/common/protocol_trainers.py",
+      "bytes": 88941,
+      "sha256": "8b7d961f9f5a8af82577e5b5a67de62160de7192cd48180eae95e9e9d0b3a940"
+    },
+    {
+      "path": "EVRPTW_Benchmark/Reinforcement_Learning/common/reward_contract.py",
+      "bytes": 14668,
+      "sha256": "ba6f846acc7c54ab8bbb07d70e6d85f343f5c029e872cc2caebd66d222bf4f78"
+    },
+    {
+      "path": "EVRPTW_Benchmark/Reinforcement_Learning/common/route_info.py",
+      "bytes": 1153,
+      "sha256": "fcbb70f8a65ce2424c7a80ebc5e856de3f7b4a8acd28df307a82433890ba3e59"
+    },
+    {
+      "path": "EVRPTW_Benchmark/Reinforcement_Learning/common/stage2_data.py",
+      "bytes": 12187,
+      "sha256": "ef6a448df7b767cf055566298aaf1cf6d7b78d127f2dab80774e831bca7333d0"
+    },
+    {
+      "path": "EVRPTW_Benchmark/Reinforcement_Learning/common/support_selection.py",
+      "bytes": 8524,
+      "sha256": "0f8a6b6996fe4b65e40a56817d8f0f4d23c375ebd16dabd53b8704a462facfa8"
+    },
+    {
+      "path": "EVRPTW_Benchmark/Reinforcement_Learning/common/terran_synthetic.py",
+      "bytes": 29207,
+      "sha256": "ab5ed7bb410586fd97047598a01e182b4f47a4d5f98546c25464052ded787444"
+    },
+    {
+      "path": "EVRPTW_Benchmark/Reinforcement_Learning/common/terran_synthetic_feasibility.py",
+      "bytes": 4229,
+      "sha256": "c3cd946b2aacefb0de08c89de9da50fa34dc016360305695ca83030aee4ce075"
+    },
+    {
+      "path": "EVRPTW_Benchmark/Reinforcement_Learning/common/tests/test_candidate_protocol.py",
+      "bytes": 1360,
+      "sha256": "c36524a6c5f4280786617d45b11e7f51f78641974cd76b6e14956b267e713ad8"
+    },
+    {
+      "path": "EVRPTW_Benchmark/Reinforcement_Learning/common/tests/test_clustered_bootstrap.py",
+      "bytes": 1275,
+      "sha256": "80462b9084ca57ab342d98c2ac1528a9d3302f20ba6ee88dead47a72199e3a70"
+    },
+    {
+      "path": "EVRPTW_Benchmark/Reinforcement_Learning/common/tests/test_common_cost_objective.py",
+      "bytes": 14330,
+      "sha256": "b8afe81cc0460f8479896a1357784ed5f4e029c333ec311f4cb36f8f28f2e555"
+    },
+    {
+      "path": "EVRPTW_Benchmark/Reinforcement_Learning/common/tests/test_curriculum_warm_start.py",
+      "bytes": 20192,
+      "sha256": "64818039737d011883ff08b964f264fd14a91561fed6dd994087db7a37aae709"
+    },
+    {
+      "path": "EVRPTW_Benchmark/Reinforcement_Learning/common/tests/test_data_pass.py",
+      "bytes": 4906,
+      "sha256": "16feceb3d585e654de464be628b4c2098e4851c389fa2b79493801e47ce0f1ab"
+    },
+    {
+      "path": "EVRPTW_Benchmark/Reinforcement_Learning/common/tests/test_distributed_adapter_options.py",
+      "bytes": 12814,
+      "sha256": "aedd0381a334d6bc6602088d802ed937d7fcac1d60137425406a8cb98c0657ed"
+    },
+    {
+      "path": "EVRPTW_Benchmark/Reinforcement_Learning/common/tests/test_distributed_dual_protocol.py",
+      "bytes": 18452,
+      "sha256": "6190b49eaa91371b7dbe080ec24c6a365d2c55ec52a661d7d93c6d688a594bd4"
+    },
+    {
+      "path": "EVRPTW_Benchmark/Reinforcement_Learning/common/tests/test_distributed_evrptw_protocol.py",
+      "bytes": 16986,
+      "sha256": "a6bd2c878387fabc7f87cd72011a160a0041beb2a59da74a869920aef65b8b16"
+    },
+    {
+      "path": "EVRPTW_Benchmark/Reinforcement_Learning/common/tests/test_distributed_helpers.py",
+      "bytes": 9243,
+      "sha256": "b90ad646b47b7ff932ad683708880f40af15d7d379f946c3e5a8ec480d4c3ca0"
+    },
+    {
+      "path": "EVRPTW_Benchmark/Reinforcement_Learning/common/tests/test_distributed_protocol.py",
+      "bytes": 22520,
+      "sha256": "b52d70f70e7165ff530ae1cff44158bfd5445ecb8a2a7ca01ad919b11c8c86f9"
+    },
+    {
+      "path": "EVRPTW_Benchmark/Reinforcement_Learning/common/tests/test_euclidean.py",
+      "bytes": 2155,
+      "sha256": "8950392c841e50371cbb8bbbab4c3fff6ec76fb588ad93821087ae28a222db1b"
+    },
+    {
+      "path": "EVRPTW_Benchmark/Reinforcement_Learning/common/tests/test_evaluation.py",
+      "bytes": 1025,
+      "sha256": "acc40c7533a5009de175b404b3b934e8ca97f872a7f0bd854637398fd447b207"
+    },
+    {
+      "path": "EVRPTW_Benchmark/Reinforcement_Learning/common/tests/test_evrptw_policy_diagnostics.py",
+      "bytes": 3387,
+      "sha256": "eca34fa1897f4412631e0ffd24a627d22f907e56cf009a145676d485e9b5ba56"
+    },
+    {
+      "path": "EVRPTW_Benchmark/Reinforcement_Learning/common/tests/test_leave_one_out_baseline.py",
+      "bytes": 4463,
+      "sha256": "d576ff5b1b19048d9241999e35ad982ad0b4571a8f6b5cf645059b8965d04298"
+    },
+    {
+      "path": "EVRPTW_Benchmark/Reinforcement_Learning/common/tests/test_method_auxiliary.py",
+      "bytes": 3588,
+      "sha256": "49f16a17e3735b25ff5ce14eccfba24cb20a7125eb4368d6ec03bf84fbd3ca5a"
+    },
+    {
+      "path": "EVRPTW_Benchmark/Reinforcement_Learning/common/tests/test_objective_distance_source.py",
+      "bytes": 6564,
+      "sha256": "dec0d5224ea8fc6a49f82b36bd5934ef8b64739e876d3b9ff1efc035c8f8d2bd"
+    },
+    {
+      "path": "EVRPTW_Benchmark/Reinforcement_Learning/common/tests/test_periodic_validation.py",
+      "bytes": 22460,
+      "sha256": "9816b1bd1d561a9a541760bc7bb4635894bf42ddfa81c4e65987d2e18608a375"
+    },
+    {
+      "path": "EVRPTW_Benchmark/Reinforcement_Learning/common/tests/test_registered_checkpoints.py",
+      "bytes": 7432,
+      "sha256": "433109a92b3c9281144d655696bcb6fac0b35e827239974aee6d96a79e218016"
+    },
+    {
+      "path": "EVRPTW_Benchmark/Reinforcement_Learning/common/tests/test_reinforce_cost_objective.py",
+      "bytes": 24137,
+      "sha256": "3db5444008ebd38f4d34cd35602e4e48c9e5dc753c27ee483426f5378fa58057"
+    },
+    {
+      "path": "EVRPTW_Benchmark/Reinforcement_Learning/common/tests/test_reinforce_training_diagnostics.py",
+      "bytes": 15246,
+      "sha256": "638613bcb29c1e9c28ab2aff91812bbf65d89c0dd66d01c9588850c3c5dc2f60"
+    },
+    {
+      "path": "EVRPTW_Benchmark/Reinforcement_Learning/common/tests/test_reward_contract.py",
+      "bytes": 22385,
+      "sha256": "24e88e7b5d719fbf098beba32a3ac565da92d7786dda34ae8d2d32d9426426c8"
+    },
+    {
+      "path": "EVRPTW_Benchmark/Reinforcement_Learning/common/tests/test_route_info_performance.py",
+      "bytes": 6218,
+      "sha256": "f383f7c1abadafa2be3c04fc39b3a77681bf9e09be14a509d042e3a8916b6a8d"
+    },
+    {
+      "path": "EVRPTW_Benchmark/Reinforcement_Learning/common/tests/test_support_selection.py",
+      "bytes": 2266,
+      "sha256": "7895cb1d29ec339759c4f96b583d297041f425e6129b1792629d1ee9ff1d3e4d"
+    },
+    {
+      "path": "EVRPTW_Benchmark/Reinforcement_Learning/common/tests/test_synthetic_pool.py",
+      "bytes": 4123,
+      "sha256": "523eb12cd6812de9c57d14659b8280e1bca8e890e3218f6743223ed5621102cd"
+    },
+    {
+      "path": "EVRPTW_Benchmark/Reinforcement_Learning/common/tests/test_terran_synthetic_feasibility.py",
+      "bytes": 1593,
+      "sha256": "cc61430eb0ee69104531fe481f72ace0f6c6fd4abc08e51cebda3faa15ef61aa"
+    },
+    {
+      "path": "EVRPTW_Benchmark/Reinforcement_Learning/common/tests/test_training_diagnostics.py",
+      "bytes": 4112,
+      "sha256": "9c98f3d8f4412f0cdd42b8696ae5858847cb0f6fbe1cc00c4cf255ec80ace8d8"
+    },
+    {
+      "path": "EVRPTW_Benchmark/Reinforcement_Learning/common/tests/test_training_stream.py",
+      "bytes": 6267,
+      "sha256": "0854359ed9c4067c841dc8c9b83caa8097a0cf8ec553fa9d7d39c64623ce35f9"
+    },
+    {
+      "path": "EVRPTW_Benchmark/Reinforcement_Learning/common/training_diagnostics.py",
+      "bytes": 6837,
+      "sha256": "fd3d2518dab6a64f4e2ee47d2ab557348c3c42f098e152f6bafaf84e98997ad5"
+    },
+    {
+      "path": "EVRPTW_Benchmark/Reinforcement_Learning/common/training_protocol.py",
+      "bytes": 29412,
+      "sha256": "a8cefe6537ccbb8745e921ae6aa99f86ef3937fd55f49503d5400d69f22062ee"
+    },
+    {
+      "path": "EVRPTW_Benchmark/Reinforcement_Learning/common/training_stream.py",
+      "bytes": 20184,
+      "sha256": "e2edeb3eb887c09dba5409c4234184b9221df339875ab209872f0e7aed4cfec2"
+    },
+    {
+      "path": "EVRPTW_Benchmark/Reinforcement_Learning/configs/2080ti/terran_cus100.yaml",
+      "bytes": 2249,
+      "sha256": "0a6b2df92cce07158319f55ca50cef069a40bd5ab14d92c49f1314c81774fa10"
+    },
+    {
+      "path": "EVRPTW_Benchmark/Reinforcement_Learning/configs/2080ti/terran_cus50.yaml",
+      "bytes": 2245,
+      "sha256": "0f0a29bd1370f3896a25e1cdca80ca569de0ad7c7231bf49360e752d213b4e0a"
+    },
+    {
+      "path": "EVRPTW_Benchmark/Reinforcement_Learning/configs/drl_experiment_protocol_v1.yaml",
+      "bytes": 5425,
+      "sha256": "22bc9de3d21485d722a8a2095250edd38afb4c2707b9157d3297282f18603791"
+    },
+    {
+      "path": "EVRPTW_Benchmark/Reinforcement_Learning/configs/drl_reward_contract_energy_vehicle_v2.json",
+      "bytes": 6388,
+      "sha256": "50c30f74100554e81f9895696e621dc994a03c75c3e2e3937c01bcbb01a689ec"
+    },
+    {
+      "path": "EVRPTW_Benchmark/Reinforcement_Learning/configs/drl_reward_contract_energy_vehicle_v3.json",
+      "bytes": 6396,
+      "sha256": "8f08fb05889e81663cbfd795c0632ff761b53ce71427b5be706139e0f07c6a1f"
+    },
+    {
+      "path": "EVRPTW_Benchmark/Reinforcement_Learning/configs/drl_rq_2080ti_memory_calibration_inventory_v1.json",
+      "bytes": 6980,
+      "sha256": "ca7ed2f49910bd94dcf7b77e86d06b6937559e6785ac9614305b350e37a7a65f"
+    },
+    {
+      "path": "EVRPTW_Benchmark/Reinforcement_Learning/configs/drl_rq_formal_launch_gate_v1.json",
+      "bytes": 2336,
+      "sha256": "e627900c6119dadb38bbd7412fd979ce43c53a21a706707ca2780339b2f07eb4"
+    },
+    {
+      "path": "EVRPTW_Benchmark/Reinforcement_Learning/configs/drl_rq_protocol_frozen_v1.yaml",
+      "bytes": 10242,
+      "sha256": "337ee36942fed4cb4cbd2b29a8f31f54e1533518ee672b570a344172df5007c1"
+    },
+    {
+      "path": "EVRPTW_Benchmark/Reinforcement_Learning/configs/drl_rq_runtime_candidates_v1.yaml",
+      "bytes": 1087,
+      "sha256": "e3f4364398e94c063aa5c3322a69e25f6adf3f6289b12829ae23c84b67eb7e01"
+    },
+    {
+      "path": "EVRPTW_Benchmark/Reinforcement_Learning/configs/drl_rq_runtime_candidates_v2.yaml",
+      "bytes": 8528,
+      "sha256": "9835bc451ddee725e5e64d931901ead27f86970bb59bd9742689159312af115c"
+    },
+    {
+      "path": "EVRPTW_Benchmark/Reinforcement_Learning/configs/drl_terran_cus1000_replacement_v1.yaml",
+      "bytes": 399,
+      "sha256": "acced0d67f2ba01193d0f2bd16ab4d8433432cf1ab4041019a83ab0102b43bae"
+    },
+    {
+      "path": "EVRPTW_Benchmark/Reinforcement_Learning/configs/drl_training_stream_registry_v1.json",
+      "bytes": 23594,
+      "sha256": "a9530c28842c6b74e9d682d6a1bb40ab039cb5f4294d2c424f9c64eaffce0968"
+    },
+    {
+      "path": "EVRPTW_Benchmark/Reinforcement_Learning/configs/drl_ts_soft_auxiliary_v1.json",
+      "bytes": 540,
+      "sha256": "65c404a26cdd80fdcdb42dc552b98cbf51a3230ce608ec22d058bb9e14d0e43c"
+    },
+    {
+      "path": "EVRPTW_Benchmark/Reinforcement_Learning/configs/evrptw_rl_station_auxiliary_v1.json",
+      "bytes": 457,
+      "sha256": "5e73642bc7d8c1fa667b1fbd8d539f4469e0debaea22d207817c14d864ca9c1f"
+    },
+    {
+      "path": "EVRPTW_Benchmark/Reinforcement_Learning/configs/rivian_energy_vehicle_cost_v1.json",
+      "bytes": 2112,
+      "sha256": "7d1e3b24afefc8b77351dd09caf04bd5d7e5040d2efb9bbb84eeea277478ec23"
+    },
+    {
+      "path": "EVRPTW_Benchmark/Reinforcement_Learning/configs/rivian_energy_vehicle_cost_v2.json",
+      "bytes": 1385,
+      "sha256": "0be3e737592bdee85d11ed344cf1a90fc2933238b5fabf5ce7f793296b9361a6"
+    },
+    {
+      "path": "EVRPTW_Benchmark/Reinforcement_Learning/scripts/README.md",
+      "bytes": 2701,
+      "sha256": "23c79b7c5871159386381f944f00da4f00972719e39dcfd1f9b53ccd327336af"
+    },
+    {
+      "path": "EVRPTW_Benchmark/Reinforcement_Learning/scripts/audit_rrnco_comparison.py",
+      "bytes": 9776,
+      "sha256": "8c16a5db7d93dac273872612f4c0f5501fc618867dbfbaa68b602251bdb5819d"
+    },
+    {
+      "path": "EVRPTW_Benchmark/Reinforcement_Learning/scripts/audit_terran_synthetic100.py",
+      "bytes": 7747,
+      "sha256": "52b0ebd8880bb1c5db1332e4b8c6dd9b33286981d699fe8beb88bdefb401fb9b"
+    },
+    {
+      "path": "EVRPTW_Benchmark/Reinforcement_Learning/scripts/benchmark_drl_hotpaths.py",
+      "bytes": 14938,
+      "sha256": "1f0aeb5160f1a3a3d4e8bf3abd0b09b3000ec19984f24af77818e393eb2af572"
+    },
+    {
+      "path": "EVRPTW_Benchmark/Reinforcement_Learning/scripts/build_support_sets.py",
+      "bytes": 2122,
+      "sha256": "8f7bdc66b148adafdf261058d57501b3af76cb5745634e3074cdbda69c822a51"
+    },
+    {
+      "path": "EVRPTW_Benchmark/Reinforcement_Learning/scripts/build_training_stream.py",
+      "bytes": 2913,
+      "sha256": "9b924dfbe7d049fc54022876feb821689512989391b873e6df9c9e6057c63550"
+    },
+    {
+      "path": "EVRPTW_Benchmark/Reinforcement_Learning/scripts/calibrate_euclidean_representation.py",
+      "bytes": 5188,
+      "sha256": "9e352ced8e2c8db1781d4fbd4fad8a1db6c469840e57209c06606f41d0b33f1b"
+    },
+    {
+      "path": "EVRPTW_Benchmark/Reinforcement_Learning/scripts/calibrate_training_reference_cost.py",
+      "bytes": 35450,
+      "sha256": "dff38d70085365abd00139890aaa8b41822ee886acd0ecdbc84f3adf9a70d984"
+    },
+    {
+      "path": "EVRPTW_Benchmark/Reinforcement_Learning/scripts/clustered_bootstrap.py",
+      "bytes": 1431,
+      "sha256": "71329807d5e00c1db8800f203df6d8307a16d45628175bcacb9de5b151745c29"
+    },
+    {
+      "path": "EVRPTW_Benchmark/Reinforcement_Learning/scripts/diagnose_evrptw_policy.py",
+      "bytes": 14894,
+      "sha256": "a228cad97a40073cee5aefe44334ea37616b4811306167e5fb590cd1b7040997"
+    },
+    {
+      "path": "EVRPTW_Benchmark/Reinforcement_Learning/scripts/generate_terran_synthetic100.py",
+      "bytes": 225,
+      "sha256": "d3358c04fd494ef08d2670c28b270a223bb9091d71a2b928e10e8f85fac03c0f"
+    },
+    {
+      "path": "EVRPTW_Benchmark/Reinforcement_Learning/scripts/prepare_preverified_stream_marker.py",
+      "bytes": 5301,
+      "sha256": "f0633fbff0330a0f6032e5db8ff3d9ad52d38fa6d07558993e6767f37fbadfce"
+    },
+    {
+      "path": "EVRPTW_Benchmark/Reinforcement_Learning/scripts/probe_evrptw_stability.py",
+      "bytes": 11615,
+      "sha256": "393d498a394428d2973214d7964867ccca8ce161db79f35fbd93a111b94e5c30"
+    },
+    {
+      "path": "EVRPTW_Benchmark/Reinforcement_Learning/scripts/refresh_preverified_training_streams.py",
+      "bytes": 7329,
+      "sha256": "3ff18492952a0f375303bc1d7a552b777e08026366bed18b5488b77decb371da"
+    },
+    {
+      "path": "EVRPTW_Benchmark/Reinforcement_Learning/scripts/summarize_drl_experiments.py",
+      "bytes": 7105,
+      "sha256": "c07c3ce1217a9d8271f14e3434726985311516db63783894c9b64b92740f4921"
+    },
+    {
+      "path": "EVRPTW_Benchmark/Reinforcement_Learning/tests/test_hotpath_diagnostic.py",
+      "bytes": 2009,
+      "sha256": "6ad069bee6a68d67118808429d58678b77207138280f433fd402f66b29c91291"
+    },
+    {
+      "path": "EVRPTW_Benchmark/Reinforcement_Learning/tests/test_paper_alignment_contract.py",
+      "bytes": 2197,
+      "sha256": "16a951a666b45cdd6145ba981e0c1cf19b10443ece49fa46911794009d2739e7"
+    },
+    {
+      "path": "EVRPTW_Benchmark/Reinforcement_Learning/tests/test_preverified_stream_marker.py",
+      "bytes": 2955,
+      "sha256": "e8d4a1e830c8c849f1dc48103c6c47789f142fee6088d49716bd021897138214"
+    },
+    {
+      "path": "EVRPTW_Benchmark/Reinforcement_Learning/tests/test_rrnco_comparison_audit.py",
+      "bytes": 4020,
+      "sha256": "1459d5454eb8c792b635ee5534531f85d5ec1da4a0ed7b381cbaa5a422a2678b"
+    },
+    {
+      "path": "EVRPTW_Benchmark/Reinforcement_Learning/tests/test_training_reference_calibration.py",
+      "bytes": 10434,
+      "sha256": "619341509d16d0e8c79435bae900fc69b470b69c6c85e4afce1dc7a39bf339ea"
+    },
+    {
+      "path": "EVRPTW_Benchmark/Reinforcement_Learning/tests/test_trusted_training_stream_artifacts.py",
+      "bytes": 4794,
+      "sha256": "c68358b0cf1018e8f4658855a939729a96b57b19bc325f8e2ede5cd4777b0dd8"
+    },
+    {
+      "path": "EVRPTW_Core/evrptw_core/__init__.py",
+      "bytes": 649,
+      "sha256": "89bbe3c7833c9f636088aa725f397ea3902868aac88d6f9f30d0242f0a622332"
+    },
+    {
+      "path": "EVRPTW_Core/evrptw_core/benchmark_schema.py",
+      "bytes": 1323,
+      "sha256": "3806034956be77fabb9f58b3f8980cf6a6899c648ee54848ddb184a68a85a337"
+    },
+    {
+      "path": "EVRPTW_Core/evrptw_core/io.py",
+      "bytes": 5505,
+      "sha256": "f8ee4fdde1a18a3a6d2d7269f8608ea914ced21741006e6d2eac614c849afb60"
+    },
+    {
+      "path": "EVRPTW_Core/evrptw_core/objective.py",
+      "bytes": 6759,
+      "sha256": "33908526726295bd55fbf40b7cd3dc7396d31fe24d9fb3b7b4811083b6bad2af"
+    },
+    {
+      "path": "EVRPTW_Core/evrptw_core/schema.py",
+      "bytes": 6650,
+      "sha256": "ac0d8ef463d99f7ded468926089656d631d1b11e979d960dabfa7c05a3801480"
+    },
+    {
+      "path": "EVRPTW_Core/evrptw_core/validation.py",
+      "bytes": 3950,
+      "sha256": "fedc96d71572d4fe43b3d8958d5797f5f7206d50df6488aaf8ec422e88abc3f0"
+    },
+    {
+      "path": "EVRPTW_Dataset_Generator/boundaries/us-11city-2025/chicago/admin_boundary.geojson",
+      "bytes": 173054,
+      "sha256": "86c67412df7057f854eee7cfc9cef35bc62fa16916aa6092b559e298683fffaa"
+    },
+    {
+      "path": "EVRPTW_Dataset_Generator/boundaries/us-11city-2025/chicago/land_boundary.geojson",
+      "bytes": 374726,
+      "sha256": "4d4dd1d98e56f250edb31c21927b9679cde9da1ff9859b2775c0019bd0b580db"
+    },
+    {
+      "path": "EVRPTW_Dataset_Generator/boundaries/us-11city-2025/chicago/metadata.json",
+      "bytes": 1639,
+      "sha256": "4bbede2fa6a8951eb0d0ac09443385b52f55bf16e281c47acffd1c4ed87267cd"
+    },
+    {
+      "path": "EVRPTW_Dataset_Generator/boundaries/us-11city-2025/dallas/admin_boundary.geojson",
+      "bytes": 431920,
+      "sha256": "af01a35ab38d8730ef5c43b951084a9c2c008c5154a710dd1155fb7b1c834cf3"
+    },
+    {
+      "path": "EVRPTW_Dataset_Generator/boundaries/us-11city-2025/dallas/land_boundary.geojson",
+      "bytes": 952616,
+      "sha256": "bb214372f55909942616762b0240e0a3286ee32c0770f9e9fdde4cd5188f90ac"
+    },
+    {
+      "path": "EVRPTW_Dataset_Generator/boundaries/us-11city-2025/dallas/metadata.json",
+      "bytes": 2249,
+      "sha256": "d8c4d9d3555d3744c37c230893e6dc718f2bf68d96816930dfedfe2c6cf76d39"
+    },
+    {
+      "path": "EVRPTW_Dataset_Generator/boundaries/us-11city-2025/fort-worth/admin_boundary.geojson",
+      "bytes": 320979,
+      "sha256": "8435d71fa88be72916bf884729da553629d7586e934ee11c9ffc05f9fb7c53da"
+    },
+    {
+      "path": "EVRPTW_Dataset_Generator/boundaries/us-11city-2025/fort-worth/land_boundary.geojson",
+      "bytes": 788897,
+      "sha256": "70302f022420046995e4c99a3b1959663fa25c3610972fda56b0ba42044fc2ad"
+    },
+    {
+      "path": "EVRPTW_Dataset_Generator/boundaries/us-11city-2025/fort-worth/metadata.json",
+      "bytes": 2265,
+      "sha256": "518eaa9163ebf92035196c8256e31118be3b061a34ec873e2e00860f8007f39e"
+    },
+    {
+      "path": "EVRPTW_Dataset_Generator/boundaries/us-11city-2025/houston/admin_boundary.geojson",
+      "bytes": 1898239,
+      "sha256": "95f0e2613f3eaf56adf0d4687825002457c7f58e61e1abd8aa2dbcd455187c0e"
+    },
+    {
+      "path": "EVRPTW_Dataset_Generator/boundaries/us-11city-2025/houston/land_boundary.geojson",
+      "bytes": 3344353,
+      "sha256": "799bdab1545d881940375e3be1e768f455585f6a3479e9569cc1b1eba1954ab7"
+    },
+    {
+      "path": "EVRPTW_Dataset_Generator/boundaries/us-11city-2025/houston/metadata.json",
+      "bytes": 2048,
+      "sha256": "0d31f059e12d017c64cb0a5d913efe2d7665ff607f604a49a6a04413ddc8810f"
+    },
+    {
+      "path": "EVRPTW_Dataset_Generator/boundaries/us-11city-2025/jacksonville/admin_boundary.geojson",
+      "bytes": 59940,
+      "sha256": "50f74f1a36c499210fd50a4b324980a9bb410b5191100d712e8aa54ddd37d116"
+    },
+    {
+      "path": "EVRPTW_Dataset_Generator/boundaries/us-11city-2025/jacksonville/land_boundary.geojson",
+      "bytes": 2124991,
+      "sha256": "c2326b96a9939b6b950f00f6521ef347ab5332638f46f6065455fbebef288cfe"
+    },
+    {
+      "path": "EVRPTW_Dataset_Generator/boundaries/us-11city-2025/jacksonville/metadata.json",
+      "bytes": 1458,
+      "sha256": "6e91c4825a8c131c302e2dfc21bff32099e4736df0a3f1506d222a9e23b05a01"
+    },
+    {
+      "path": "EVRPTW_Dataset_Generator/boundaries/us-11city-2025/los-angeles/admin_boundary.geojson",
+      "bytes": 231486,
+      "sha256": "d1ead0377f3ad2f7da0b57ecba00e3330c2f50f4f77d242e3e4254251778c061"
+    },
+    {
+      "path": "EVRPTW_Dataset_Generator/boundaries/us-11city-2025/los-angeles/land_boundary.geojson",
+      "bytes": 525743,
+      "sha256": "f4987a537e95bfbc71df5fe8fcc124209f55fce2034da5039f8d55a84c8a51bd"
+    },
+    {
+      "path": "EVRPTW_Dataset_Generator/boundaries/us-11city-2025/los-angeles/metadata.json",
+      "bytes": 1455,
+      "sha256": "a8f549165aa853d591598486394a7e8b03fcc987c3f97ac63829f4d4ad9fec94"
+    },
+    {
+      "path": "EVRPTW_Dataset_Generator/boundaries/us-11city-2025/manifest.json",
+      "bytes": 14550,
+      "sha256": "ef215033927571ad22396cd5ac327ee68a17dc6dffdb2e8ff64b4580fcbe4722"
+    },
+    {
+      "path": "EVRPTW_Dataset_Generator/boundaries/us-11city-2025/new-york/admin_boundary.geojson",
+      "bytes": 44492,
+      "sha256": "4025b0dff47654bbe811a40ff998341c51206d89503b9a1c9e766ae3bea0cf86"
+    },
+    {
+      "path": "EVRPTW_Dataset_Generator/boundaries/us-11city-2025/new-york/land_boundary.geojson",
+      "bytes": 715957,
+      "sha256": "3d7376588d85a1a86c4152ada0f893a2598128abb22b2b5d4a9f25ce9d823c70"
+    },
+    {
+      "path": "EVRPTW_Dataset_Generator/boundaries/us-11city-2025/new-york/metadata.json",
+      "bytes": 2271,
+      "sha256": "8ae3c1357277f4cc2ce7f8b135c66b07dd2a67a7b10ccf81c6368bf72baa989a"
+    },
+    {
+      "path": "EVRPTW_Dataset_Generator/boundaries/us-11city-2025/philadelphia/admin_boundary.geojson",
+      "bytes": 90400,
+      "sha256": "3bb02eba6ab58844dcbfcedfb7100e0c4a4bae8f90e9ea444e50b7626be57fe6"
+    },
+    {
+      "path": "EVRPTW_Dataset_Generator/boundaries/us-11city-2025/philadelphia/land_boundary.geojson",
+      "bytes": 1092962,
+      "sha256": "52069420fa248fec4f471770db9276e5cf6da77db366d3ff9d718e5646c23a94"
+    },
+    {
+      "path": "EVRPTW_Dataset_Generator/boundaries/us-11city-2025/philadelphia/metadata.json",
+      "bytes": 1461,
+      "sha256": "91a016b7b893ca294a770401ef188fc78bab34b3e16c1478b4ca10386d50d351"
+    },
+    {
+      "path": "EVRPTW_Dataset_Generator/boundaries/us-11city-2025/phoenix/admin_boundary.geojson",
+      "bytes": 184395,
+      "sha256": "8551b2ef8366c3009a25fac736f6c420ce2f7de8cc7b1e3ad31d7c71c54582dd"
+    },
+    {
+      "path": "EVRPTW_Dataset_Generator/boundaries/us-11city-2025/phoenix/land_boundary.geojson",
+      "bytes": 323849,
+      "sha256": "9af771cf3944e7a3c0eb826796f7f9af665ed6967ba88092c22a886086473e6b"
+    },
+    {
+      "path": "EVRPTW_Dataset_Generator/boundaries/us-11city-2025/phoenix/metadata.json",
+      "bytes": 1433,
+      "sha256": "5a6d791707d999fa04aa3f4716ee148f4ddef5f23daf6fc047e9b7aa8b38b4c2"
+    },
+    {
+      "path": "EVRPTW_Dataset_Generator/boundaries/us-11city-2025/san-antonio/admin_boundary.geojson",
+      "bytes": 395291,
+      "sha256": "55a690f4ad9ba541a19315bc1bd46e820f7058493b0f51d3f90995cb7886eda2"
+    },
+    {
+      "path": "EVRPTW_Dataset_Generator/boundaries/us-11city-2025/san-antonio/land_boundary.geojson",
+      "bytes": 1117035,
+      "sha256": "415509f301f5cd7049fb27d076f76217033eaec05efea30a7afc626ffc75aac1"
+    },
+    {
+      "path": "EVRPTW_Dataset_Generator/boundaries/us-11city-2025/san-antonio/metadata.json",
+      "bytes": 1861,
+      "sha256": "3912c495b54e7bebf39e30ca7af97b47ea4d2adcdebd1b88bc51dbc5f243219f"
+    },
+    {
+      "path": "EVRPTW_Dataset_Generator/boundaries/us-11city-2025/san-diego/admin_boundary.geojson",
+      "bytes": 340534,
+      "sha256": "3b7cdb529f9a3db42eb39c114740514218da5706d90f0ddbebeadae65ee6c1a2"
+    },
+    {
+      "path": "EVRPTW_Dataset_Generator/boundaries/us-11city-2025/san-diego/land_boundary.geojson",
+      "bytes": 457847,
+      "sha256": "e54f5ad49ad658ae63ccdf49a024103e00fc4d0a49119e8021764b2403859370"
+    },
+    {
+      "path": "EVRPTW_Dataset_Generator/boundaries/us-11city-2025/san-diego/metadata.json",
+      "bytes": 1446,
+      "sha256": "845d706ec0c2df4dcd2c407f4077fafb55f59b557888d71d6374da058eec6542"
+    },
+    {
+      "path": "EVRPTW_Dataset_Generator/configs/amazon_cohort_split_v1.json",
+      "bytes": 173244,
+      "sha256": "ade0da8d4ccc43666a7efeae3bf332dd32dde2ddf9f66453df323d596829b941"
+    },
+    {
+      "path": "EVRPTW_Dataset_Generator/configs/amazon_operational_transfer_acceptance_v2.json",
+      "bytes": 2502,
+      "sha256": "4b3a9bff2729f515dd57015dd84b2b804640d0995af8eaa8ed6ffe1df8af6d59"
+    },
+    {
+      "path": "EVRPTW_Dataset_Generator/configs/cle_evrptw_stage2_v2.json",
+      "bytes": 4805,
+      "sha256": "ba02ecb29a38ad27a8b57ec78cee7954daaaef056a165e69951c21e2a64f3f35"
+    },
+    {
+      "path": "EVRPTW_Dataset_Generator/configs/gate02_customer_location_contract_v1.json",
+      "bytes": 6453,
+      "sha256": "3220e205b476b02ea9000fed553993570fa941dea93636413a4ad0e4b8e20257"
+    },
+    {
+      "path": "EVRPTW_Dataset_Generator/configs/stage2_acceptance_v3_construct_valid.json",
+      "bytes": 1629,
+      "sha256": "fa9d047a440bb3f3bada7b90e320b09bf6492285913b559a5a808cfab80f0bbb"
+    },
+    {
+      "path": "EVRPTW_Dataset_Generator/configs/stage2_acceptance_v3_full_7500.json",
+      "bytes": 1495,
+      "sha256": "678798c0e465495f18a3aaa6dc7045cb1e0351f3d01bfe71e56ad8b6a1357f0e"
+    },
+    {
+      "path": "EVRPTW_Dataset_Generator/configs/us_11city_building_extraction_v1.json",
+      "bytes": 6570,
+      "sha256": "8cb3f6a9872445b2f08b30777b4ab45705f29b8297098b7969e4a067ee69d1cd"
+    },
+    {
+      "path": "EVRPTW_Dataset_Generator/configs/us_11city_cle_v1.json",
+      "bytes": 4031,
+      "sha256": "4bd64b43ad3fa9fac5e0438f986b4d8d01312caa73e2e8f76fe3abeaf75774b1"
+    },
+    {
+      "path": "EVRPTW_Dataset_Generator/configs/us_11city_hpms_sources_v1.json",
+      "bytes": 849,
+      "sha256": "dc0c5845b19f2001914d4d540c2aec89e2f23f436377759cab9dd51b29317889"
+    },
+    {
+      "path": "EVRPTW_Dataset_Generator/configs/us_11city_population_v1.json",
+      "bytes": 5236,
+      "sha256": "8e316492d496fa1cabffb0b1e4cf9120c90f95c8e68c94a0bd4d9eea374df489"
+    },
+    {
+      "path": "EVRPTW_Dataset_Generator/configs/us_census_block_groups_v1.json",
+      "bytes": 678,
+      "sha256": "dc21b9fba4ea19aaf14a339538aea8cc60fed99e94c60cab025b5dcc3ead0ee9"
+    },
+    {
+      "path": "EVRPTW_Dataset_Generator/configs/us_moves5_speed_profile_v1.json",
+      "bytes": 1780,
+      "sha256": "90313edae1be49164d0de8688b169ded43e4ea6a6e2d4a97c86f85849b77efbd"
+    },
+    {
+      "path": "EVRPTW_Dataset_Generator/configs/us_national_charging_power_medians_v1.json",
+      "bytes": 1266,
+      "sha256": "4a181a8440839602679be5f8d8c823b5d6f5fc5ff3b7211768c87d2fa0c87f57"
+    },
+    {
+      "path": "EVRPTW_Dataset_Generator/configs/us_reference_instance_profile_v2.json",
+      "bytes": 3540,
+      "sha256": "073d46c64c0837dc2928b74d3a9461994bc3c881d1a77036d5cb4de79a67ed27"
+    },
+    {
+      "path": "EVRPTW_Dataset_Generator/configs/us_reference_instance_profile_v2_release.json",
+      "bytes": 4678,
+      "sha256": "e13bc30c7ce4607c3f936881bdc9233a5eec6f525b8eca3e77993b27e6d57997"
+    },
+    {
+      "path": "EVRPTW_Dataset_Generator/configs/us_states_v1.json",
+      "bytes": 8333,
+      "sha256": "4422b0b0e35126bfc84b32c3fae8632c3929e9bba9c4b21cb2629294a8457459"
+    },
+    {
+      "path": "EVRPTW_Dataset_Generator/scripts/aggregate_phase1_metrics.py",
+      "bytes": 581,
+      "sha256": "3d084afcafbf2fd332219fce20a30ba2e08fa6994369f0599480c12f23981f78"
+    },
+    {
+      "path": "EVRPTW_Dataset_Generator/scripts/analyze_amazon_arcd_statistics.py",
+      "bytes": 22790,
+      "sha256": "45ec532f96b7e8bf9e50cba1b7d33064ec668b8d14ea81b2de3628a98a35e938"
+    },
+    {
+      "path": "EVRPTW_Dataset_Generator/scripts/apply_stage2_joint_support_gate.py",
+      "bytes": 24408,
+      "sha256": "f77a2dd9769ed1ee90e476a8c0a419bd2b7aec270fbf3b82dfd30cf59fe02711"
+    },
+    {
+      "path": "EVRPTW_Dataset_Generator/scripts/apply_stage2_joint_support_gate_parallel.py",
+      "bytes": 21869,
+      "sha256": "d0ca605fd52dcb332f0913d376d3aead6c1994db50623426fe32aadbd81232c0"
+    },
+    {
+      "path": "EVRPTW_Dataset_Generator/scripts/assemble_cle.py",
+      "bytes": 3934,
+      "sha256": "bff04c16c8b05ee9ae2ae35cf4b23bec2b7e33ae3ef019dc6d08ccfa78fa9e60"
+    },
+    {
+      "path": "EVRPTW_Dataset_Generator/scripts/audit_customer_nearest_footprints.py",
+      "bytes": 1055,
+      "sha256": "a3b0e6557ad532c942f93469f644e035219aad466f435c7d4c95a5e033095563"
+    },
+    {
+      "path": "EVRPTW_Dataset_Generator/scripts/audit_customer_terminal_access.py",
+      "bytes": 1685,
+      "sha256": "0b29e85479abd21623a6d1966ad9b1fc13b6444b6678285d23d59f6612498f90"
+    },
+    {
+      "path": "EVRPTW_Dataset_Generator/scripts/audit_stage2_primary_ev_activity.py",
+      "bytes": 1377,
+      "sha256": "460308db79f4b7c494b5b6a90e0e86a5a158d2e1d8e03198731b7fb67096bfd1"
+    },
+    {
+      "path": "EVRPTW_Dataset_Generator/scripts/audit_stage2_terminal_connectivity.py",
+      "bytes": 38040,
+      "sha256": "015dabb03dd1f68a4187decad879fe82b82e722705b1c620dc7ce3e44d6cf06f"
+    },
+    {
+      "path": "EVRPTW_Dataset_Generator/scripts/build_amazon_cohort_split.py",
+      "bytes": 19498,
+      "sha256": "251c72c144f46fedd99f1f1e3ec78bf72d86797af028314f888be16f47f3e323"
+    },
+    {
+      "path": "EVRPTW_Dataset_Generator/scripts/build_amazon_stage2_artifacts.py",
+      "bytes": 886,
+      "sha256": "7009ccac15506b318864b3f86afe6d6475fd99a0ac9b6bcd62017a2dd8fd8e4a"
+    },
+    {
+      "path": "EVRPTW_Dataset_Generator/scripts/build_amazon_station_inventory.py",
+      "bytes": 8655,
+      "sha256": "b5e48290093364a9e387b1a4343bd79eaca634f15a4b2849e339227b495bc52c"
+    },
+    {
+      "path": "EVRPTW_Dataset_Generator/scripts/build_boundary_manifest.py",
+      "bytes": 2772,
+      "sha256": "e2dd878d95a55cf5411d4e960c7669992cf7f7303cca95055e98fb52d82180a1"
+    },
+    {
+      "path": "EVRPTW_Dataset_Generator/scripts/build_census_city_boundaries.py",
+      "bytes": 8995,
+      "sha256": "648ad4aeec58dcc9a627960282c02aaefab7ab94b3b831e86fb6a50660862472"
+    },
+    {
+      "path": "EVRPTW_Dataset_Generator/scripts/build_city_cle.py",
+      "bytes": 17112,
+      "sha256": "4017d53f87a514c4c124e62911c85cc61318f4f90e9ea8f01bbb9f91c4fa39d2"
+    },
+    {
+      "path": "EVRPTW_Dataset_Generator/scripts/build_cle_appendix_tables.py",
+      "bytes": 12528,
+      "sha256": "beaaac7901f6ea9af9c172c0b6de6cb5769b814dd1c23af83ad10b297ab1d3d6"
+    },
+    {
+      "path": "EVRPTW_Dataset_Generator/scripts/build_cle_cohort.py",
+      "bytes": 25453,
+      "sha256": "7c48c78606aef9d41fd2b125c2612f9fd1b9e5abff038a0d1130dc4abd03b3db"
+    },
+    {
+      "path": "EVRPTW_Dataset_Generator/scripts/build_cle_review_map.py",
+      "bytes": 25309,
+      "sha256": "00062684f8fdc80a1a4b92ecff6a7de07a91a0802595483f4165d956036934ac"
+    },
+    {
+      "path": "EVRPTW_Dataset_Generator/scripts/build_connectivity_audit_acceptance_v2.py",
+      "bytes": 48249,
+      "sha256": "27a5d5168ec186aa1f2db301c06beb3e7888f2fb43cc08aab43aed716b07a697"
+    },
+    {
+      "path": "EVRPTW_Dataset_Generator/scripts/build_customer_footprint_access_audit.py",
+      "bytes": 999,
+      "sha256": "f6ad85d0d283068b7f1d0bc29412c186c620a673fc866c307b672e5986d1dc83"
+    },
+    {
+      "path": "EVRPTW_Dataset_Generator/scripts/build_customer_spatial_pilot.py",
+      "bytes": 1344,
+      "sha256": "39971a8c7b1d6d299246958a407cf9422ad5b0e179f4865b0ffc965944b9e664"
+    },
+    {
+      "path": "EVRPTW_Dataset_Generator/scripts/build_depot_audit.py",
+      "bytes": 14164,
+      "sha256": "85619ec6eb1b58bfcf3c782fbc8eaf8da0da176df812f81e76295a006f5e4bad"
+    },
+    {
+      "path": "EVRPTW_Dataset_Generator/scripts/build_facility_layers.py",
+      "bytes": 1433,
+      "sha256": "fe229ce491dd1a628643236441dcda670a53833ed6c9d5beca24361e5f15a56f"
+    },
+    {
+      "path": "EVRPTW_Dataset_Generator/scripts/build_hpms_edge_matches.py",
+      "bytes": 2369,
+      "sha256": "c94e379c5045529421e4bd27024b7ff01125f6bf209c13482154b2e6f90c6ba4"
+    },
+    {
+      "path": "EVRPTW_Dataset_Generator/scripts/build_legal_speed_layer.py",
+      "bytes": 1006,
+      "sha256": "1aaa1d0db194f3480e006733b54a36adf3f6384c457583757a1e7b43f6117719"
+    },
+    {
+      "path": "EVRPTW_Dataset_Generator/scripts/build_national_charging_power_medians.py",
+      "bytes": 4833,
+      "sha256": "4c6c26534d0fd4a0073a6d505a8c122c8cb5f89d4ed70970fe0a42649679e57e"
+    },
+    {
+      "path": "EVRPTW_Dataset_Generator/scripts/build_nsi_review_payload.py",
+      "bytes": 4937,
+      "sha256": "b1c2d139ea5236aeda9157277fd622afcb51be29631ffeadfacd28a2a4f1037d"
+    },
+    {
+      "path": "EVRPTW_Dataset_Generator/scripts/build_osm_depot_preview.py",
+      "bytes": 47560,
+      "sha256": "f143eb89f92411d9a9218582d99b52fe1df81dde068657273d1e839fd0fbdb50"
+    },
+    {
+      "path": "EVRPTW_Dataset_Generator/scripts/build_stage2_instances.py",
+      "bytes": 50529,
+      "sha256": "ca29348fb861673af15dca48bf79dcd0865aa0443d5c0e67b95d9ded206d5a99"
+    },
+    {
+      "path": "EVRPTW_Dataset_Generator/scripts/build_stage2_pilot_report.py",
+      "bytes": 2414,
+      "sha256": "bcd96ea3adf23fe7cc3a225e321b47d7d6b87e503709d5a9987f28ce0b9aec4f"
+    },
+    {
+      "path": "EVRPTW_Dataset_Generator/scripts/build_stage2_toy_manifest.py",
+      "bytes": 1961,
+      "sha256": "46b2fb043324e8ddd0705c47c72bd618f97324d5dc3b063861d01ba22a79320d"
+    },
+    {
+      "path": "EVRPTW_Dataset_Generator/scripts/build_terminal_access_layer.py",
+      "bytes": 1370,
+      "sha256": "90e2f66b5a54ec406c10f29e7945b0e67979261a818c147fcfc3be23fe242fba"
+    },
+    {
+      "path": "EVRPTW_Dataset_Generator/scripts/check_candidate_revision.py",
+      "bytes": 814,
+      "sha256": "d6262dcfc1fffd1288c25d5abda6925263569d0d3167b23746c726fa6300b3ce"
+    },
+    {
+      "path": "EVRPTW_Dataset_Generator/scripts/compare_stage2_c0_plans.py",
+      "bytes": 5595,
+      "sha256": "ef74074e467acea6c442279382814594875187ca7f6b97600ca070933551cf4c"
+    },
+    {
+      "path": "EVRPTW_Dataset_Generator/scripts/dataset_archive_tool.py",
+      "bytes": 43028,
+      "sha256": "668c96b008ad79c42039a746eae453d46e0badf9447d7f56fb3c813900a3c07d"
+    },
+    {
+      "path": "EVRPTW_Dataset_Generator/scripts/derive_moves5_speed_profile.py",
+      "bytes": 867,
+      "sha256": "2f013f31edf4a3b479b96bf4135175aef32d442981039a7c4e5ec6c72cd9d91f"
+    },
+    {
+      "path": "EVRPTW_Dataset_Generator/scripts/download_afdc_snapshot.py",
+      "bytes": 3342,
+      "sha256": "295d09011bdcaba8f67fbbd186b8c6519fbbb5a120376ec13e805443606e545b"
+    },
+    {
+      "path": "EVRPTW_Dataset_Generator/scripts/download_amazon_last_mile_2021.sh",
+      "bytes": 1815,
+      "sha256": "93f0ca0036cd665b0f77b95942edc4c5185d12f33a0f48a328541a5c6b092dbf"
+    },
+    {
+      "path": "EVRPTW_Dataset_Generator/scripts/download_hpms_city.py",
+      "bytes": 7170,
+      "sha256": "9eb24e38f4668aa09017a3d3100c0a11a8c59302d0beddd6b58111085f0fcf86"
+    },
+    {
+      "path": "EVRPTW_Dataset_Generator/scripts/download_microsoft_state_buildings.py",
+      "bytes": 4409,
+      "sha256": "f84429a8b4db3fbbb529d9fb24aad46328249ef9369e79265fb1abf90d8f4f32"
+    },
+    {
+      "path": "EVRPTW_Dataset_Generator/scripts/evaluate_amazon_operational_transfer_v2.py",
+      "bytes": 2142,
+      "sha256": "a0334d798659cf94961d757c5175c3f0195e84625f420824d2ff22aff4be419a"
+    },
+    {
+      "path": "EVRPTW_Dataset_Generator/scripts/evaluate_charging_sensitivity.py",
+      "bytes": 7311,
+      "sha256": "dc88436f56398475799efef068ef7b3cca807506e20410f7089fedf6b5668a48"
+    },
+    {
+      "path": "EVRPTW_Dataset_Generator/scripts/evaluate_stage2_construct_valid_acceptance_v3.py",
+      "bytes": 1809,
+      "sha256": "ec2c1fb63bb1f7cca741c248515dcecae24c5483c2aac69a1d8c2c58a057a1db"
+    },
+    {
+      "path": "EVRPTW_Dataset_Generator/scripts/evaluate_stage2_realism.py",
+      "bytes": 10241,
+      "sha256": "758652009161ba18c84badc44bbe8eaae119cb7613827b32facd6d451c3b414d"
+    },
+    {
+      "path": "EVRPTW_Dataset_Generator/scripts/export_stage2_slim.sh",
+      "bytes": 1412,
+      "sha256": "4c8070e0caa446c98abe29fe50a8e38a6f10b1817478c17013f64ccc66dc9434"
+    },
+    {
+      "path": "EVRPTW_Dataset_Generator/scripts/extract_city_buildings.py",
+      "bytes": 1503,
+      "sha256": "1bafe504688a2fb07826746db218d7ff211b3b54ae92c79091ecf12c214a1c17"
+    },
+    {
+      "path": "EVRPTW_Dataset_Generator/scripts/extract_osm_charging_pois.py",
+      "bytes": 6105,
+      "sha256": "cda3384c94be2dada7c801e12e6fa12a8932173747105e7f719bab433ba818a1"
+    },
+    {
+      "path": "EVRPTW_Dataset_Generator/scripts/fetch_census_block_groups.py",
+      "bytes": 2793,
+      "sha256": "e7a3d185befb2e2c8ae6bfc0ff5e74857573bf492d14f5aa0dc8423ba7b87c02"
+    },
+    {
+      "path": "EVRPTW_Dataset_Generator/scripts/fetch_pbf_sources.py",
+      "bytes": 4256,
+      "sha256": "2f3d14fab225610b6c7fa59d7ac1b2ba2e89a26310d747970c7af03933d8705a"
+    },
+    {
+      "path": "EVRPTW_Dataset_Generator/scripts/filter_afdc_snapshot.py",
+      "bytes": 2337,
+      "sha256": "efb18db48920e7aa4effa70d9ad3f9554dfa77f9dbba5ac26f98ca523169b6b0"
+    },
+    {
+      "path": "EVRPTW_Dataset_Generator/scripts/generate_us_city_cle.py",
+      "bytes": 8374,
+      "sha256": "2d0e8af780fffb4958d914b5d89246ecffb7ddc6c1f14e0ac74d67c1566a59f1"
+    },
+    {
+      "path": "EVRPTW_Dataset_Generator/scripts/geocode_afdc_addresses_census.py",
+      "bytes": 6575,
+      "sha256": "605eb7ba547e8b20c6bb43d81c79c9a3a9c35c03cf01c6da53af774c20ebfafe"
+    },
+    {
+      "path": "EVRPTW_Dataset_Generator/scripts/package_cle.py",
+      "bytes": 1472,
+      "sha256": "b45fc6fd8fd6a03a93dc3b9d4629a444619a22b2da546d8bcaf3c2116a25454f"
+    },
+    {
+      "path": "EVRPTW_Dataset_Generator/scripts/preflight_cle_sources.py",
+      "bytes": 997,
+      "sha256": "aa19c8621d73271bc2f61c3a9f69f2a5649cc7d8ff834055fa5aaeb4b6d3cef5"
+    },
+    {
+      "path": "EVRPTW_Dataset_Generator/scripts/prepare_us11_sources.py",
+      "bytes": 12271,
+      "sha256": "bdb251198fedf809c52ddd442b8c7127b60aa7659d3c121ce877583ce62f463e"
+    },
+    {
+      "path": "EVRPTW_Dataset_Generator/scripts/prepare_us_city.py",
+      "bytes": 13999,
+      "sha256": "583a6727d42883afec4db8fe8bfb7f6df6b356ca690fd3338357fc5b41cca308"
+    },
+    {
+      "path": "EVRPTW_Dataset_Generator/scripts/promote_stage2_profile.py",
+      "bytes": 1902,
+      "sha256": "8eb544032ecd06cf46754ebb68680775ea5dcd8deddbe353ac3beca03a603092"
+    },
+    {
+      "path": "EVRPTW_Dataset_Generator/scripts/reconcile_stage2_run_report.py",
+      "bytes": 2251,
+      "sha256": "5a8a789a505707a8cb17eb2e3cfc55f16672b9e75f97f9f640c7ed2dbe9111c0"
+    },
+    {
+      "path": "EVRPTW_Dataset_Generator/scripts/reconstruct_stage2_instances.py",
+      "bytes": 5547,
+      "sha256": "ab6bfa3ccd7612e79c53fc3de2bd2d1960f62372f0cc5c561a59c9f9b222cf2e"
+    },
+    {
+      "path": "EVRPTW_Dataset_Generator/scripts/resolve_afdc_coordinates.py",
+      "bytes": 3328,
+      "sha256": "134f3479d08d002193ae23dc7bd4a8b7bc0c65d8c3f28f11b9ca2e83dcd679f0"
+    },
+    {
+      "path": "EVRPTW_Dataset_Generator/scripts/restore_stage2_instances.sh",
+      "bytes": 1418,
+      "sha256": "2ea7cd247f005d0ec06d79d495c69f47ec6eecae9f8cfd1e17d14e1a5f668fad"
+    },
+    {
+      "path": "EVRPTW_Dataset_Generator/scripts/run_stage2_release_preflight.py",
+      "bytes": 8318,
+      "sha256": "4478ef27ad6a2004d72a16aeb4a2a5803fe1ff322b09148f61d000eaa1ed7182"
+    },
+    {
+      "path": "EVRPTW_Dataset_Generator/scripts/verify_boundary_gate.py",
+      "bytes": 1697,
+      "sha256": "227fc44e1308d04c302756ef393aea46629e5b87a6815444fa4577c1aa4057d8"
+    },
+    {
+      "path": "EVRPTW_Dataset_Generator/scripts/verify_customer_gate.py",
+      "bytes": 1680,
+      "sha256": "6abeb26c59534ecfe6417e6f98f01b429dc5e756be494425756bc0d3fc90eeae"
+    },
+    {
+      "path": "EVRPTW_Dataset_Generator/src/evrptw_cle/__init__.py",
+      "bytes": 86,
+      "sha256": "9a5037736422cc3d9efaade73becab65a6b6023989f630134b2b9a492eba88f2"
+    },
+    {
+      "path": "EVRPTW_Dataset_Generator/src/evrptw_cle/boundary.py",
+      "bytes": 2836,
+      "sha256": "e50127ee35e0fb4193aa3e5a15edccabdba34cdfa6af8e2bf0dfd7f44c6e659d"
+    },
+    {
+      "path": "EVRPTW_Dataset_Generator/src/evrptw_cle/boundary_gate.py",
+      "bytes": 17294,
+      "sha256": "f70e2af697453ba34b8ca73e9a9a1da969e8efe8e1f1ca225d2cfa1296e8b149"
+    },
+    {
+      "path": "EVRPTW_Dataset_Generator/src/evrptw_cle/building_registry.py",
+      "bytes": 16201,
+      "sha256": "75a2865ab2f7c89e53a13beb05fde885276c755b6f9f644fdfdf458501318f23"
+    },
+    {
+      "path": "EVRPTW_Dataset_Generator/src/evrptw_cle/buildings.py",
+      "bytes": 14079,
+      "sha256": "bf16828b82c2e2aba02ab1449c1d62e39b7efe3a8c00773af3f5cea7e2f85ac4"
+    },
+    {
+      "path": "EVRPTW_Dataset_Generator/src/evrptw_cle/charger_resolution.py",
+      "bytes": 8851,
+      "sha256": "2c32eb4a15dcd0613dcfd83c482ffdc5da2df7ae257538bb847f4997841e84bc"
+    },
+    {
+      "path": "EVRPTW_Dataset_Generator/src/evrptw_cle/cle.py",
+      "bytes": 48440,
+      "sha256": "35c788e83601be957c6e7e7100b3ba9ee006aa31e4ad9d786af0a49732f16367"
+    },
+    {
+      "path": "EVRPTW_Dataset_Generator/src/evrptw_cle/cli.py",
+      "bytes": 14502,
+      "sha256": "c8a8c04506c2186db5728092385076ffeb2aad5c8f5d7ee3573f4150dbc46a90"
+    },
+    {
+      "path": "EVRPTW_Dataset_Generator/src/evrptw_cle/connectivity.py",
+      "bytes": 4604,
+      "sha256": "fb728f11f65b36b4ad329d540705f5fa0029fcca75a8013d05a07b96a56e00c0"
+    },
+    {
+      "path": "EVRPTW_Dataset_Generator/src/evrptw_cle/customer_access.py",
+      "bytes": 31365,
+      "sha256": "d3b4ced4f28fe5b0c0b42086fcf19c53b8c6472a4935c2cde6d0e81cf08b9d28"
+    },
+    {
+      "path": "EVRPTW_Dataset_Generator/src/evrptw_cle/customer_gate.py",
+      "bytes": 22875,
+      "sha256": "cfbed281f4b63991cd5f238f94df510c704dcb3f95e4dcaf33e7a8323e3aa1c3"
+    },
+    {
+      "path": "EVRPTW_Dataset_Generator/src/evrptw_cle/customer_spatial.py",
+      "bytes": 26954,
+      "sha256": "57ce431f5ead0fd1cec12cdd8832e06a2ffeb0f7c5e92aa526baa21804d5123b"
+    },
+    {
+      "path": "EVRPTW_Dataset_Generator/src/evrptw_cle/facilities.py",
+      "bytes": 20812,
+      "sha256": "4b75b438bbe2991bf6a8a0b9bc1b6be0d7eff7cb70b2d31fd1e8668999c664ef"
+    },
+    {
+      "path": "EVRPTW_Dataset_Generator/src/evrptw_cle/hpms_match.py",
+      "bytes": 20211,
+      "sha256": "28b0e0b77f9abce4c9163dce2c4bfd9a88ede0590d706ef0c9c4b8f3fa20bfe3"
+    },
+    {
+      "path": "EVRPTW_Dataset_Generator/src/evrptw_cle/moves_speed.py",
+      "bytes": 11222,
+      "sha256": "18d20d260adff2202f70bc79c4f5b6578ad6390e70fc299c036b96d65c722287"
+    },
+    {
+      "path": "EVRPTW_Dataset_Generator/src/evrptw_cle/nsi.py",
+      "bytes": 44518,
+      "sha256": "651d353f9e705535b23cef37632e96a626ddc6f170ca7c928e183c9e9d29665c"
+    },
+    {
+      "path": "EVRPTW_Dataset_Generator/src/evrptw_cle/operational.py",
+      "bytes": 15341,
+      "sha256": "8243d791fe6dc336fcc5428a07b5cae966be980ddd02bb448280b3550b0ccc2e"
+    },
+    {
+      "path": "EVRPTW_Dataset_Generator/src/evrptw_cle/osm_graph.py",
+      "bytes": 9921,
+      "sha256": "b6d59fd2d2d0a8f0a5054201fa929fc1e7a900961ee044f6aa5cfb7276d305ea"
+    },
+    {
+      "path": "EVRPTW_Dataset_Generator/src/evrptw_cle/overview.py",
+      "bytes": 13055,
+      "sha256": "7a9527bca17baa6b509a95b84720675558609d64286a19f29eba4deac72dec9e"
+    },
+    {
+      "path": "EVRPTW_Dataset_Generator/src/evrptw_cle/pipeline.py",
+      "bytes": 15722,
+      "sha256": "dabf5d694f133725f9a3b0694df24d6ea70ad22c4f2c8ee144403ffda574e876"
+    },
+    {
+      "path": "EVRPTW_Dataset_Generator/src/evrptw_cle/preflight.py",
+      "bytes": 13243,
+      "sha256": "a520a1fbffc92a17d7515a135984b8d7f6496986136305025abc31d8e8de3c6b"
+    },
+    {
+      "path": "EVRPTW_Dataset_Generator/src/evrptw_cle/protected_connectivity.py",
+      "bytes": 7343,
+      "sha256": "32c657c542df25022dac6ce1b1a036344d3cd76529aa81ec78a8f3f05a4e8a50"
+    },
+    {
+      "path": "EVRPTW_Dataset_Generator/src/evrptw_cle/release.py",
+      "bytes": 3641,
+      "sha256": "66b9171bff0f17a20fffdc55c49eb89ae8d55e657cb9307f75eb84ee0dde8584"
+    },
+    {
+      "path": "EVRPTW_Dataset_Generator/src/evrptw_cle/service_access.py",
+      "bytes": 10295,
+      "sha256": "07a7bfa363812608af8467d09f20e3a0deba763a6b313eebfdd9060037575ade"
+    },
+    {
+      "path": "EVRPTW_Dataset_Generator/src/evrptw_cle/speed.py",
+      "bytes": 27319,
+      "sha256": "e41873c074f8886459d8b281b545edf6c64cd77579783b207eedf99313dc3c09"
+    },
+    {
+      "path": "EVRPTW_Dataset_Generator/src/evrptw_cle/terminal_access.py",
+      "bytes": 13887,
+      "sha256": "8073d135bad7f999f919fca780f73b21c554d5c3880296727e218ccc00341f31"
+    },
+    {
+      "path": "EVRPTW_Dataset_Generator/src/evrptw_cle/util.py",
+      "bytes": 788,
+      "sha256": "48027aa562dc5597614e5a042089e395c166597686f59f60bd601fbc2764b979"
+    },
+    {
+      "path": "EVRPTW_Dataset_Generator/src/evrptw_cle/verification.py",
+      "bytes": 4030,
+      "sha256": "cccb47077ac8eef5a474385dad499811fb5dcac6ec288c661ba5cf777c823fbf"
+    },
+    {
+      "path": "EVRPTW_Dataset_Generator/src/evrptw_cle/visualization.py",
+      "bytes": 11986,
+      "sha256": "b1473fa43bacbed92845da80c7c4cb817e755f86861df8fbb86123a664c1cdec"
+    },
+    {
+      "path": "EVRPTW_Dataset_Generator/src/evrptw_stage2/__init__.py",
+      "bytes": 393,
+      "sha256": "e7a8348a1beea98a00c34fa568503018f3040458d9dab07bc4b22674bdbe901d"
+    },
+    {
+      "path": "EVRPTW_Dataset_Generator/src/evrptw_stage2/acceptance.py",
+      "bytes": 12990,
+      "sha256": "16f42e7b0ff6f62cb51ae945f84185e8d5f0b8f0d4ab34295ba9034d19fa7b0b"
+    },
+    {
+      "path": "EVRPTW_Dataset_Generator/src/evrptw_stage2/amazon.py",
+      "bytes": 32068,
+      "sha256": "9985c24885eb74739d1e55382318993f40af34ab5a427287a3aa6155fbe7ed38"
+    },
+    {
+      "path": "EVRPTW_Dataset_Generator/src/evrptw_stage2/artifacts.py",
+      "bytes": 20767,
+      "sha256": "cb8a378119dadbb7adb0b8c8ee6ea24d8cfb9e26038932806197dbd8c87c060e"
+    },
+    {
+      "path": "EVRPTW_Dataset_Generator/src/evrptw_stage2/cli.py",
+      "bytes": 8859,
+      "sha256": "6b5087e4974798802cf9ba87c782ffc047e656351939385199b4fec1b7b3a312"
+    },
+    {
+      "path": "EVRPTW_Dataset_Generator/src/evrptw_stage2/community.py",
+      "bytes": 18380,
+      "sha256": "19439991844265a95778280fb09328e1edac9e4fc0585ccc6610403f21103a57"
+    },
+    {
+      "path": "EVRPTW_Dataset_Generator/src/evrptw_stage2/config.py",
+      "bytes": 9946,
+      "sha256": "eb33e3e5810163353e2f50dcc07ea77c0f332500837a20853896c10d73e1ed9d"
+    },
+    {
+      "path": "EVRPTW_Dataset_Generator/src/evrptw_stage2/connectivity_acceptance.py",
+      "bytes": 9605,
+      "sha256": "8001424d2d66bcf4e9798f31968f3aa8f938930b9008c1be8bb0a16a5ffa48af"
+    },
+    {
+      "path": "EVRPTW_Dataset_Generator/src/evrptw_stage2/construct_acceptance.py",
+      "bytes": 23751,
+      "sha256": "ed83514684ffd13a933bf8e568da1973b29263c7fbb2ccf578f512a677e437f3"
+    },
+    {
+      "path": "EVRPTW_Dataset_Generator/src/evrptw_stage2/contracts.py",
+      "bytes": 126,
+      "sha256": "8ea2c66cb59a7c0d06cf8b9174d669e660abebaf8c630e0c876f18aff2897811"
+    },
+    {
+      "path": "EVRPTW_Dataset_Generator/src/evrptw_stage2/ev_activity.py",
+      "bytes": 21189,
+      "sha256": "27008f855999adb7917f68fec5bb8d0a343ef529dbae0b79aa3ed4ea4cf0a214"
+    },
+    {
+      "path": "EVRPTW_Dataset_Generator/src/evrptw_stage2/family_process_worker.py",
+      "bytes": 6387,
+      "sha256": "66ae3361b24d190a7c8f91b86f58ec6260ff23350e73ff14e6f7fe2466a1054c"
+    },
+    {
+      "path": "EVRPTW_Dataset_Generator/src/evrptw_stage2/materialize.py",
+      "bytes": 29142,
+      "sha256": "ed69c7526ddb273f2b45ff0974c6e580ac7dadad796d1a8e2f24fa59a9ddd368"
+    },
+    {
+      "path": "EVRPTW_Dataset_Generator/src/evrptw_stage2/metrics.py",
+      "bytes": 35020,
+      "sha256": "50d41fe13b57d8ddd83f93b5421c84eb403ef59134dc36a06fa14e933f1caa31"
+    },
+    {
+      "path": "EVRPTW_Dataset_Generator/src/evrptw_stage2/operational_acceptance.py",
+      "bytes": 23485,
+      "sha256": "de32426c920e7cb38009634b4aceb6bcf2e45bbca2abb2323fa8eae289876981"
+    },
+    {
+      "path": "EVRPTW_Dataset_Generator/src/evrptw_stage2/orders.py",
+      "bytes": 27956,
+      "sha256": "775a0d585ff79f7981a46427ae450b68d27d7d0eea6246045df91072b2e721a8"
+    },
+    {
+      "path": "EVRPTW_Dataset_Generator/src/evrptw_stage2/parallel.py",
+      "bytes": 12335,
+      "sha256": "3e6baa2254f7d8f05411436caba6b12bea390ed5377a55bb85cf71f11e0c8108"
+    },
+    {
+      "path": "EVRPTW_Dataset_Generator/src/evrptw_stage2/planning.py",
+      "bytes": 19076,
+      "sha256": "6db5beb4902949ba19c87f0d7cfbb352cbf168f03d936f4b41d2cb51b64e5e4d"
+    },
+    {
+      "path": "EVRPTW_Dataset_Generator/src/evrptw_stage2/profile.py",
+      "bytes": 5104,
+      "sha256": "a8cd11dc6aefdd6b97e3690eb27342bd3765c54cb05c59b5359e5a4f48ca917e"
+    },
+    {
+      "path": "EVRPTW_Dataset_Generator/src/evrptw_stage2/progress.py",
+      "bytes": 6102,
+      "sha256": "b62884534b01045b367424035fffc437f4eb55d7d63692b4c3f4744c099008cb"
+    },
+    {
+      "path": "EVRPTW_Dataset_Generator/src/evrptw_stage2/promotion.py",
+      "bytes": 12943,
+      "sha256": "59679fb4e1d4e57b5983d270dd2c7470243b9f315ea8cef3ace9ad37f13fe6fc"
+    },
+    {
+      "path": "EVRPTW_Dataset_Generator/src/evrptw_stage2/provenance.py",
+      "bytes": 2099,
+      "sha256": "c3a9ab5978510acdc15f3700479f7e77901ce8a17a19550ba8e14ad6da5ff82c"
+    },
+    {
+      "path": "EVRPTW_Dataset_Generator/src/evrptw_stage2/reader.py",
+      "bytes": 14065,
+      "sha256": "9a0e4833c217c0c981077f91d67188918ec5ada2d80c3d68eb4f7fde6413b980"
+    },
+    {
+      "path": "EVRPTW_Dataset_Generator/src/evrptw_stage2/reconciliation.py",
+      "bytes": 16399,
+      "sha256": "dc8189e2f87dcb66c24a210f5b31bb273490d98b0d97de6e11da048f8e758cec"
+    },
+    {
+      "path": "EVRPTW_Dataset_Generator/src/evrptw_stage2/reconstruction.py",
+      "bytes": 30293,
+      "sha256": "02e87ef094265721da93fd8c35e32e3dc4e0c1d05750e39d048c507f77b552d0"
+    },
+    {
+      "path": "EVRPTW_Dataset_Generator/src/evrptw_stage2/release_discipline.py",
+      "bytes": 9645,
+      "sha256": "566f5fb6daef9fc0e1aa9c8fb86d2bea0da526ae388eec7ed6e1dc01e0681637"
+    },
+    {
+      "path": "EVRPTW_Dataset_Generator/src/evrptw_stage2/road_state.py",
+      "bytes": 7601,
+      "sha256": "503775d18f64dea6ed32db725cefb6d81ac49cf3a320ca79c6c35b4cb83cd7e9"
+    },
+    {
+      "path": "EVRPTW_Dataset_Generator/src/evrptw_stage2/rounding.py",
+      "bytes": 8048,
+      "sha256": "688ff55068211e3610546d562c767867f95093c237d3081179e77d9400a12884"
+    },
+    {
+      "path": "EVRPTW_Dataset_Generator/src/evrptw_stage2/routing.py",
+      "bytes": 60550,
+      "sha256": "291f5438f365b035e5950cb0d663d3753cede47cc496ebc9db40c1bf86602e69"
+    },
+    {
+      "path": "EVRPTW_Dataset_Generator/src/evrptw_stage2/runtime_supervisor.py",
+      "bytes": 23438,
+      "sha256": "8438770c2e7731574005faab3153e5c390cc29e0ba120ccaab2a3c23a1bc0347"
+    },
+    {
+      "path": "EVRPTW_Dataset_Generator/src/evrptw_stage2/selection.py",
+      "bytes": 56869,
+      "sha256": "781a47c39de50d195295048e33b90a0f839c072e28189260c67716d94b54cdfc"
+    },
+    {
+      "path": "EVRPTW_Dataset_Generator/src/evrptw_stage2/selection_capsule.py",
+      "bytes": 11281,
+      "sha256": "7726d6a9ec9f1563d88691224c7a7d7e8d104be515f55abc5914ecb1349dcab4"
+    },
+    {
+      "path": "EVRPTW_Dataset_Generator/src/evrptw_stage2/spatial_activation.py",
+      "bytes": 66351,
+      "sha256": "932c5a8e71e785cae61f2bca58e3f6e808b8a2783d84c86a197ba8feb58f47fc"
+    },
+    {
+      "path": "EVRPTW_Dataset_Generator/src/evrptw_stage2/subprocess_parallel.py",
+      "bytes": 10122,
+      "sha256": "bcc4c335b4221963166a180bb60ba60355b5df3459da8e550ccc5f2cc394731a"
+    },
+    {
+      "path": "EVRPTW_Dataset_Generator/src/evrptw_stage2/toy.py",
+      "bytes": 8258,
+      "sha256": "f287f72a43f1d02e7ad992e02b3a6312d06593fe0f3056b291379c6ed209dedd"
+    },
+    {
+      "path": "EVRPTW_Dataset_Generator/src/evrptw_stage2/toy_plan.py",
+      "bytes": 6622,
+      "sha256": "e3576899a28ed27475326c6bd675e59ab239db5e7ed11e3b392a7f1175cdb453"
+    },
+    {
+      "path": "EVRPTW_Dataset_Generator/tests/fixtures/runtime_family_fixture.py",
+      "bytes": 2374,
+      "sha256": "709e06b790d77cbfb5abedb2e6c815b2d69c9cff955789aeb2154016c1e84459"
+    },
+    {
+      "path": "EVRPTW_Dataset_Generator/tests/fixtures/runtime_supervisor_driver.py",
+      "bytes": 2400,
+      "sha256": "22ba1e0edb08ab204af3f8ed3ef32673085f7c7aa4f67ce44bfecb98ba32a010"
+    },
+    {
+      "path": "EVRPTW_Dataset_Generator/tests/test_boundary_gate.py",
+      "bytes": 6178,
+      "sha256": "ebf199873edf4a65d07271db7cc268b3e632f1c0f47d3e486b9483b61b7f1c81"
+    },
+    {
+      "path": "EVRPTW_Dataset_Generator/tests/test_building_registry.py",
+      "bytes": 6768,
+      "sha256": "08adb338d7040e314e9803ed327ca8910199571dad09e943ce2003d9ef34be9d"
+    },
+    {
+      "path": "EVRPTW_Dataset_Generator/tests/test_buildings.py",
+      "bytes": 992,
+      "sha256": "805060b75a02e3f4eae0215594a36e69ea8027cadf3c114984ae624fb22e3361"
+    },
+    {
+      "path": "EVRPTW_Dataset_Generator/tests/test_c0_plan_comparison.py",
+      "bytes": 11930,
+      "sha256": "8377ce2d2d2282d255bd613908fcdab2b89ee08ec38ece1c98dd23547bca2ae9"
+    },
+    {
+      "path": "EVRPTW_Dataset_Generator/tests/test_c1_pre_split_audit.py",
+      "bytes": 11635,
+      "sha256": "2a8f0bec7fc2194dade64530df0791bd4e3d79c21dc142c6a37917ca73da1007"
+    },
+    {
+      "path": "EVRPTW_Dataset_Generator/tests/test_c2_r2v2_gate.py",
+      "bytes": 2030,
+      "sha256": "d9abca3326252f372ed004af169492934e55bc2ff469a8585683b13eb1e971e9"
+    },
+    {
+      "path": "EVRPTW_Dataset_Generator/tests/test_charger_resolution.py",
+      "bytes": 2685,
+      "sha256": "28262122b425044fcf8897540f073391a2f8de1fd917acbbb0039a2946b88913"
+    },
+    {
+      "path": "EVRPTW_Dataset_Generator/tests/test_cle.py",
+      "bytes": 7934,
+      "sha256": "2898370691fa68c1005df73fded356f7d97f2b83c0db5776993ce2acc5496625"
+    },
+    {
+      "path": "EVRPTW_Dataset_Generator/tests/test_connectivity.py",
+      "bytes": 1512,
+      "sha256": "3f94ef6f9ee3f81db4e032ea0e350c965cb1d4ba58cc8856b2846a286b57c019"
+    },
+    {
+      "path": "EVRPTW_Dataset_Generator/tests/test_customer_access.py",
+      "bytes": 2140,
+      "sha256": "b7a7a921a817a664bd35ba6191df7349d618e644a2f5e8a53f859ac289bc0451"
+    },
+    {
+      "path": "EVRPTW_Dataset_Generator/tests/test_customer_gate.py",
+      "bytes": 6512,
+      "sha256": "ffeda37b310cd8069c1af0a07db4af61536362699fc040d7ee06fa5944affb3d"
+    },
+    {
+      "path": "EVRPTW_Dataset_Generator/tests/test_customer_spatial.py",
+      "bytes": 1782,
+      "sha256": "f96fdfe41245a3cc5e120f03864f4df87eb02c05425fb488e60a95111ed8eb9f"
+    },
+    {
+      "path": "EVRPTW_Dataset_Generator/tests/test_dataset_archive_tool.py",
+      "bytes": 18498,
+      "sha256": "65151183d3e51ddaa27a040881b8b847983d5b53d5917dafa192c9b01422f495"
+    },
+    {
+      "path": "EVRPTW_Dataset_Generator/tests/test_depot_candidate_policy.py",
+      "bytes": 2599,
+      "sha256": "7a05a2fad7ef5e369b0be3be3e008b15868226e941b4ec104a9416355ea75144"
+    },
+    {
+      "path": "EVRPTW_Dataset_Generator/tests/test_ev_activity.py",
+      "bytes": 1504,
+      "sha256": "f19b5a77f0341ed9ae4dc84cab206edce72eb42737185dc3042de9d088469a03"
+    },
+    {
+      "path": "EVRPTW_Dataset_Generator/tests/test_facilities.py",
+      "bytes": 2316,
+      "sha256": "035213456a041d55b59033f2029e1d2a6538b2165828923091482c39d1ad96ee"
+    },
+    {
+      "path": "EVRPTW_Dataset_Generator/tests/test_frozen_boundaries.py",
+      "bytes": 1559,
+      "sha256": "7d249fbddb57f9b55b9312360b8c480e56edcbcbeaf2299c446872aaa3847250"
+    },
+    {
+      "path": "EVRPTW_Dataset_Generator/tests/test_full_path_toy.py",
+      "bytes": 10774,
+      "sha256": "e55377c095eebdfb29590d787dbd2a17db738c01f234bb07bea0b735264c8911"
+    },
+    {
+      "path": "EVRPTW_Dataset_Generator/tests/test_hpms_match.py",
+      "bytes": 3493,
+      "sha256": "eeed0ad06581c854f3b9a9390ba5b6b2554a64a20339b518f040c38278db9b0c"
+    },
+    {
+      "path": "EVRPTW_Dataset_Generator/tests/test_moves_speed.py",
+      "bytes": 1288,
+      "sha256": "c0b39e66f12e036ed76b0f6dd3b97527f0c4b3da359f82ad06890e0c3211f95d"
+    },
+    {
+      "path": "EVRPTW_Dataset_Generator/tests/test_nsi.py",
+      "bytes": 3462,
+      "sha256": "0a2ca7421a95c494b1892c69f9bdcfeedeff0a9d70eb8de7eba933f3cecfc6b1"
+    },
+    {
+      "path": "EVRPTW_Dataset_Generator/tests/test_operational.py",
+      "bytes": 3838,
+      "sha256": "d7d53c0e1f54fc3bc964e8f2465b06f39310d0f567f1ce4871aad356c12fdc14"
+    },
+    {
+      "path": "EVRPTW_Dataset_Generator/tests/test_operational_acceptance.py",
+      "bytes": 3507,
+      "sha256": "95cc677991e846747df6926b524e5348acb2cd9b0c2083e28efcd7f996c15325"
+    },
+    {
+      "path": "EVRPTW_Dataset_Generator/tests/test_osm_graph.py",
+      "bytes": 1208,
+      "sha256": "0071471076e6647475f83e7dfda3d853d1006fa5ab3e0950c79561c577ac2f5a"
+    },
+    {
+      "path": "EVRPTW_Dataset_Generator/tests/test_protected_connectivity.py",
+      "bytes": 2498,
+      "sha256": "f059892cdc9e3b293cb726171bfdead008d2fa56077e8eb88d4637b897f34a40"
+    },
+    {
+      "path": "EVRPTW_Dataset_Generator/tests/test_reconstruction.py",
+      "bytes": 14080,
+      "sha256": "b2bf41ad4f63e4208226972d6a5b17ed2b93ee318dd1205c1bc3cb40778e1888"
+    },
+    {
+      "path": "EVRPTW_Dataset_Generator/tests/test_release_discipline.py",
+      "bytes": 15374,
+      "sha256": "7b7afca52f5b21e61771901b25b7070ff90f89e10fc1c86dc6662b45e7983367"
+    },
+    {
+      "path": "EVRPTW_Dataset_Generator/tests/test_report_control.py",
+      "bytes": 13616,
+      "sha256": "9b2aa8155f834b6f4c262aacb60259e7f9561cd26267a051f826c1d56b9e2d92"
+    },
+    {
+      "path": "EVRPTW_Dataset_Generator/tests/test_runtime_supervisor.py",
+      "bytes": 10527,
+      "sha256": "881867a98ebeef7a0ca48289102ac48ea27114f4e39ceb56af80e6876f82fc31"
+    },
+    {
+      "path": "EVRPTW_Dataset_Generator/tests/test_selection_capsule.py",
+      "bytes": 5700,
+      "sha256": "e176645fcc17b8b6fbc06998c4c869624e5e081b2866a0fbb5d01a1f0f972a60"
+    },
+    {
+      "path": "EVRPTW_Dataset_Generator/tests/test_service_access.py",
+      "bytes": 4576,
+      "sha256": "ec02d01e6aabc727844320a92daf9be60c8f2ac0ffc32176d916d40534fdb8fa"
+    },
+    {
+      "path": "EVRPTW_Dataset_Generator/tests/test_source_preparation.py",
+      "bytes": 1553,
+      "sha256": "2381fcdf2d73d12fb4e753cf7c8892b3fc2fc78fcc3a7ab1811bc557bbcc1dd0"
+    },
+    {
+      "path": "EVRPTW_Dataset_Generator/tests/test_speed.py",
+      "bytes": 5947,
+      "sha256": "f4685e33e55ec22d36310958eec19bc5f7f5ab6c47b1b5f57a902811994269b8"
+    },
+    {
+      "path": "EVRPTW_Dataset_Generator/tests/test_stage2.py",
+      "bytes": 41939,
+      "sha256": "959531c57f885d725552f1e15db7fb578258700218c36cc242576bc97a74ca5e"
+    },
+    {
+      "path": "EVRPTW_Dataset_Generator/tests/test_stage2_repair.py",
+      "bytes": 12418,
+      "sha256": "d9ae78f86ee883a54bd674f1444ac5c67defc1005a73464a7d0854a292d2ca94"
+    },
+    {
+      "path": "EVRPTW_Dataset_Generator/tests/test_stage2_spatial.py",
+      "bytes": 26375,
+      "sha256": "45bcc5d3499a9107e222f35f6791e127f6ad142bc6193b1b9791a1d0728e0ddd"
+    },
+    {
+      "path": "EVRPTW_Dataset_Generator/tests/test_terminal_access.py",
+      "bytes": 2204,
+      "sha256": "ce61e213cba854249c85388271d9dd9a5a6c00193a7ac2e775c768ae07c1c6c6"
+    },
+    {
+      "path": "EVRPTW_Dataset_Generator/tests/test_visualization.py",
+      "bytes": 610,
+      "sha256": "6e877e67725a9af99bcf72024a1f960d75691f1f41de714ad551dfc2fb0a09cf"
+    },
+    {
+      "path": "LICENSE",
+      "bytes": 845,
+      "sha256": "a23b0cb7f5b24bb0f974170acea82d196af57ad85f5749531a8fdb1e20dcd811"
+    },
+    {
+      "path": "README.md",
+      "bytes": 7409,
+      "sha256": "d02da7b271ae42b1e684f03d3bbb339be52afbb7a46ebecbb5f472f986a52b26"
+    },
+    {
+      "path": "REVIEW.md",
+      "bytes": 3996,
+      "sha256": "f69bc7a70331059ef24c8099904330f528099dbe6373df1a391f63ad82ab0191"
+    },
+    {
+      "path": "THIRD_PARTY_NOTICES.md",
+      "bytes": 5756,
+      "sha256": "742dc5122f06d38f852d056a82c677f532d9082b403767cb0a672e8f677594d0"
+    },
+    {
+      "path": "configs/demo/generation.json",
+      "bytes": 222,
+      "sha256": "1a9de117c4fdb164f9e178ec15f421edfb215dae988c1e7c115fc52e5e154aba"
+    },
+    {
+      "path": "configs/demo/generation_profile.json",
+      "bytes": 3951,
+      "sha256": "d8856ff7b2b4fa800378410082c4c78a9cc7687f171149d51a5ba25bf8dcfb0a"
+    },
+    {
+      "path": "configs/evaluation/final_protocol.json",
+      "bytes": 463,
+      "sha256": "c7bb4a26079e113198543bea91e830f807e7bf545067952b4512d6a7549cac78"
+    },
+    {
+      "path": "configs/paper/alignment_status.json",
+      "bytes": 581,
+      "sha256": "eed77e4144240bc58c1f916f1e4b291dc3e6f8a816714f4b2995661aa9e7e8cb"
+    },
+    {
+      "path": "configs/paper/objective.json",
+      "bytes": 1451,
+      "sha256": "7ac6e66e54d0230ed9b89a3a06363053709419447924c30cd17dbfb8554508e8"
+    },
+    {
+      "path": "configs/training/am_evrptw_euclid_100.json",
+      "bytes": 6653,
+      "sha256": "335b6f4af4ba80607bf34e76a3d1b8521cbaf2717124f428a8ce6823a915e180"
+    },
+    {
+      "path": "configs/training/am_evrptw_road_100.json",
+      "bytes": 7139,
+      "sha256": "d36d3657430d0b6ce24565a9bc1fc51d558595213e761706711951e27de51d43"
+    },
+    {
+      "path": "configs/training/am_evrptw_road_1000.json",
+      "bytes": 6102,
+      "sha256": "fb2f6c242a6f7e640db9f9354b7b54d329cc9d585740f1b8f1bd87ae87166931"
+    },
+    {
+      "path": "configs/training/am_evrptw_road_500.json",
+      "bytes": 6097,
+      "sha256": "805e9a2ff25a3cef0acc948967ad49163ff4b7c1b9d94dde684afff18d2dbf8b"
+    },
+    {
+      "path": "configs/training/drl_ts_euclid_100.json",
+      "bytes": 6114,
+      "sha256": "62cfd8cc9f83f295d42b33eb4c7e2e29dec6ac6fd5262119616821e29afde51b"
+    },
+    {
+      "path": "configs/training/drl_ts_road_100.json",
+      "bytes": 6092,
+      "sha256": "955d2c9984933c6c39a450707d8011889313ca738bcaad240ec5586014ca061d"
+    },
+    {
+      "path": "configs/training/drl_ts_road_1000.json",
+      "bytes": 5948,
+      "sha256": "f41352034a739b70267094fc33d54271fac92afc93352ef415d57626677ca617"
+    },
+    {
+      "path": "configs/training/drl_ts_road_500.json",
+      "bytes": 7981,
+      "sha256": "449106e7f11ea6d33757e570a769186e373b86cc58d99b00891a7fc3c0bb5a5b"
+    },
+    {
+      "path": "configs/training/evrptw_rl_euclid_100.json",
+      "bytes": 7888,
+      "sha256": "57b0c9a347bc839b59f30d7fb79442696a0db66319a320e4307a5aa9cab13f4a"
+    },
+    {
+      "path": "configs/training/evrptw_rl_road_100.json",
+      "bytes": 7871,
+      "sha256": "fe6fdb604b14be01562c1d1d0bd0c3c2d734afe62c03581d444372451647faba"
+    },
+    {
+      "path": "configs/training/evrptw_rl_road_1000.json",
+      "bytes": 7866,
+      "sha256": "e78df7409b253859f5a8ddeff9f5e99c15e2d1b584e158eb3b5d4a9aea4df3bd"
+    },
+    {
+      "path": "configs/training/evrptw_rl_road_500.json",
+      "bytes": 7843,
+      "sha256": "6a0e1bf997bf9a530576a34e05c222cd3e7f536cbbd02bee79887bedc5e16c43"
+    },
+    {
+      "path": "configs/training/learning_inventory.json",
+      "bytes": 37220,
+      "sha256": "068c2aec714183aa470b496e79a5beb004161e0f6149c561a62721615af160e8"
+    },
+    {
+      "path": "configs/training/rrnco_euclid_100.json",
+      "bytes": 5877,
+      "sha256": "2ab94287e9372ff81caa156ada6a9212f5e4dbafd48e5f4e5e1e7412030269b6"
+    },
+    {
+      "path": "configs/training/rrnco_road_100.json",
+      "bytes": 5855,
+      "sha256": "ce4bbd0c2f4608568952d3a8ea631a74f75018880a2db30e2b37526f905b85ba"
+    },
+    {
+      "path": "configs/training/rrnco_road_1000.json",
+      "bytes": 5863,
+      "sha256": "96ab2987d4af3c6256ba880abc5f5fb098b8503668009d5b0772a4f16fef2346"
+    },
+    {
+      "path": "configs/training/rrnco_road_500.json",
+      "bytes": 7288,
+      "sha256": "4aac033a98b764063a48de06797f3a14275dce426ffeecc8bb32f829dbfb3b26"
+    },
+    {
+      "path": "configs/training/terran_euclid_100.json",
+      "bytes": 16406,
+      "sha256": "e5f1b63fddb09d70c35c47c5190a87b7ab516802f6fa5339db68e553a73a63e1"
+    },
+    {
+      "path": "configs/training/terran_road_100.json",
+      "bytes": 16839,
+      "sha256": "eb40ed2599cde824cdca601f14bf712216d9081358af3f81808664bdb0023729"
+    },
+    {
+      "path": "configs/training/terran_road_1000.json",
+      "bytes": 5587,
+      "sha256": "8a7e9bd06704fd5533a3fb4bcccb9db94accbb2b42f0f263869f5b341dd40bd6"
+    },
+    {
+      "path": "configs/training/terran_road_500.json",
+      "bytes": 5579,
+      "sha256": "c2b723a5f3c7bb01dde342098544a34be51e67c573ed009c54066d3c1afadd6a"
+    },
+    {
+      "path": "docs/ACCEPTANCE.md",
+      "bytes": 15078,
+      "sha256": "e0d99aec350cc7ed48233db903adea4bfe691b176fe0ad9c2cfd2f2269c20b6a"
+    },
+    {
+      "path": "docs/AI_USE.md",
+      "bytes": 1232,
+      "sha256": "ced8dbef27d39cce46638b308e59472dcf0975db19a1acfc5f4cf85e98644743"
+    },
+    {
+      "path": "docs/BASELINES.md",
+      "bytes": 4185,
+      "sha256": "e953c074fabf25de680aa4d87a8766ad558e455eb59d4fb8b7a88b6d7ab3d77e"
+    },
+    {
+      "path": "docs/BENCHMARK.md",
+      "bytes": 4252,
+      "sha256": "192e88a4a41fa2c27f553dd1c816b321d252aa50624a767025e9bc6c5dd843d6"
+    },
+    {
+      "path": "docs/DATASET.md",
+      "bytes": 5928,
+      "sha256": "0508aae829f421d000ff356291d018397ae8401712fdbf98734017d04bdfc7fa"
+    },
+    {
+      "path": "docs/DATA_AVAILABILITY.md",
+      "bytes": 7024,
+      "sha256": "96bab6be801d4f4feb15bf433ff70f6b21ff023435e3a18a5cdd824157dac7c4"
+    },
+    {
+      "path": "docs/GENERATION.md",
+      "bytes": 17460,
+      "sha256": "7e08d3de6eeb28ff54013ccd9e01801996e7bb993f245f650801a8caa4709f05"
+    },
+    {
+      "path": "docs/LICENSING.md",
+      "bytes": 6840,
+      "sha256": "8f73ea721372dea623dca5053bacdb4c4cbc241d36f722c78d1b06c24198567a"
+    },
+    {
+      "path": "docs/QUICKSTART.md",
+      "bytes": 2029,
+      "sha256": "2852e48354a83a2ba7e2885116e555d3ce151c1b236832e64ab01b5fafd7e348"
+    },
+    {
+      "path": "docs/QUICK_DEMOS.md",
+      "bytes": 6030,
+      "sha256": "c49e2067ff0b42c2bb2730353102b0c84766e693be3f0609fd3a707fb9546aa6"
+    },
+    {
+      "path": "docs/REPRODUCING_RESULTS.md",
+      "bytes": 4911,
+      "sha256": "48bfc28148c5b9a9df4e3e4fa637bbdfc5ec1bf1a6b2922aef61e77f1f66ee59"
+    },
+    {
+      "path": "docs/REVIEW_AUDIT.md",
+      "bytes": 4188,
+      "sha256": "283baa01490eebce779760bfcecbc25cc5f74132d48c035b5d5abe895b26c30d"
+    },
+    {
+      "path": "docs/TRAINING_AND_EVALUATION.md",
+      "bytes": 12944,
+      "sha256": "fb37daeb96b09b1b2719c7d96dfcb191d086b9e30094a59b736b1ff5accf18fb"
+    },
+    {
+      "path": "docs/TROUBLESHOOTING.md",
+      "bytes": 2329,
+      "sha256": "67bdd875fd87eb302dbb060674316c5bda5905d3808a8710614f5103eb2ceec3"
+    },
+    {
+      "path": "eval_plot.py",
+      "bytes": 377,
+      "sha256": "650eb79e8510c74d0a51da5275a778cd462019cad62c805ae9e3e1f203d69136"
+    },
+    {
+      "path": "examples/evaluation/README.md",
+      "bytes": 1844,
+      "sha256": "6a1a692efdce8d0a09c5c8c27211d43bb553be0063ba69ceb98a112fc237ed70"
+    },
+    {
+      "path": "examples/evaluation/road_100.json",
+      "bytes": 2991926,
+      "sha256": "a4492cdfc16754ac4e7e6f57a98f40972b3fbcf6421cba691c596e194997320a"
+    },
+    {
+      "path": "examples/evaluation/verification.json",
+      "bytes": 818,
+      "sha256": "a3a777854ab165ed0e44c4ba94ca73761ca5553423b9be35443812d7bddf5569"
+    },
+    {
+      "path": "examples/expected/am_evrptw_road100_30.json",
+      "bytes": 3304,
+      "sha256": "08c88e23e4544e9bf8dc37b6f275c242e3d51dfbfad113f2e9f6285bf4375313"
+    },
+    {
+      "path": "examples/expected/checkpoint_acceptance.json",
+      "bytes": 10398,
+      "sha256": "22f96f208276c3c511bee8232cdd0357fea75232cc0f54345e3b87c21aec0713"
+    },
+    {
+      "path": "examples/expected/drl_ts_road100_30.json",
+      "bytes": 3312,
+      "sha256": "4129c44567a624dc0ec51e86efb2353346b031dc75b33f6d5038d0d14beab4af"
+    },
+    {
+      "path": "examples/expected/evrptw_rl_road100_30.json",
+      "bytes": 3304,
+      "sha256": "ef75d3149aecf36d52ca94543265036b6b688a3ea87ff923912af40ba435c16f"
+    },
+    {
+      "path": "examples/expected/gradient_smoke.json",
+      "bytes": 3316,
+      "sha256": "a349cff8199acb004542b1c87b402da31a466bfb9375fc5a1ce711acc6429312"
+    },
+    {
+      "path": "examples/expected/quick_demos/README.md",
+      "bytes": 1357,
+      "sha256": "4b1fe7a96ee327ac19f06bdc04d21ebcc50f26c2d61d7efd1d1a5f04aa399ec6"
+    },
+    {
+      "path": "examples/expected/quick_demos/evaluate_demo/result.json",
+      "bytes": 4121,
+      "sha256": "afd6c557f35015566b9f77ec5c8ada708a37044ebc36ac44e8c0533ee7b4bef8"
+    },
+    {
+      "path": "examples/expected/quick_demos/evaluate_demo/routes.svg",
+      "bytes": 12313,
+      "sha256": "0ef9bdc084261fbd985d664a90592042960df32b601c82d63082d5de6da40dbb"
+    },
+    {
+      "path": "examples/expected/quick_demos/evaluate_real_am/result.json",
+      "bytes": 3662,
+      "sha256": "23027395573d9799012a0e380b80fcf3375fb8d11d7f4d530fadaa103b02f4cb"
+    },
+    {
+      "path": "examples/expected/quick_demos/evaluate_real_am/routes.svg",
+      "bytes": 65195,
+      "sha256": "d8855b2308680603b591a16905ff24a2bf6bc72764221147f340b816aa17b2ef"
+    },
+    {
+      "path": "examples/expected/quick_demos/training/loss.jsonl",
+      "bytes": 3809,
+      "sha256": "354979d5d0fde0940927c5f3c7f621889f09657eb87e0f67c35d7f4137531abf"
+    },
+    {
+      "path": "examples/expected/quick_demos/training/summary.json",
+      "bytes": 1836,
+      "sha256": "60f258af356b3867dc4f61304879bc96e10680ccfa838029835ab8e03df55711"
+    },
+    {
+      "path": "examples/expected/rrnco_road100_30.json",
+      "bytes": 3259,
+      "sha256": "3c80221c6bbc998272e68cb8f80bddb99ab675baf62de737ff130def88af95a7"
+    },
+    {
+      "path": "examples/expected/terran_road100_30.json",
+      "bytes": 3218,
+      "sha256": "84b5daefebe4538163cede83761d5d94564f7626d11b08f02134c04ef7355a42"
+    },
+    {
+      "path": "examples/generation/fixture/directed_speeds.parquet",
+      "bytes": 24152,
+      "sha256": "78d99b2ecbb13d4f55e2b9b70b47b4fa7683752fcdcec99b78ca2a9eb21f1b2b"
+    },
+    {
+      "path": "examples/generation/fixture/fixture_manifest.json",
+      "bytes": 1779,
+      "sha256": "2678a42a44e43d614ec4b849024ee83290be7a0e21b5de18bb1be53480202f69"
+    },
+    {
+      "path": "examples/generation/fixture/order_templates.parquet",
+      "bytes": 9203,
+      "sha256": "163b7c0c8bfa3239037ed3c89576bc0a33803d550d1754b6ff9c60e4bed08a24"
+    },
+    {
+      "path": "examples/generation/fixture/road.graphml",
+      "bytes": 50280,
+      "sha256": "9f0b9af573a2d69eb38229fb5ca221dcc266c8302c86dd0db5c616382bb8a75a"
+    },
+    {
+      "path": "examples/generation/fixture/terminal_pool.parquet",
+      "bytes": 21831,
+      "sha256": "c2ff60532bf9e67ed3cd6ff535e1f2f95a9898b845cafbea568eb4f7f0dd638b"
+    },
+    {
+      "path": "examples/quick_train/README.md",
+      "bytes": 1306,
+      "sha256": "b91e6ffff3039f4c4c217c72c18cf4dd5196ebcdf2703c3c48d3c0e5860bd7da"
+    },
+    {
+      "path": "examples/quick_train/families/demo_family_train_000/family_manifest.json",
+      "bytes": 5226,
+      "sha256": "5a960eedf5e516eb6204e6ce2b4565794d1cd1e8183d1b74e93029efc6adb8c2"
+    },
+    {
+      "path": "examples/quick_train/families/demo_family_train_000/matrices/distance_matrix_km.npy",
+      "bytes": 612,
+      "sha256": "d02f5f17189d2b1d56a5f46a1fb642a86c5e07f6b81717adc720e78119786725"
+    },
+    {
+      "path": "examples/quick_train/families/demo_family_train_000/matrices/distance_path_travel_time_s.npy",
+      "bytes": 612,
+      "sha256": "d9ef6942c67be7503d7a2dedd04c3453a0d2370fe847fd2ec98ea924f5de88f6"
+    },
+    {
+      "path": "examples/quick_train/families/demo_family_train_000/matrices/running_time_path_distance_km.npy",
+      "bytes": 612,
+      "sha256": "a291a5fe656d523f71b01f131f4cc0225aa6e71152db0918f193c7e1fc6614c4"
+    },
+    {
+      "path": "examples/quick_train/families/demo_family_train_000/matrices/running_time_shortest_matrix_s.npy",
+      "bytes": 612,
+      "sha256": "0c52d3776ac2e519fb20b55f79772045cc347d359f2c34aa1c1443c816c29007"
+    },
+    {
+      "path": "examples/quick_train/families/demo_family_train_000/terminal_index.parquet",
+      "bytes": 15297,
+      "sha256": "0c9f795384460a6c0e6152b3e8ccfce642190cf943d6c9f2c632a7369bd50839"
+    },
+    {
+      "path": "examples/quick_train/families/demo_family_train_000/verification.json",
+      "bytes": 1579,
+      "sha256": "8270ff6464d307fa2a7b1d38dd78afa320b87e99b1c730246eb7ede32855ef19"
+    },
+    {
+      "path": "examples/quick_train/families/demo_family_train_000/views/demo_train_000/charging_attributes.npz",
+      "bytes": 461,
+      "sha256": "93b0f684905240e25992c3c9d0341449cb3abd515e985d297f14711477f07293"
+    },
+    {
+      "path": "examples/quick_train/families/demo_family_train_000/views/demo_train_000/customer_attributes.npz",
+      "bytes": 2922,
+      "sha256": "85bdbe507fdb5dc6ab47ccb122a3d2d3e1cf40a99ef1e4054f55c369b609c057"
+    },
+    {
+      "path": "examples/quick_train/families/demo_family_train_000/views/demo_train_000/terminal_parent_indices.npy",
+      "bytes": 172,
+      "sha256": "d403c47a54cea8d4b345da24023b046b31617bf05653ee270ec8f3107625179e"
+    },
+    {
+      "path": "examples/quick_train/families/demo_family_train_000/views/demo_train_000/view_manifest.json",
+      "bytes": 6424,
+      "sha256": "3a61a63877ecf925a03b470a2de18b3d82e7c4017658f5f2595b67ee89e82647"
+    },
+    {
+      "path": "examples/quick_train/families/demo_family_train_000/views/demo_train_000_nested/charging_attributes.npz",
+      "bytes": 454,
+      "sha256": "cb53b1988a226f34c0d94d9edaf3af0236e09436b96bfd4b59864ba4219d9899"
+    },
+    {
+      "path": "examples/quick_train/families/demo_family_train_000/views/demo_train_000_nested/customer_attributes.npz",
+      "bytes": 2833,
+      "sha256": "5e515401d5973f988cc568dce2f82c4bdf3f5cf19d18d0e6ff78b0ba1257caa5"
+    },
+    {
+      "path": "examples/quick_train/families/demo_family_train_000/views/demo_train_000_nested/terminal_parent_indices.npy",
+      "bytes": 152,
+      "sha256": "c056862021b66fd763b07930c871a10578a0368230f4c01fe31e54f3ca3f11d9"
+    },
+    {
+      "path": "examples/quick_train/families/demo_family_train_000/views/demo_train_000_nested/view_manifest.json",
+      "bytes": 6419,
+      "sha256": "ad96edafbc7803dd86d892caef6103652199b74dd4c597235b8eae90a36c3801"
+    },
+    {
+      "path": "examples/training/road_100/README.md",
+      "bytes": 3666,
+      "sha256": "222b14b41407f937d45ee03b9c7c072fd14bd3c92720dca88213fa32d5303a00"
+    },
+    {
+      "path": "examples/training/road_100/instances/iv_38209784bbd529e20dcb731d.json",
+      "bytes": 3003692,
+      "sha256": "f8c12904fa44ecc5a591ac280b9a302982f3db9ff842659c8c1a0f76e2964983"
+    },
+    {
+      "path": "examples/training/road_100/instances/iv_dbe0ddae27bf5257359dc80d.json",
+      "bytes": 3005808,
+      "sha256": "41b943c36b732f6a6ec60cebe2d3da13ec384d8c879092b8c7cfb780d72a1473"
+    },
+    {
+      "path": "examples/training/road_100/sample_manifest.json",
+      "bytes": 2312,
+      "sha256": "06a6d9f318fbcc66d66a3b6a4b813ca3ebc3b765104c4248b0a6a887072e0c97"
+    },
+    {
+      "path": "examples/training/road_100/verification.json",
+      "bytes": 13369,
+      "sha256": "6e22f98e8b82728a20afca33b0d0205cbed4e212c11d9b78df24a592682ba84e"
+    },
+    {
+      "path": "generate.sh",
+      "bytes": 311,
+      "sha256": "4ee6e5692a7626c7186e0f58d8af8e3c859931634f7aeda4318071ed32a1dacb"
+    },
+    {
+      "path": "licenses/TERRAN.Apache-2.0.txt",
+      "bytes": 11357,
+      "sha256": "c71d239df91726fc519c6eb72d318ec65820627232b2f796219e87dcf35d0ab4"
+    },
+    {
+      "path": "licenses/attention-learn-to-route.MIT.txt",
+      "bytes": 1068,
+      "sha256": "e9eee47b6c6be05a17c1b1916dafcbdf571b799785422686b65b40f74688e3d0"
+    },
+    {
+      "path": "licenses/real-routing-nco.MIT.txt",
+      "bytes": 1062,
+      "sha256": "820243863426b8f6ce5385a8e4bbe14f2da8675beec6d463e481c74bf251a491"
+    },
+    {
+      "path": "manifests/acceptance.json",
+      "bytes": 6592,
+      "sha256": "569ee25cb30d8fdda7fc598c78540bac45daccb71e46183fcaa8d572199fd0de"
+    },
+    {
+      "path": "manifests/quick_demo_acceptance.json",
+      "bytes": 4884,
+      "sha256": "fb4b498e35db9ff54ee983a635add38d789ae871dcd4226ce6ccea8c58c89a21"
+    },
+    {
+      "path": "manifests/release.json",
+      "bytes": 2229,
+      "sha256": "03bfb80a2ede8c5752b94e240a59403afac465b192faf5eebeec706bc2d57242"
+    },
+    {
+      "path": "manifests/reviewer_workflows_acceptance.json",
+      "bytes": 24021,
+      "sha256": "f3e386c96a447103fbaf7c3ab200b78d96ff3a0624d4cfe4ce9336f1fd0f4bd8"
+    },
+    {
+      "path": "pyproject.toml",
+      "bytes": 916,
+      "sha256": "474564f5fc55f87ac64d0ebf229f609cf54673a1b8df895f733346c2f0fcaa1e"
+    },
+    {
+      "path": "requirements/core.txt",
+      "bytes": 100,
+      "sha256": "1e7f86eed9dde777fcd4062b5f9f717e9d86eb7cbff624cb1280ddc0b4af311e"
+    },
+    {
+      "path": "requirements/learning.txt",
+      "bytes": 66,
+      "sha256": "00cf4fe15d1fcb2c95f297a6dcc63ffdc2a1b3c66bcb5423b74634058e34ea3f"
+    },
+    {
+      "path": "requirements/test.txt",
+      "bytes": 14,
+      "sha256": "979ce722361b8537d17af4ff4909fb35a47a0521f0371756544e858759e691f7"
+    },
+    {
+      "path": "requirements/tested-cpu-environment.txt",
+      "bytes": 550,
+      "sha256": "79d5a65aad4465dbfe84804eb90056dec52836fc948cb3728c2f69dd313864dd"
+    },
+    {
+      "path": "scripts/evaluate.py",
+      "bytes": 9029,
+      "sha256": "0d04e3c028a8db73dfc86cea3e806e2c6a7a48ed0ac6b8a946a4dfce10c55aac"
+    },
+    {
+      "path": "scripts/generate_demo.py",
+      "bytes": 12592,
+      "sha256": "602eca074c1a8316946e30dd02bfb7aae0c2efbc1e812361bbc5c7a4d2ac4404"
+    },
+    {
+      "path": "scripts/learning_demo.py",
+      "bytes": 9137,
+      "sha256": "c16687e67526902fe89c54105565ede8a1f3a3af20caac2500052c94397d56fc"
+    },
+    {
+      "path": "scripts/learning_smoke.py",
+      "bytes": 8449,
+      "sha256": "e114f6fc47285a891b39e3257d4c979aa2c367504990fed4770059ef54cc1764"
+    },
+    {
+      "path": "scripts/prepare_generation_snapshot.py",
+      "bytes": 2793,
+      "sha256": "424e09f024e60f267f6de66a70f2199def974f0ee91a1c193b914eb11951748d"
+    },
+    {
+      "path": "scripts/quick_train.py",
+      "bytes": 11353,
+      "sha256": "6f60eb4ff1899ac25335428327bdeca9bb9e2951ccebeb10d671aaa88bdec179"
+    },
+    {
+      "path": "scripts/review_generate.py",
+      "bytes": 23717,
+      "sha256": "3390543259d352a12ee481e659154fb2a0a2f0d675715d15651c6c9a789e8ebe"
+    },
+    {
+      "path": "scripts/solve_demo.py",
+      "bytes": 2340,
+      "sha256": "daa66c3d81465b6ab3e4fbd1d643fc302ee63295342d955f9825fc8e001677cf"
+    },
+    {
+      "path": "setup.py",
+      "bytes": 532,
+      "sha256": "65d15e844bd20c8e38e18c3ee75587f97eea61173159401c3aaad43e2f33f93a"
+    },
+    {
+      "path": "src/evrptw_db/__init__.py",
+      "bytes": 94,
+      "sha256": "39c4c9c573abed58219af6a3719aa56e70a2661acd4025d900f320eb6f88e2d9"
+    },
+    {
+      "path": "src/evrptw_db/cli.py",
+      "bytes": 4497,
+      "sha256": "2cf8583c896f101fe16281a14574825b1b0dbc13b57522c9831ba8976c4d58fc"
+    },
+    {
+      "path": "src/evrptw_db/reporting.py",
+      "bytes": 5366,
+      "sha256": "e62484b0586dd64c6aabaffc16592bb8c8b6f7b40ccdbf24e67c29874e8adc76"
+    },
+    {
+      "path": "src/evrptw_db/review.py",
+      "bytes": 3485,
+      "sha256": "f07add3ed3fbd6b8111af872d0af5ff3a6002f74ce0a8c9234b2c79a6933183d"
+    },
+    {
+      "path": "src/evrptw_db/route_plot.py",
+      "bytes": 16208,
+      "sha256": "ba8abeddb403da47e4cfcc4ee1d194a52b1274d237c3d6c3a1676777e68709ba"
+    },
+    {
+      "path": "tests/test_generate_entry.py",
+      "bytes": 10598,
+      "sha256": "37863491dff9e87393db3897c2e15d14ccb16dc856c4f9288b86562f6da8d529"
+    },
+    {
+      "path": "tests/test_quick_train.py",
+      "bytes": 2276,
+      "sha256": "bfe03d6ad8e2e47d48c0ec0c6001691ed83b1a9cdefacd2ae7ad9729bce52677"
+    },
+    {
+      "path": "tests/test_review_contract.py",
+      "bytes": 6438,
+      "sha256": "314daf00ca576afe6504b348470772b12d21c12969aa831438a106c0b13c906b"
+    },
+    {
+      "path": "tests/test_route_plot.py",
+      "bytes": 8401,
+      "sha256": "098c8c277f96b250aa8eb85bb20c88104dde35e364fbc904ca3220d355389c0c"
+    },
+    {
+      "path": "tools/verify_delivery.py",
+      "bytes": 2262,
+      "sha256": "302ca7b983d97635583348bbfe749fc65588e63ecdc2efceac2cdd8337527a5e"
+    },
+    {
+      "path": "train.py",
+      "bytes": 22941,
+      "sha256": "fa8664af075756cfa9b577a9741eeee06cd5566fa97caebbd1de419d9a010477"
+    }
+  ]
+}

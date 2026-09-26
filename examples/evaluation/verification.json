@@ -1,0 +1,19 @@
+{
+  "array_value_identity_checks": 31,
+  "charging_station_count": 20,
+  "customer_count": 100,
+  "family_id": "mf_f00002829bd8a1180a26e4cb",
+  "independent_singleton_route_replay": "PASS",
+  "instance_file": "road_100.json",
+  "schema": "canonical_evaluation_example_verification_v1",
+  "scope": "One real T1 evaluation view, not a full benchmark; no view/family overlap with the packaged training sample; geographic pools may be shared by the original T1 protocol",
+  "sha256": "a4492cdfc16754ac4e7e6f57a98f40972b3fbcf6421cba691c596e194997320a",
+  "size_bytes": 2991926,
+  "source_split_id": "test",
+  "source_track_id": "test1_new_seed",
+  "status": "PASS",
+  "training_family_overlap": 0,
+  "training_view_overlap": 0,
+  "view_id": "iv_4073f1928fa0c95f3de64257",
+  "view_specific_certificate_recomputed": "PASS"
+}

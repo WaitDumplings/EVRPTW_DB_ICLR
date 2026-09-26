@@ -1,0 +1,331 @@
+{
+  "schema": "learning_checkpoint_acceptance_v1",
+  "strict_load": "PASS",
+  "tensor_identity": "PASS",
+  "fixed_seed_equivalence": "PASS",
+  "artifacts": [
+    {
+      "artifact_id": "am_evrptw_euclid_100",
+      "status": "PASS",
+      "candidates": 2,
+      "max_steps": 48,
+      "seed": 1234,
+      "instance_id": "demo_train_000",
+      "comparisons": {
+        "routes": true,
+        "success": true,
+        "served_customers": true,
+        "objective_distance_km": true,
+        "vehicles_started": true
+      },
+      "comparison": "Original checkpoint tensors versus cleaned tensors in the same unchanged native inference implementation"
+    },
+    {
+      "artifact_id": "terran_euclid_100",
+      "status": "PASS",
+      "candidates": 2,
+      "max_steps": 48,
+      "seed": 1234,
+      "instance_id": "demo_train_000",
+      "comparisons": {
+        "routes": true,
+        "success": true,
+        "served_customers": true,
+        "objective_distance_km": true,
+        "vehicles_started": true
+      },
+      "comparison": "Original checkpoint tensors versus cleaned tensors in the same unchanged native inference implementation"
+    },
+    {
+      "artifact_id": "evrptw_rl_euclid_100",
+      "status": "PASS",
+      "candidates": 2,
+      "max_steps": 48,
+      "seed": 1234,
+      "instance_id": "demo_train_000",
+      "comparisons": {
+        "routes": true,
+        "success": true,
+        "served_customers": true,
+        "objective_distance_km": true,
+        "vehicles_started": true
+      },
+      "comparison": "Original checkpoint tensors versus cleaned tensors in the same unchanged native inference implementation"
+    },
+    {
+      "artifact_id": "rrnco_euclid_100",
+      "status": "PASS",
+      "candidates": 2,
+      "max_steps": 48,
+      "seed": 1234,
+      "instance_id": "demo_train_000",
+      "comparisons": {
+        "routes": true,
+        "success": true,
+        "served_customers": true,
+        "objective_distance_km": true,
+        "vehicles_started": true
+      },
+      "comparison": "Original checkpoint tensors versus cleaned tensors in the same unchanged native inference implementation"
+    },
+    {
+      "artifact_id": "drl_ts_euclid_100",
+      "status": "PASS",
+      "candidates": 2,
+      "max_steps": 48,
+      "seed": 1234,
+      "instance_id": "demo_train_000",
+      "comparisons": {
+        "routes": true,
+        "success": true,
+        "served_customers": true,
+        "objective_distance_km": true,
+        "vehicles_started": true
+      },
+      "comparison": "Original checkpoint tensors versus cleaned tensors in the same unchanged native inference implementation"
+    },
+    {
+      "artifact_id": "am_evrptw_road_100",
+      "status": "PASS",
+      "candidates": 30,
+      "max_steps": 360,
+      "seed": 1234,
+      "instance_id": "iv_4073f1928fa0c95f3de64257",
+      "comparisons": {
+        "routes": true,
+        "success": true,
+        "served_customers": true,
+        "objective_distance_km": true,
+        "vehicles_started": true
+      },
+      "comparison": "Original checkpoint tensors versus cleaned tensors in the same unchanged native inference implementation"
+    },
+    {
+      "artifact_id": "terran_road_100",
+      "status": "PASS",
+      "candidates": 2,
+      "max_steps": 48,
+      "seed": 1234,
+      "instance_id": "demo_train_000",
+      "comparisons": {
+        "routes": true,
+        "success": true,
+        "served_customers": true,
+        "objective_distance_km": true,
+        "vehicles_started": true
+      },
+      "comparison": "Original checkpoint tensors versus cleaned tensors in the same unchanged native inference implementation"
+    },
+    {
+      "artifact_id": "evrptw_rl_road_100",
+      "status": "PASS",
+      "candidates": 2,
+      "max_steps": 48,
+      "seed": 1234,
+      "instance_id": "demo_train_000",
+      "comparisons": {
+        "routes": true,
+        "success": true,
+        "served_customers": true,
+        "objective_distance_km": true,
+        "vehicles_started": true
+      },
+      "comparison": "Original checkpoint tensors versus cleaned tensors in the same unchanged native inference implementation"
+    },
+    {
+      "artifact_id": "rrnco_road_100",
+      "status": "PASS",
+      "candidates": 2,
+      "max_steps": 48,
+      "seed": 1234,
+      "instance_id": "demo_train_000",
+      "comparisons": {
+        "routes": true,
+        "success": true,
+        "served_customers": true,
+        "objective_distance_km": true,
+        "vehicles_started": true
+      },
+      "comparison": "Original checkpoint tensors versus cleaned tensors in the same unchanged native inference implementation"
+    },
+    {
+      "artifact_id": "drl_ts_road_100",
+      "status": "PASS",
+      "candidates": 2,
+      "max_steps": 48,
+      "seed": 1234,
+      "instance_id": "demo_train_000",
+      "comparisons": {
+        "routes": true,
+        "success": true,
+        "served_customers": true,
+        "objective_distance_km": true,
+        "vehicles_started": true
+      },
+      "comparison": "Original checkpoint tensors versus cleaned tensors in the same unchanged native inference implementation"
+    },
+    {
+      "artifact_id": "am_evrptw_road_500",
+      "status": "PASS",
+      "candidates": 2,
+      "max_steps": 48,
+      "seed": 1234,
+      "instance_id": "demo_train_000",
+      "comparisons": {
+        "routes": true,
+        "success": true,
+        "served_customers": true,
+        "objective_distance_km": true,
+        "vehicles_started": true
+      },
+      "comparison": "Original checkpoint tensors versus cleaned tensors in the same unchanged native inference implementation"
+    },
+    {
+      "artifact_id": "terran_road_500",
+      "status": "PASS",
+      "candidates": 2,
+      "max_steps": 48,
+      "seed": 1234,
+      "instance_id": "demo_train_000",
+      "comparisons": {
+        "routes": true,
+        "success": true,
+        "served_customers": true,
+        "objective_distance_km": true,
+        "vehicles_started": true
+      },
+      "comparison": "Original checkpoint tensors versus cleaned tensors in the same unchanged native inference implementation"
+    },
+    {
+      "artifact_id": "evrptw_rl_road_500",
+      "status": "PASS",
+      "candidates": 2,
+      "max_steps": 48,
+      "seed": 1234,
+      "instance_id": "demo_train_000",
+      "comparisons": {
+        "routes": true,
+        "success": true,
+        "served_customers": true,
+        "objective_distance_km": true,
+        "vehicles_started": true
+      },
+      "comparison": "Original checkpoint tensors versus cleaned tensors in the same unchanged native inference implementation"
+    },
+    {
+      "artifact_id": "rrnco_road_500",
+      "status": "PASS",
+      "candidates": 2,
+      "max_steps": 48,
+      "seed": 1234,
+      "instance_id": "demo_train_000",
+      "comparisons": {
+        "routes": true,
+        "success": true,
+        "served_customers": true,
+        "objective_distance_km": true,
+        "vehicles_started": true
+      },
+      "comparison": "Original checkpoint tensors versus cleaned tensors in the same unchanged native inference implementation"
+    },
+    {
+      "artifact_id": "drl_ts_road_500",
+      "status": "PASS",
+      "candidates": 2,
+      "max_steps": 48,
+      "seed": 1234,
+      "instance_id": "demo_train_000",
+      "comparisons": {
+        "routes": true,
+        "success": true,
+        "served_customers": true,
+        "objective_distance_km": true,
+        "vehicles_started": true
+      },
+      "comparison": "Original checkpoint tensors versus cleaned tensors in the same unchanged native inference implementation"
+    },
+    {
+      "artifact_id": "am_evrptw_road_1000",
+      "status": "PASS",
+      "candidates": 2,
+      "max_steps": 48,
+      "seed": 1234,
+      "instance_id": "demo_train_000",
+      "comparisons": {
+        "routes": true,
+        "success": true,
+        "served_customers": true,
+        "objective_distance_km": true,
+        "vehicles_started": true
+      },
+      "comparison": "Original checkpoint tensors versus cleaned tensors in the same unchanged native inference implementation"
+    },
+    {
+      "artifact_id": "terran_road_1000",
+      "status": "PASS",
+      "candidates": 2,
+      "max_steps": 48,
+      "seed": 1234,
+      "instance_id": "demo_train_000",
+      "comparisons": {
+        "routes": true,
+        "success": true,
+        "served_customers": true,
+        "objective_distance_km": true,
+        "vehicles_started": true
+      },
+      "comparison": "Original checkpoint tensors versus cleaned tensors in the same unchanged native inference implementation"
+    },
+    {
+      "artifact_id": "rrnco_road_1000",
+      "status": "PASS",
+      "candidates": 2,
+      "max_steps": 48,
+      "seed": 1234,
+      "instance_id": "demo_train_000",
+      "comparisons": {
+        "routes": true,
+        "success": true,
+        "served_customers": true,
+        "objective_distance_km": true,
+        "vehicles_started": true
+      },
+      "comparison": "Original checkpoint tensors versus cleaned tensors in the same unchanged native inference implementation"
+    },
+    {
+      "artifact_id": "drl_ts_road_1000",
+      "status": "PASS",
+      "candidates": 2,
+      "max_steps": 48,
+      "seed": 1234,
+      "instance_id": "demo_train_000",
+      "comparisons": {
+        "routes": true,
+        "success": true,
+        "served_customers": true,
+        "objective_distance_km": true,
+        "vehicles_started": true
+      },
+      "comparison": "Original checkpoint tensors versus cleaned tensors in the same unchanged native inference implementation"
+    },
+    {
+      "artifact_id": "evrptw_rl_road_1000",
+      "status": "PASS",
+      "candidates": 2,
+      "max_steps": 48,
+      "seed": 1234,
+      "instance_id": "demo_train_000",
+      "comparisons": {
+        "routes": true,
+        "success": true,
+        "served_customers": true,
+        "objective_distance_km": true,
+        "vehicles_started": true
+      },
+      "comparison": "Original checkpoint tensors versus cleaned tensors in the same unchanged native inference implementation"
+    }
+  ],
+  "full_training": "NOT RUN",
+  "resumption": "NOT SUPPORTED: inference-only export",
+  "evaluation_scope": "Five genuine Road-100 checkpoints, one real Cus100 view, 30 sampled candidates each; other regimes only receive shape/metadata/tensor/equivalence checks."
+}

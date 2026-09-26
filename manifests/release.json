@@ -1,0 +1,46 @@
+{
+  "release_id": "anonymous-review-v1",
+  "status": "audited_source_candidate_publication_checks_pending",
+  "source_version": "content hashes in FILE_MANIFEST.json",
+  "original_git_history_included": false,
+  "review_views": 22,
+  "checkpoint_configurations": 20,
+  "formal_final_protocol": "configs/evaluation/final_protocol.json",
+  "paper_alignment": "configs/paper/alignment_status.json",
+  "licensing": "LICENSE",
+  "distribution_roots": [
+    "evrptw-db",
+    "review-core",
+    "review-checkpoints"
+  ],
+  "full_experiment_records_included": false,
+  "paper_table_reconstruction": "Requires separately supplied complete records and frozen BKS",
+  "legacy_developer_demos": {
+    "training": "scripts/quick_train.py",
+    "evaluation": "scripts/evaluate.py",
+    "training_fixture": "examples/quick_train/families/demo_family_train_000",
+    "plot_format": "standalone_svg",
+    "default_optimizer_steps": 8,
+    "training_scope": "Separate demo/train fixture; not paper training",
+    "documentation": "docs/ACCEPTANCE.md"
+  },
+  "reviewer_entrypoints": {
+    "generation": "bash generate.sh",
+    "training": "python train.py --model evrptw_rl --scale 100",
+    "evaluation": "python eval_plot.py --ckpt PATH --inst_path PATH",
+    "training_samples": 2,
+    "training_scale": 100,
+    "training_representation": "road",
+    "training_split": "core/train",
+    "default_training_epochs": 5,
+    "evaluation_sample": "../review-core/materialized/families/mf_f00002829bd8a1180a26e4cb/views/iv_4073f1928fa0c95f3de64257/view_manifest.json",
+    "live_online_generation_validation": "NOT RUN",
+    "plot_format": "standalone_svg",
+    "documentation": "README.md",
+    "source_preparation_acceptance": "manifests/reviewer_workflows_acceptance.json",
+    "training_console": "One demo overview, one loss line per epoch, final checkpoint path; details in loss.jsonl and summary.json",
+    "evaluation_data_bundle": "review-core",
+    "training_scope": "Tiny-sample runnable framework demonstration; shared training components, not full dataset/batch training, convergence or paper performance."
+  },
+  "hosting_status": "Private version control and anonymous reviewer access are separate; no anonymous endpoint certified."
+}

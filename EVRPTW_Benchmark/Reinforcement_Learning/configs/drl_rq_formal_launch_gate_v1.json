@@ -1,0 +1,50 @@
+{
+  "schema": "drl_rq_formal_launch_gate_v1",
+  "protocol_id": "drl_rq_protocol_frozen_v1",
+  "formal_launch_allowed": true,
+  "launch_policy": "reward_contract_v3_formal_user_authorized",
+  "authorized_job_ids": [
+    "full__G__Full-support__am_evrptw__Cus50__seed1234",
+    "full__G__Full-support__evrptw_rl__Cus50__seed1234",
+    "full__G__Full-support__drl_ts__Cus50__seed1234",
+    "full__G__Full-support__terran__Cus50__seed1234",
+    "full__G__Coverage-10%-support__terran__Cus100__seed1234",
+    "full__E__Full-support__am_evrptw__Cus100__seed1234",
+    "full__E__Full-support__evrptw_rl__Cus100__seed1234",
+    "full__E__Full-support__drl_ts__Cus100__seed1234",
+    "full__G__Full-support__am_evrptw__Cus100__seed1234",
+    "full__G__Full-support__evrptw_rl__Cus100__seed1234",
+    "full__G__Full-support__drl_ts__Cus100__seed1234",
+    "full__G__Full-support__terran__Cus100__seed1234",
+    "full__E__Full-support__terran__Cus100__seed1234",
+    "full__G__Random-10%-support__am_evrptw__Cus100__seed1234",
+    "full__G__Random-10%-support__terran__Cus100__seed1234",
+    "full__G__Coverage-10%-support__am_evrptw__Cus100__seed1234",
+    "full__G__Full-support__terran__Cus500__seed1234",
+    "full__G__Full-support__terran__Cus1000__seed1234"
+  ],
+  "authorized_terran_training_profile_by_scale": {
+    "Cus500": {
+      "physical_batch_size": 74,
+      "effective_batch_size": 74,
+      "training_trajectory_count": 50
+    },
+    "Cus1000": {
+      "physical_batch_size": 4,
+      "effective_batch_size": 4,
+      "training_trajectory_count": 50
+    }
+  },
+  "formal_launch_gates": {
+    "G1": "PILOT_WAIVED_BY_USER",
+    "G2": "IMPLEMENTED_UNIT_TESTED",
+    "G3": "PILOT_WAIVED_BY_USER",
+    "G4": "PILOT_WAIVED_BY_USER",
+    "G5": "PILOT_WAIVED_BY_USER",
+    "G6": "PILOT_WAIVED_BY_USER",
+    "G7": "IMPLEMENTED_UNIT_TESTED",
+    "G8": "IMPLEMENTED_UNIT_TESTED"
+  },
+  "note": "The user explicitly authorized all 16 RTX 2080 Ti Cus50/Cus100 jobs under objective v2 and reward contract v3 on 2026-09-08; the two previously authorized fresh TERRAN Cus500/Cus1000 jobs remain authorized. Other A6000 candidates remain fail-closed. Training validation uses 500 fixed instances every 100 epochs with patience 5 after epoch 5000; final test keeps its independent best-of-100 budget.",
+  "file_hash_validation_performed": false
+}

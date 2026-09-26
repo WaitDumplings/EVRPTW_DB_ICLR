@@ -1,0 +1,113 @@
+{
+  "schema": "learning_gradient_smoke_v1",
+  "view_id": "demo_train_000",
+  "split": "demo/train",
+  "device": "cpu",
+  "seed": 1234,
+  "customer_count": 8,
+  "full_training": "NOT RUN",
+  "scope": "One bounded diagnostic optimizer step per original architecture; no benchmark test training; no inference checkpoint produced.",
+  "checks": [
+    {
+      "method": "AM-EVRPTW",
+      "status": "PASS",
+      "initialization": "random_for_gradient_check_only",
+      "architecture": {
+        "embedding_dim": 128,
+        "hidden_dim": 128,
+        "n_encode_layers": 3,
+        "n_heads": 8,
+        "tanh_clipping": 10.0,
+        "normalization": "batch"
+      },
+      "transitions": 34,
+      "loss": -41.66444396972656,
+      "gradient_norm": 1972.095703125,
+      "parameters_with_gradients": 47,
+      "parameter_tensors_changed": 47,
+      "seconds": 0.13057734118774533
+    },
+    {
+      "method": "TERRAN",
+      "status": "PASS",
+      "initialization": "random_for_gradient_check_only",
+      "architecture": {
+        "embedding_dim": 256,
+        "tanh_clipping": 15.0,
+        "n_encode_layers": 3,
+        "device": "cpu",
+        "name": "evrptw",
+        "use_graph_token": false,
+        "use_dynamic_embedding": false,
+        "critic_mode": "legacy",
+        "popart_beta": 0.01,
+        "popart_min_std": 1.0
+      },
+      "transitions": 2,
+      "loss": 2.1245899200439453,
+      "gradient_norm": 11.608269691467285,
+      "parameters_with_gradients": 63,
+      "parameter_tensors_changed": 63,
+      "seconds": 0.042146997060626745
+    },
+    {
+      "method": "EVRPTW-RL",
+      "status": "PASS",
+      "initialization": "random_for_gradient_check_only",
+      "architecture": {
+        "embedding_dim": 128,
+        "structure2vec_rounds": 3,
+        "graph_aggregation": "mean"
+      },
+      "transitions": 22,
+      "loss": -23.90401840209961,
+      "gradient_norm": 6.780831813812256,
+      "parameters_with_gradients": 15,
+      "parameter_tensors_changed": 15,
+      "seconds": 0.030286688124760985
+    },
+    {
+      "method": "RRNCO",
+      "status": "PASS",
+      "initialization": "random_for_gradient_check_only",
+      "architecture": {
+        "embedding_dim": 128,
+        "n_encode_layers": 6,
+        "n_heads": 8,
+        "feedforward_hidden": 512,
+        "distance_sample_size": 25,
+        "tanh_clipping": 10.0,
+        "graph_mode": "full",
+        "aft_mode": "stable",
+        "distance_sampling": "nearest",
+        "relation_chunk_size": 32,
+        "checkpoint_bias": true,
+        "relation_temperature": 5.0
+      },
+      "transitions": 32,
+      "loss": -31.08053970336914,
+      "gradient_norm": 999.634765625,
+      "parameters_with_gradients": 572,
+      "parameter_tensors_changed": 572,
+      "seconds": 0.18812932795844972
+    },
+    {
+      "method": "DRL-TS",
+      "status": "PASS",
+      "initialization": "random_for_gradient_check_only",
+      "architecture": {
+        "embedding_dim": 128,
+        "n_encode_layers": 2,
+        "n_heads": 8,
+        "nearest_neighbors": 10,
+        "tanh_clipping": 10.0
+      },
+      "transitions": 22,
+      "loss": -28.240509033203125,
+      "gradient_norm": 771.1298217773438,
+      "parameters_with_gradients": 70,
+      "parameter_tensors_changed": 70,
+      "seconds": 0.04234304395504296
+    }
+  ]
+}

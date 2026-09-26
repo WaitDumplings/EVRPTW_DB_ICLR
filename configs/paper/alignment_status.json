@@ -1,0 +1,14 @@
+{
+  "status": "NOT_CERTIFIED",
+  "final_manuscript_available": false,
+  "appendix_D_available": false,
+  "discrepancies": [
+    "Historical evaluations use 100 candidates, current target 30.",
+    "Historical cost uses shortest distance; current objective uses fastest-time-path distance.",
+    "Archived main BKS is not frozen; five-model headroom source/results not established.",
+    "Full eight-solver aligned final record cohort not supplied."
+  ],
+  "resolved_provenance": [
+    "TERRAN public upstream pinned, Apache-2.0 LICENSE retained, model-file lineage checked."
+  ]
+}

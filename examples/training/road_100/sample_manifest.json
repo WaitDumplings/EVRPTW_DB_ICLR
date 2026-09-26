@@ -1,0 +1,57 @@
+{
+  "customer_count": 100,
+  "representation": "road",
+  "schema": "evrptw_training_sample_v1",
+  "scope": "Two real Road100 training views for short native training demonstrations; not the full paper training corpus. Source split and identifiers are unchanged.",
+  "selection": {
+    "algorithm": "Sort true core/train Cus100 views by SHA256(UTF8(\"20260925:road100train:\"+view_id)), then view_id; take first 2. No solver outcomes used.",
+    "eligible_count": 50000,
+    "seed": 20260925,
+    "source_index_sha256": "42b58b6c7e79c3a6438ad51fa8f2573055e01e3fd1fcc01b2edd990921caed56"
+  },
+  "source_cohort": "core/train",
+  "split_id": "train",
+  "usage": "review_training_demo",
+  "verification": "verification.json",
+  "view_count": 2,
+  "views": [
+    {
+      "charging_station_count": 20,
+      "city_slug": "chicago",
+      "customer_count": 100,
+      "family_cohort_id": "core/train",
+      "family_id": "mf_fe944eb2ac4c48485be30851",
+      "instance_id": "iv_38209784bbd529e20dcb731d",
+      "instance_path": "instances/iv_38209784bbd529e20dcb731d.json",
+      "representation": "road",
+      "selection_sha256": "00006313bbb6ecb671a50a6d328ec07b57eabb3d4bbde9793f1f892998d9c583",
+      "sha256": "f8c12904fa44ecc5a591ac280b9a302982f3db9ff842659c8c1a0f76e2964983",
+      "size_bytes": 3003692,
+      "source_cohort": "core/train",
+      "split_id": "train",
+      "terminal_count": 121,
+      "usage": "review_training_demo",
+      "view_id": "iv_38209784bbd529e20dcb731d",
+      "view_seed": 2045019287955674613
+    },
+    {
+      "charging_station_count": 20,
+      "city_slug": "chicago",
+      "customer_count": 100,
+      "family_cohort_id": "core/train",
+      "family_id": "mf_e30b3a0959d951e6b188d6bd",
+      "instance_id": "iv_dbe0ddae27bf5257359dc80d",
+      "instance_path": "instances/iv_dbe0ddae27bf5257359dc80d.json",
+      "representation": "road",
+      "selection_sha256": "0000a6bdf75b95e9fccdd2aa1a0b74f1a14c5e6f339d3f798486af255d279b3f",
+      "sha256": "41b943c36b732f6a6ec60cebe2d3da13ec384d8c879092b8c7cfb780d72a1473",
+      "size_bytes": 3005808,
+      "source_cohort": "core/train",
+      "split_id": "train",
+      "terminal_count": 121,
+      "usage": "review_training_demo",
+      "view_id": "iv_dbe0ddae27bf5257359dc80d",
+      "view_seed": 2326051282449247676
+    }
+  ]
+}

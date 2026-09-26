@@ -1,0 +1,150 @@
+{
+  "schema": "quick_evaluation_v1",
+  "status": "VERIFIED",
+  "method": "AM-EVRPTW",
+  "artifact_id": "am_evrptw_demo_train_seed1234_steps8",
+  "checkpoint_sha256": "a93058bedc305ab763bf9a0d6c7e720a78900f11d5cfbf7e28b9cf2af918ef36",
+  "checkpoint_epoch": null,
+  "checkpoint_optimizer_steps": 8,
+  "checkpoint_scope": "quick_training_demo",
+  "strict_load": "PASS",
+  "instance_id": "demo_train_000",
+  "input_kind": "engineering_demo_view",
+  "customer_count": 8,
+  "candidates": 30,
+  "decode_type": "sampling",
+  "seed": 1234,
+  "max_steps": 360,
+  "selected_trajectory": 20,
+  "environment_success_count": 30,
+  "complete_and_feasible": true,
+  "routes": [
+    [
+      0,
+      5,
+      0
+    ],
+    [
+      0,
+      3,
+      0
+    ],
+    [
+      0,
+      4,
+      0
+    ],
+    [
+      0,
+      1,
+      6,
+      0
+    ],
+    [
+      0,
+      8,
+      7,
+      0
+    ],
+    [
+      0,
+      2,
+      0
+    ]
+  ],
+  "verification": {
+    "passed": true,
+    "violations": [],
+    "objective_distance_km": 74.71222341060638,
+    "objective_distance_source": "running_time_path_distance_km",
+    "charging_visit_count": 0,
+    "total_charging_time_s": 0.0,
+    "charging_power_source": "charging_power_kw",
+    "charging_power_factor_source": "charging_policy.charging_power_derating_factor",
+    "charging_power_derating_factor": 0.9,
+    "route_metrics": [
+      {
+        "route_index": 0,
+        "distance_km": 11.956995010375977,
+        "end_time_s": 30049.414978027344,
+        "load_cm3": 45456.5703125,
+        "remaining_battery_kwh": 95.34747266769409,
+        "charging_time_s": 0.0
+      },
+      {
+        "route_index": 1,
+        "distance_km": 12.864691257476807,
+        "end_time_s": 30049.6689453125,
+        "load_cm3": 25824.03515625,
+        "remaining_battery_kwh": 94.99428367614746,
+        "charging_time_s": 0.0
+      },
+      {
+        "route_index": 2,
+        "distance_km": 11.973474979400635,
+        "end_time_s": 29998.558471679688,
+        "load_cm3": 3138.9599609375,
+        "remaining_battery_kwh": 95.34106040000916,
+        "charging_time_s": 0.0
+      },
+      {
+        "route_index": 3,
+        "distance_km": 11.980531334877014,
+        "end_time_s": 30108.634742736816,
+        "load_cm3": 44287.837890625,
+        "remaining_battery_kwh": 95.33831476047635,
+        "charging_time_s": 0.0
+      },
+      {
+        "route_index": 4,
+        "distance_km": 13.114919900894165,
+        "end_time_s": 33010.22863769531,
+        "load_cm3": 17472.518188476562,
+        "remaining_battery_kwh": 94.89691853523254,
+        "charging_time_s": 0.0
+      },
+      {
+        "route_index": 5,
+        "distance_km": 12.821610927581787,
+        "end_time_s": 30125.775512695312,
+        "load_cm3": 4467.7578125,
+        "remaining_battery_kwh": 95.01104640960693,
+        "charging_time_s": 0.0
+      }
+    ],
+    "objective_mode": "energy_vehicle_cost",
+    "objective_profile_id": "rivian_energy_vehicle_cost_v2",
+    "objective_unit": "USD",
+    "objective_value": 2493.1365746104057,
+    "objective_cost_usd": 2493.1365746104057,
+    "electricity_cost_usd": 11.337652579819647,
+    "vehicle_cost_usd": 2481.798922030586,
+    "vehicles_started": 6
+  },
+  "objective": {
+    "mode": "energy_vehicle_cost",
+    "profile_id": "rivian_energy_vehicle_cost_v2",
+    "electricity_price_usd_per_kwh": 0.39,
+    "consumption_kwh_per_km": 0.38910505836575876,
+    "vehicle_fixed_cost_usd": 413.6331536717643,
+    "objective_distance_source": "running_time_path_distance_km"
+  },
+  "vehicle_count": 6,
+  "objective_cost_usd": 2493.1365746104057,
+  "objective_distance_km": 74.71222341060638,
+  "timing": {
+    "native_setup_and_decode_s": 0.03287435392849147,
+    "selection_and_verification_s": 0.0027373528573662043,
+    "inference_end_to_end_s": 0.06835080403834581,
+    "plot_s": 0.0010100328363478184,
+    "total_with_plot_s": 0.07298164605163038
+  },
+  "environment": {
+    "device": "cpu",
+    "threads": 1,
+    "python": "3.11.13",
+    "torch": "2.5.1+cpu"
+  },
+  "plot": "routes.svg",
+  "scope": "One-instance review demo. A demo/train replay is not held-out policy evaluation."
+}

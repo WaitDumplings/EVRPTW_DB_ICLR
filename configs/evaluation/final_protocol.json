@@ -1,0 +1,13 @@
+{
+  "schema": "review_protocol_target_v1",
+  "status": "target_not_completed_full_evaluation",
+  "candidate_count": 30,
+  "decode_type": "sampling",
+  "selection": "minimum_cost_among_complete_independently_verified_candidates",
+  "objective_config": "../paper/objective.json",
+  "formal_search_budget_s": 1800,
+  "headroom_budget_s": 7200,
+  "quality_policy": "full_cohort_FR_1_only",
+  "missing_time_policy": "null",
+  "archived_results_candidate_count": 100
+}

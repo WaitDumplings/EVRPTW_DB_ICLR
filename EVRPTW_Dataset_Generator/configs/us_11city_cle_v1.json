@@ -1,0 +1,95 @@
+{
+  "schema": "evrptw_cle_build_profile_v1",
+  "profile_id": "us_11city_cle_v1",
+  "artifact_name": "City Logistics Environment",
+  "artifact_abbreviation": "CLE",
+  "country_adapter": "us_public_data_v1",
+  "city_preset": "configs/us_11city_population_v1.json",
+  "building_registry": "configs/us_11city_building_extraction_v1.json",
+  "boundary_root": "boundaries/us-11city-2025",
+  "source_paths": {
+    "microsoft_building_root": "data/sources/microsoft-us-building-footprints",
+    "afdc_raw_csv": "data/sources/afdc/afdc_us_public_available_electric.csv",
+    "afdc_resolved_csv": "data/sources/afdc/afdc_us_public_available_electric_resolved_us_11city_v1.csv",
+    "hpms_raw_root": "data/sources/hpms",
+    "hpms_source_registry": "configs/us_11city_hpms_sources_v1.json"
+  },
+  "work_root": "work/us-11city-v2",
+  "release_root": "../EVRPTW_Dataset/CLE_v2/us_11city",
+  "road_policy": {
+    "network_type": "drive",
+    "routing_buffer_ladder_km": [0, 1, 2, 5, 10, 20],
+    "minimum_city_node_coverage": 0.99,
+    "minimum_city_physical_road_length_coverage": 0.995,
+    "auto_skip_isolated_component_node_threshold_exclusive": 100,
+    "outside_service_boundary_policy": "transit_only",
+    "synthetic_intercomponent_edges": false
+  },
+  "charging_policy": {
+    "fuel_type": "ELEC",
+    "status": "E",
+    "access": "public",
+    "accepted_modes": ["L2", "DC_FAST"],
+    "road_access_distance_policy": "retain_all_and_flag_tail",
+    "coordinate_policy": "retain_raw_afdc_and_use_reviewable_resolved_geometry_when_supported",
+    "coordinate_evidence_required": true,
+    "required_resolution_inputs": ["census_results", "osm_pois"],
+    "unresolved_coordinate_policy": "retain_in_source_layer_but_exclude_from_default_candidate_pool"
+  },
+  "depot_policy": {
+    "tier_a": "explicit_dispatch_or_carrier_facility_evidence",
+    "tier_b": "warehouse_or_logistics_proxy",
+    "tier_c": "exclude_from_default_candidate_pool",
+    "minimum_area_hard_filter_m2": null,
+    "reference_area_flag_m2": 1000,
+    "area_policy": "continuous_attribute_and_sensitivity_flag_not_ground_truth"
+  },
+  "service_location_policy": {
+    "geometry_source": "Microsoft USBuildingFootprints",
+    "attribute_source": "USACE NSI 2026",
+    "g1": "NSI point covered by Microsoft polygon",
+    "g2_max_distance_m": 10,
+    "g2_max_area_factor": 4,
+    "multi_building_complex_policy": "no_automatic_merge_without_independent_site_evidence",
+    "road_access_distance_policy": "retain_all_and_flag_tail"
+  },
+  "speed_profile": {
+    "profile_id": "us_hpms_osm_moves5_v1",
+    "functional_class_priority": ["high_confidence_hpms_f_system", "osm_highway_fallback"],
+    "legal_speed_priority": [
+      "osm_directional_maxspeed",
+      "osm_generic_maxspeed",
+      "direction_verified_hpms_speed_limit",
+      "hierarchical_imputation"
+    ],
+    "hpms_matching": {
+      "required": true,
+      "output_contract": "work_root/hpms_edge_matches/<city>.parquet",
+      "match_scope": "city_projected_physical_corridor_then_directed_edge",
+      "f_system_policy": "high_confidence_corridor_match",
+      "speed_limit_policy": "high_confidence_direction_verified_edge_match_only",
+      "parameters": {
+        "candidate_radius_m": 75,
+        "overlap_buffer_m": 25,
+        "minimum_overlap_ratio": 0.2,
+        "maximum_orientation_delta_deg": 30,
+        "high_confidence_distance_m": 25,
+        "high_confidence_overlap_ratio": 0.5,
+        "high_confidence_orientation_delta_deg": 15,
+        "ambiguity_distance_margin_m": 10,
+        "ambiguity_overlap_margin": 0.2
+      }
+    },
+    "moves_source": {
+      "profile": "configs/us_moves5_speed_profile_v1.json",
+      "model": "U.S. EPA MOVES5",
+      "database": "movesdb20241112",
+      "source_type_id": 32,
+      "service_window": "08:00-24:00",
+      "free_flow_method": "weekend 06:00-10:00 VHT-weighted speed-bin Q85",
+      "edge_free_flow_proxy": "direction-applicable legal speed"
+    },
+    "vehicle_speed_cap_kph": null,
+    "instance_operational_scenarios": "stage_2"
+  }
+}

@@ -1,0 +1,42 @@
+{
+  "artifact_id": "demo_cle_fort_worth_v1",
+  "city_slug": "fort-worth",
+  "files": {
+    "directed_speeds.parquet": "78d99b2ecbb13d4f55e2b9b70b47b4fa7683752fcdcec99b78ca2a9eb21f1b2b",
+    "order_templates.parquet": "163b7c0c8bfa3239037ed3c89576bc0a33803d550d1754b6ff9c60e4bed08a24",
+    "road.graphml": "9f0b9af573a2d69eb38229fb5ca221dcc266c8302c86dd0db5c616382bb8a75a",
+    "terminal_pool.parquet": "c2ff60532bf9e67ed3cd6ff535e1f2f95a9898b845cafbea568eb4f7f0dd638b"
+  },
+  "frozen_master_seed": 20260925,
+  "manual_cle_release_claimed": false,
+  "road": {
+    "clipping": "Union of directed shortest distance/weekday/weekend paths between access anchors and a fixed hub; all original edges between retained nodes. Paths, connector speed distribution and coverage can differ from full city.",
+    "directed_edges": 304,
+    "nodes": 184,
+    "source": "OpenStreetMap-derived operational CLE"
+  },
+  "schema": "evrptw_demo_cached_cle_v1",
+  "scope": "engineering_demo_not_benchmark_cohort",
+  "source_cle_release_blockers": [
+    "microsoft_nsi_geometry",
+    "customer_road_access_review",
+    "depot_release",
+    "charging_coordinate_validation",
+    "charging_release",
+    "delivery_communities"
+  ],
+  "source_day": "DAU1:2018-07-20",
+  "source_licenses": {
+    "chargers": "AFDC public station data; see source notices",
+    "customer_geometry": "Microsoft US Building Footprints ODbL-1.0; derived NSI residential aggregation",
+    "orders": "Amazon Last Mile Routing Research Challenge 2021 CC-BY-NC-4.0",
+    "roads_depot": "OpenStreetMap ODbL-1.0; attribution required",
+    "speeds": "OSM legal limits and US EPA MOVES5-derived reference profiles"
+  },
+  "template_count": 128,
+  "terminal_pool": {
+    "charging_station": 4,
+    "customer": 48,
+    "depot": 1
+  }
+}

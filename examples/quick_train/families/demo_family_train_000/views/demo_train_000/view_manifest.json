@@ -1,0 +1,180 @@
+{
+  "attribute_report": {
+    "charging_usage_diagnostics": {
+      "baseline_solver_run": false,
+      "binding_energy_count": 0,
+      "certificate_used_cs_count": 0,
+      "soc_tolerance_kwh": 1e-06,
+      "solution_cs_visit_count": null
+    },
+    "customer_count": 8,
+    "day_type": "weekday",
+    "demand_cm3_mean": 17580.9609375,
+    "demand_cm3_p90": 31713.7890625,
+    "energy": {
+      "model_id": "rivian_delivery_700_constant_distance_v1",
+      "specific_energy_consumption_kwh_per_km": 0.38910505836575876,
+      "stored_energy_matrices": false
+    },
+    "feasibility_gate": {
+      "capacity_feasible_count": 8,
+      "energy_feasible_count": 8,
+      "maximum_charging_visit_count": 0,
+      "minimum_customer_transition_energy_margin_kwh": 94.9942855834961,
+      "passed": true,
+      "policy": "fixed_amazon_template_single_customer_certificate_v1",
+      "requires_charging_count": 0,
+      "time_feasible_count": 8
+    },
+    "full_cs_to_depot_cache": {
+      "charging_station_count": 2,
+      "finite_return_count": 2,
+      "maximum_time_s": 453.0542907714844,
+      "median_time_s": 452.89060974121094,
+      "minimum_time_s": 452.7269287109375,
+      "semantics": "full_departure_cs_to_depot_fastest_feasible_time_v2",
+      "unreachable_return_count": 0
+    },
+    "order_attribute_source": "amazon_last_mile_2021_observed_stop_templates",
+    "order_matching": {
+      "customer_count": 8,
+      "generation_track": null,
+      "hall_coverage_complete": true,
+      "matching_bias_audit": {
+        "eligible_pool": {
+          "count": 128,
+          "demand_cm3_mean": 16319.9137734375,
+          "demand_cm3_p90": 42427.3906,
+          "package_count_mean": 1.5859375,
+          "package_count_p90": 2.299999999999997,
+          "service_time_s_mean": 92.46171874999999,
+          "service_time_s_p90": 155.16,
+          "tw_presence_rate": 0.1484375,
+          "tw_width_s_mean": 53394.84375,
+          "tw_width_s_p50": 57600.0
+        },
+        "matched_templates": {
+          "count": 8,
+          "demand_cm3_mean": 17580.96025,
+          "demand_cm3_p90": 31713.796799999996,
+          "package_count_mean": 1.625,
+          "package_count_p90": 2.0,
+          "service_time_s_mean": 75.625,
+          "service_time_s_p90": 109.69999999999999,
+          "tw_presence_rate": 0.25,
+          "tw_width_s_mean": 53542.5,
+          "tw_width_s_p50": 57600.0
+        }
+      },
+      "policy": "amazon_stationday_covering_bipartite_matching_v1",
+      "selected_order_source_mode": "SINGLE_ORDER_DAY",
+      "selected_station_code": "DAU1",
+      "selected_station_day_ids": [
+        "DAU1:2018-07-20"
+      ],
+      "source_attempt_count": 1,
+      "source_attempts": [
+        {
+          "feasible_edge_count": 1024,
+          "matched_customer_count": 8,
+          "source_mode": "SINGLE_ORDER_DAY",
+          "source_rank": 0,
+          "station_code": "DAU1",
+          "station_day_ids": [
+            "DAU1:2018-07-20"
+          ],
+          "status": "accepted",
+          "template_count": 128
+        }
+      ],
+      "template_reuse": false
+    },
+    "order_template_inheritance": true,
+    "package_count_mean": 1.625,
+    "package_count_p90": 2.0,
+    "schema": "cle_evrptw_view_attribute_report_v3",
+    "service_time_s_mean": 75.625,
+    "service_time_s_p90": 109.69998168945312,
+    "time_windows": {
+      "actual_tight_window_rate": 0.25,
+      "feasibility_clipping_applied": false,
+      "tight_window_count": 2
+    }
+  },
+  "charger_selection": {
+    "parent_terminal_indices": [
+      9,
+      10
+    ],
+    "policy": "production_road_time_child_roster_reselection"
+  },
+  "charging_attributes": "charging_attributes.npz",
+  "charging_policy": {
+    "ac_l2_vehicle_cap_kw": 11.0,
+    "charging_power_derating_factor": 0.9,
+    "dc_vehicle_cap_kw": 100.0,
+    "initial_state_of_charge_fraction": 1.0,
+    "missing_station_power_policy": "national_mode_median_or_error",
+    "national_mode_median_registry": "us_national_charging_power_medians_v1.json",
+    "national_mode_median_registry_schema": "evrptw_national_charging_power_medians_v1",
+    "national_mode_median_scope": "public_us_afdc_compatible_connector_ports",
+    "national_mode_medians_kw": {
+      "ac_level2": 6.5,
+      "dc_fast": 200.0
+    },
+    "policy": "full_charge_linear_derated_v2",
+    "port_capacity_model": "infinite_ports"
+  },
+  "charging_station_count": 2,
+  "city_slug": "fort-worth",
+  "consumer_cohort_id": "demo/train",
+  "customer_attributes": "customer_attributes.npz",
+  "customer_count": 8,
+  "day_type": "weekday",
+  "energy_model": {
+    "auxiliary_load_included": false,
+    "battery_capacity_kwh": 100.0,
+    "model_id": "rivian_delivery_700_constant_distance_v1",
+    "nominal_range_km": 257.0,
+    "specific_energy_consumption_kwh_per_km": 0.38910505836575876,
+    "speed_dependence_included": false
+  },
+  "family_id": "demo_family_train_000",
+  "full_cs_to_depot_cache": {
+    "allows_multiple_cs_hops": true,
+    "depot_charge_time_included": false,
+    "energy_source": "running_time_path_distance_km_times_specific_energy_consumption_kwh_per_km",
+    "intermediate_full_charge_policy": "full_charge_linear_v1",
+    "origin_cs_charge_time_included": false,
+    "semantics": "full_departure_cs_to_depot_fastest_feasible_time_v2",
+    "time_matrix": "running_time_shortest_matrix_s"
+  },
+  "generation_mode": "non_release_pilot",
+  "matrix_storage": "parent_index_view",
+  "non_release_pilot": true,
+  "operating_horizon_s": [
+    28800,
+    86400
+  ],
+  "order_template_ids_inherited_from_parent": true,
+  "parent_matrix_files": {
+    "distance_matrix_km": "matrices/distance_matrix_km.npy",
+    "distance_path_travel_time_s": "matrices/distance_path_travel_time_s.npy",
+    "running_time_path_distance_km": "matrices/running_time_path_distance_km.npy",
+    "running_time_shortest_matrix_s": "matrices/running_time_shortest_matrix_s.npy"
+  },
+  "scale_id": "demo_cus8",
+  "schema": "cle_evrptw_materialized_view_v4",
+  "scope": "engineering_demo_not_benchmark_cohort",
+  "split_id": "demo/train",
+  "terminal_parent_indices": "terminal_parent_indices.npy",
+  "track_id": "demo",
+  "vehicle": {
+    "battery_capacity_kwh": 100.0,
+    "cargo_capacity_cm3": 18500000.0,
+    "specific_energy_consumption_kwh_per_km": 0.38910505836575876,
+    "unlimited_fleet": true,
+    "vehicle_id": "rivian_commercial_van_delivery_700_reference_v1"
+  },
+  "view_id": "demo_train_000"
+}

@@ -1,0 +1,566 @@
+{
+  "official_evaluation_and_validation_family_overlap": 0,
+  "official_evaluation_and_validation_view_overlap": 0,
+  "review_evaluation_family_overlap": 0,
+  "review_evaluation_view_overlap": 0,
+  "sample_count": 2,
+  "schema": "road100_training_sample_verification_v1",
+  "scope": "Exact numerical restoration, matrix contract and constructive feasibility checks; not solver performance or geographic holdout proof",
+  "status": "PASS",
+  "views": [
+    {
+      "array_checks": [
+        {
+          "dtype": "float32",
+          "field": "depot",
+          "shape": [
+            2
+          ],
+          "value_identity": "PASS"
+        },
+        {
+          "dtype": "float32",
+          "field": "customers",
+          "shape": [
+            100,
+            2
+          ],
+          "value_identity": "PASS"
+        },
+        {
+          "dtype": "float32",
+          "field": "charging_stations",
+          "shape": [
+            20,
+            2
+          ],
+          "value_identity": "PASS"
+        },
+        {
+          "dtype": "float32",
+          "field": "distance_matrix_km",
+          "shape": [
+            121,
+            121
+          ],
+          "value_identity": "PASS"
+        },
+        {
+          "dtype": "float32",
+          "field": "demands_cm3",
+          "shape": [
+            100
+          ],
+          "value_identity": "PASS"
+        },
+        {
+          "dtype": "int32",
+          "field": "package_counts",
+          "shape": [
+            100
+          ],
+          "value_identity": "PASS"
+        },
+        {
+          "dtype": "float32",
+          "field": "service_time_s",
+          "shape": [
+            100
+          ],
+          "value_identity": "PASS"
+        },
+        {
+          "dtype": "float32",
+          "field": "tw_s",
+          "shape": [
+            100,
+            2
+          ],
+          "value_identity": "PASS"
+        },
+        {
+          "dtype": "float32",
+          "field": "cs_time_to_depot_s",
+          "shape": [
+            20
+          ],
+          "value_identity": "PASS"
+        },
+        {
+          "dtype": "float32",
+          "field": "raw_travel_time_matrix_s",
+          "shape": [
+            121,
+            121
+          ],
+          "value_identity": "PASS"
+        },
+        {
+          "dtype": "float32",
+          "field": "shortest_time_matrix_s",
+          "shape": [
+            121,
+            121
+          ],
+          "value_identity": "PASS"
+        },
+        {
+          "dtype": "float32",
+          "field": "energy_matrix_kwh",
+          "shape": [
+            121,
+            121
+          ],
+          "value_identity": "PASS"
+        },
+        {
+          "dtype": "float32",
+          "field": "cs_activation.charging_power_kw",
+          "shape": [
+            20
+          ],
+          "value_identity": "PASS"
+        },
+        {
+          "dtype": "float32",
+          "field": "charging_power_kw",
+          "shape": [
+            20
+          ],
+          "value_identity": "PASS"
+        },
+        {
+          "dtype": "float32",
+          "field": "running_time_shortest_matrix_s",
+          "shape": [
+            121,
+            121
+          ],
+          "value_identity": "PASS"
+        },
+        {
+          "dtype": "float32",
+          "field": "running_time_path_energy_kwh",
+          "shape": [
+            121,
+            121
+          ],
+          "value_identity": "PASS"
+        },
+        {
+          "dtype": "float32",
+          "field": "running_time_path_distance_km",
+          "shape": [
+            121,
+            121
+          ],
+          "value_identity": "PASS"
+        },
+        {
+          "dtype": "float32",
+          "field": "distance_path_travel_time_s",
+          "shape": [
+            121,
+            121
+          ],
+          "value_identity": "PASS"
+        },
+        {
+          "dtype": "float32",
+          "field": "full_cs_to_depot_time_s",
+          "shape": [
+            20
+          ],
+          "value_identity": "PASS"
+        },
+        {
+          "dtype": "int32",
+          "field": "terminal_parent_indices",
+          "shape": [
+            121
+          ],
+          "value_identity": "PASS"
+        },
+        {
+          "dtype": "float32",
+          "field": "feasibility_certificate.certificate_service_arrival_time_s",
+          "shape": [
+            100
+          ],
+          "value_identity": "PASS"
+        },
+        {
+          "dtype": "float32",
+          "field": "feasibility_certificate.return_duration_s",
+          "shape": [
+            100
+          ],
+          "value_identity": "PASS"
+        },
+        {
+          "dtype": "bool",
+          "field": "feasibility_certificate.requires_charging",
+          "shape": [
+            100
+          ],
+          "value_identity": "PASS"
+        },
+        {
+          "dtype": "int16",
+          "field": "feasibility_certificate.charging_visit_count",
+          "shape": [
+            100
+          ],
+          "value_identity": "PASS"
+        },
+        {
+          "dtype": "int32",
+          "field": "feasibility_certificate.inbound_full_state_terminal_index",
+          "shape": [
+            100
+          ],
+          "value_identity": "PASS"
+        },
+        {
+          "dtype": "int32",
+          "field": "feasibility_certificate.first_post_customer_charger_terminal_index",
+          "shape": [
+            100
+          ],
+          "value_identity": "PASS"
+        },
+        {
+          "dtype": "float32",
+          "field": "feasibility_certificate.customer_transition_energy_margin_kwh",
+          "shape": [
+            100
+          ],
+          "value_identity": "PASS"
+        },
+        {
+          "dtype": "object",
+          "field": "terminal_source_ids",
+          "shape": [
+            121
+          ],
+          "value_identity": "PASS"
+        },
+        {
+          "dtype": "object",
+          "field": "order_template_ids",
+          "shape": [
+            100
+          ],
+          "value_identity": "PASS"
+        },
+        {
+          "dtype": "object",
+          "field": "order_station_day_ids",
+          "shape": [
+            100
+          ],
+          "value_identity": "PASS"
+        },
+        {
+          "dtype": "object",
+          "field": "order_template_source_modes",
+          "shape": [
+            100
+          ],
+          "value_identity": "PASS"
+        }
+      ],
+      "canonical_restore": "PASS",
+      "customer_source_overlap_with_22_eval_views": 1,
+      "directed_asymmetry": "PASS",
+      "independent_singleton_route_replay": "PASS",
+      "matrix_shape": [
+        121,
+        121
+      ],
+      "singleton_vehicle_count": 100,
+      "source_cohort": "core/train",
+      "source_customer_pool": "train",
+      "source_order_pool": "GEN-TRAIN",
+      "view_id": "iv_38209784bbd529e20dcb731d",
+      "view_specific_certificate_recomputed": "PASS"
+    },
+    {
+      "array_checks": [
+        {
+          "dtype": "float32",
+          "field": "depot",
+          "shape": [
+            2
+          ],
+          "value_identity": "PASS"
+        },
+        {
+          "dtype": "float32",
+          "field": "customers",
+          "shape": [
+            100,
+            2
+          ],
+          "value_identity": "PASS"
+        },
+        {
+          "dtype": "float32",
+          "field": "charging_stations",
+          "shape": [
+            20,
+            2
+          ],
+          "value_identity": "PASS"
+        },
+        {
+          "dtype": "float32",
+          "field": "distance_matrix_km",
+          "shape": [
+            121,
+            121
+          ],
+          "value_identity": "PASS"
+        },
+        {
+          "dtype": "float32",
+          "field": "demands_cm3",
+          "shape": [
+            100
+          ],
+          "value_identity": "PASS"
+        },
+        {
+          "dtype": "int32",
+          "field": "package_counts",
+          "shape": [
+            100
+          ],
+          "value_identity": "PASS"
+        },
+        {
+          "dtype": "float32",
+          "field": "service_time_s",
+          "shape": [
+            100
+          ],
+          "value_identity": "PASS"
+        },
+        {
+          "dtype": "float32",
+          "field": "tw_s",
+          "shape": [
+            100,
+            2
+          ],
+          "value_identity": "PASS"
+        },
+        {
+          "dtype": "float32",
+          "field": "cs_time_to_depot_s",
+          "shape": [
+            20
+          ],
+          "value_identity": "PASS"
+        },
+        {
+          "dtype": "float32",
+          "field": "raw_travel_time_matrix_s",
+          "shape": [
+            121,
+            121
+          ],
+          "value_identity": "PASS"
+        },
+        {
+          "dtype": "float32",
+          "field": "shortest_time_matrix_s",
+          "shape": [
+            121,
+            121
+          ],
+          "value_identity": "PASS"
+        },
+        {
+          "dtype": "float32",
+          "field": "energy_matrix_kwh",
+          "shape": [
+            121,
+            121
+          ],
+          "value_identity": "PASS"
+        },
+        {
+          "dtype": "float32",
+          "field": "cs_activation.charging_power_kw",
+          "shape": [
+            20
+          ],
+          "value_identity": "PASS"
+        },
+        {
+          "dtype": "float32",
+          "field": "charging_power_kw",
+          "shape": [
+            20
+          ],
+          "value_identity": "PASS"
+        },
+        {
+          "dtype": "float32",
+          "field": "running_time_shortest_matrix_s",
+          "shape": [
+            121,
+            121
+          ],
+          "value_identity": "PASS"
+        },
+        {
+          "dtype": "float32",
+          "field": "running_time_path_energy_kwh",
+          "shape": [
+            121,
+            121
+          ],
+          "value_identity": "PASS"
+        },
+        {
+          "dtype": "float32",
+          "field": "running_time_path_distance_km",
+          "shape": [
+            121,
+            121
+          ],
+          "value_identity": "PASS"
+        },
+        {
+          "dtype": "float32",
+          "field": "distance_path_travel_time_s",
+          "shape": [
+            121,
+            121
+          ],
+          "value_identity": "PASS"
+        },
+        {
+          "dtype": "float32",
+          "field": "full_cs_to_depot_time_s",
+          "shape": [
+            20
+          ],
+          "value_identity": "PASS"
+        },
+        {
+          "dtype": "int32",
+          "field": "terminal_parent_indices",
+          "shape": [
+            121
+          ],
+          "value_identity": "PASS"
+        },
+        {
+          "dtype": "float32",
+          "field": "feasibility_certificate.certificate_service_arrival_time_s",
+          "shape": [
+            100
+          ],
+          "value_identity": "PASS"
+        },
+        {
+          "dtype": "float32",
+          "field": "feasibility_certificate.return_duration_s",
+          "shape": [
+            100
+          ],
+          "value_identity": "PASS"
+        },
+        {
+          "dtype": "bool",
+          "field": "feasibility_certificate.requires_charging",
+          "shape": [
+            100
+          ],
+          "value_identity": "PASS"
+        },
+        {
+          "dtype": "int16",
+          "field": "feasibility_certificate.charging_visit_count",
+          "shape": [
+            100
+          ],
+          "value_identity": "PASS"
+        },
+        {
+          "dtype": "int32",
+          "field": "feasibility_certificate.inbound_full_state_terminal_index",
+          "shape": [
+            100
+          ],
+          "value_identity": "PASS"
+        },
+        {
+          "dtype": "int32",
+          "field": "feasibility_certificate.first_post_customer_charger_terminal_index",
+          "shape": [
+            100
+          ],
+          "value_identity": "PASS"
+        },
+        {
+          "dtype": "float32",
+          "field": "feasibility_certificate.customer_transition_energy_margin_kwh",
+          "shape": [
+            100
+          ],
+          "value_identity": "PASS"
+        },
+        {
+          "dtype": "object",
+          "field": "terminal_source_ids",
+          "shape": [
+            121
+          ],
+          "value_identity": "PASS"
+        },
+        {
+          "dtype": "object",
+          "field": "order_template_ids",
+          "shape": [
+            100
+          ],
+          "value_identity": "PASS"
+        },
+        {
+          "dtype": "object",
+          "field": "order_station_day_ids",
+          "shape": [
+            100
+          ],
+          "value_identity": "PASS"
+        },
+        {
+          "dtype": "object",
+          "field": "order_template_source_modes",
+          "shape": [
+            100
+          ],
+          "value_identity": "PASS"
+        }
+      ],
+      "canonical_restore": "PASS",
+      "customer_source_overlap_with_22_eval_views": 0,
+      "directed_asymmetry": "PASS",
+      "independent_singleton_route_replay": "PASS",
+      "matrix_shape": [
+        121,
+        121
+      ],
+      "singleton_vehicle_count": 100,
+      "source_cohort": "core/train",
+      "source_customer_pool": "train",
+      "source_order_pool": "GEN-TRAIN",
+      "view_id": "iv_dbe0ddae27bf5257359dc80d",
+      "view_specific_certificate_recomputed": "PASS"
+    }
+  ]
+}

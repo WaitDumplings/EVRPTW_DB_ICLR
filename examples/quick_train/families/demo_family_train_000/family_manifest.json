@@ -1,0 +1,123 @@
+{
+  "charging_policy": {
+    "ac_l2_vehicle_cap_kw": 11.0,
+    "charging_power_derating_factor": 0.9,
+    "dc_vehicle_cap_kw": 100.0,
+    "initial_state_of_charge_fraction": 1.0,
+    "missing_station_power_policy": "national_mode_median_or_error",
+    "national_mode_median_registry": "us_national_charging_power_medians_v1.json",
+    "national_mode_median_registry_schema": "evrptw_national_charging_power_medians_v1",
+    "national_mode_median_scope": "public_us_afdc_compatible_connector_ports",
+    "national_mode_medians_kw": {
+      "ac_level2": 6.5,
+      "dc_fast": 200.0
+    },
+    "policy": "full_charge_linear_derated_v2",
+    "port_capacity_model": "infinite_ports"
+  },
+  "city_slug": "fort-worth",
+  "demo_selection": "stable seeded hash of a fixed nearby eligible CLE terminal pool",
+  "energy_model": {
+    "auxiliary_load_included": false,
+    "battery_capacity_kwh": 100.0,
+    "model_id": "rivian_delivery_700_constant_distance_v1",
+    "nominal_range_km": 257.0,
+    "specific_energy_consumption_kwh_per_km": 0.38910505836575876,
+    "speed_dependence_included": false
+  },
+  "family_cohort_id": "demo/train",
+  "family_id": "demo_family_train_000",
+  "family_seed": 5042870985598027465,
+  "materialization_status": "complete",
+  "matrix_files": {
+    "distance_matrix_km": "matrices/distance_matrix_km.npy",
+    "distance_path_travel_time_s": "matrices/distance_path_travel_time_s.npy",
+    "running_time_path_distance_km": "matrices/running_time_path_distance_km.npy",
+    "running_time_shortest_matrix_s": "matrices/running_time_shortest_matrix_s.npy"
+  },
+  "matrix_total_bytes": 2448,
+  "non_release_pilot": true,
+  "parent_charging_station_count": 2,
+  "parent_customer_count": 8,
+  "reference_profile_id": "us_public_last_mile_reference_v3-stage2-repair",
+  "reference_profile_status": "release_calibrated",
+  "road_state_report": {
+    "additional_random_edge_factors": false,
+    "asymmetric_speed_physical_segment_fraction": 0.0,
+    "baseline_factor_source": "frozen_neutral_profile_value",
+    "comparable_bidirectional_physical_segment_count": 60,
+    "day_type": "weekday",
+    "directed_edge_count": 304,
+    "energy_model_id": "rivian_delivery_700_constant_distance_v1",
+    "factor_granularity": "residual_day_type_x_moves_road_type",
+    "legal_cap_binding_fraction": 0.0,
+    "model_id": "moves5_reference_with_neutral_residual_v1",
+    "moves_road_type_baseline_factors": {
+      "urban_restricted_access": 1.0,
+      "urban_unrestricted_access": 1.0
+    },
+    "reference_speed_column": "reference_speed_weekday_kph",
+    "road_state_seed": 4108584133195059035,
+    "schema": "cle_evrptw_family_road_state_report_v2",
+    "specific_energy_consumption_kwh_per_km": 0.38910505836575876,
+    "speed_kph_max": 85.48089751111681,
+    "speed_kph_median": 30.70156719256704,
+    "speed_kph_min": 17.54375268146688
+  },
+  "routing_report": {
+    "asymmetric_pair_fraction": {
+      "distance": 0.4909090909090909,
+      "distance_path_time": 0.4909090909090909,
+      "running_time": 0.4909090909090909,
+      "running_time_path_distance": 0.4909090909090909
+    },
+    "canonical_zero_turn": true,
+    "directed_edge_count": 304,
+    "distance_dijkstra_batch_count": 1,
+    "distance_dijkstra_batch_size": 24,
+    "distance_dijkstra_unique_source_count": 9,
+    "distance_dijkstra_unique_target_count": 9,
+    "distance_path_policy": "directed_shortest_physical_distance_with_exact_edge_projection_v1",
+    "energy_matrix_storage": "derived_from_path_distance_times_scalar_h",
+    "physical_graph_node_count": 184,
+    "route_storage": "reconstruct_on_demand_from_cle_road_state_terminal_access_and_policy",
+    "running_time_dijkstra_batch_count": 1,
+    "running_time_dijkstra_batch_size": 12,
+    "running_time_dijkstra_unique_source_count": 11,
+    "running_time_dijkstra_unique_target_count": 24,
+    "running_time_path_policy": "directed_zero_turn_shortest_running_time_v3",
+    "schema": "cle_evrptw_family_routing_report_v2",
+    "signal_delay_included": false,
+    "stored_matrix_count": 4,
+    "terminal_access_option_count": 20,
+    "terminal_count": 11,
+    "topological_immediate_edge_reversal_rule": "forbidden",
+    "topological_immediate_edge_reversal_transition_count": 120,
+    "turn_aware_transition_count": 428,
+    "turn_penalty_in_running_time_path_optimization": false,
+    "turn_penalty_model_id": "canonical_zero_turn_v1"
+  },
+  "schema": "cle_evrptw_materialized_matrix_family_v3",
+  "scope": "engineering_demo_not_benchmark_cohort",
+  "skipped_full_pipeline_operations": [
+    "whole-city CBG split construction",
+    "Amazon spatial structure matching and joint support gates",
+    "region-first family selection",
+    "official cohort plan and Phase-1 statistical acceptance"
+  ],
+  "stage2_generation_contract": "review_engineering_subset_v1",
+  "terminal_count": 11,
+  "terminal_index": "terminal_index.parquet",
+  "vehicle": {
+    "battery_capacity_kwh": 100.0,
+    "cargo_capacity_cm3": 18500000.0,
+    "specific_energy_consumption_kwh_per_km": 0.38910505836575876,
+    "unlimited_fleet": true,
+    "vehicle_id": "rivian_commercial_van_delivery_700_reference_v1"
+  },
+  "view_count": 2,
+  "view_ids": [
+    "demo_train_000",
+    "demo_train_000_nested"
+  ]
+}

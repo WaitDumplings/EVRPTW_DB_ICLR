@@ -1,0 +1,52 @@
+{
+  "schema": "am_quick_training_v1",
+  "status": "PASS",
+  "method": "AM-EVRPTW",
+  "split": "demo/train",
+  "view_id": "demo_train_000",
+  "customer_count": 8,
+  "constructor": {
+    "embedding_dim": 128,
+    "hidden_dim": 128,
+    "n_encode_layers": 3,
+    "n_heads": 8,
+    "tanh_clipping": 10.0,
+    "normalization": "batch"
+  },
+  "device": "cpu",
+  "threads": 1,
+  "seed": 1234,
+  "optimizer": "Adam",
+  "learning_rate": 0.0001,
+  "optimizer_steps": 8,
+  "epochs": null,
+  "trajectories_per_step": 8,
+  "rollout_step_limit": 44,
+  "baseline": "Frozen initial policy, greedy rollout on the same demo/train instance",
+  "loss": "mean(detach(sampled_normalized_cost - greedy_normalized_cost) * sampled_log_likelihood)",
+  "loss_monotonicity": "Not guaranteed",
+  "initial_loss": 44.87752914428711,
+  "final_loss": 37.86570358276367,
+  "steps_with_parameter_changes": 8,
+  "parameter_tensors_changed_from_initialization": 47,
+  "checkpoint": "demo_checkpoint.pt",
+  "checkpoint_sha256": "a93058bedc305ab763bf9a0d6c7e720a78900f11d5cfbf7e28b9cf2af918ef36",
+  "strict_load": "PASS",
+  "saved_tensor_identity": "PASS",
+  "inference_only_checkpoint": true,
+  "objective": {
+    "mode": "energy_vehicle_cost",
+    "profile_id": "rivian_energy_vehicle_cost_v2",
+    "electricity_price_usd_per_kwh": 0.39,
+    "consumption_kwh_per_km": 0.38910505836575876,
+    "vehicle_fixed_cost_usd": 413.6331536717643,
+    "objective_distance_source": "running_time_path_distance_km"
+  },
+  "normalization": {
+    "reward_distance_scale_mode": "single_customer_repair_median",
+    "reward_distance_scale_km": 11.965375423431396,
+    "reward_objective_scale": 415.4489110317403
+  },
+  "seconds": 0.48112592101097107,
+  "scope": "Actual short REINFORCE training for demonstration; no benchmark test training, no paper reproduction or quality guarantee."
+}

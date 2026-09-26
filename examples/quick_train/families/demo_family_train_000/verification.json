@@ -1,0 +1,48 @@
+{
+  "certified_customer_count": 12,
+  "city_slug": "fort-worth",
+  "errors": [],
+  "family_id": "demo_family_train_000",
+  "matrix_metrics": {
+    "distance_matrix_km": {
+      "asymmetric_pair_fraction": 0.4909090909090909,
+      "max_off_diagonal": 8.939144134521484,
+      "median_off_diagonal": 1.068447470664978,
+      "min_off_diagonal": 0.03278058394789696
+    },
+    "distance_path_travel_time_s": {
+      "asymmetric_pair_fraction": 0.4909090909090909,
+      "max_off_diagonal": 932.7254028320312,
+      "median_off_diagonal": 137.72796630859375,
+      "min_off_diagonal": 4.484411239624023
+    },
+    "running_time_path_distance_km": {
+      "asymmetric_pair_fraction": 0.4909090909090909,
+      "max_off_diagonal": 11.070907592773438,
+      "median_off_diagonal": 1.0695871114730835,
+      "min_off_diagonal": 0.03278058394789696
+    },
+    "running_time_shortest_matrix_s": {
+      "asymmetric_pair_fraction": 0.4909090909090909,
+      "max_off_diagonal": 806.5147094726562,
+      "median_off_diagonal": 131.93930053710938,
+      "min_off_diagonal": 4.484411239624023
+    }
+  },
+  "matrix_total_bytes": 2448,
+  "maximum_charging_visit_count": 0,
+  "passed": true,
+  "requires_charging_customer_count": 0,
+  "schema": "cle_evrptw_materialized_family_verification_v1",
+  "stored_full_cs_cache_view_count": 2,
+  "terminal_count": 11,
+  "unreachable_full_cs_return_count": 0,
+  "view_count": 2,
+  "view_counts_by_scale": {
+    "demo_cus4": 1,
+    "demo_cus8": 1
+  },
+  "warnings": [
+    "Family is a non-release pilot and cannot be published as an official split."
+  ]
+}

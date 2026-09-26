@@ -1,0 +1,256 @@
+protocol_id: drl_rq_protocol_frozen_v1
+status: reward_contract_v3_formal_2080ti_terran_authorized
+formal_launch_allowed: true
+launch_mode: direct_full_after_user_authorization
+launch_policy: reward_contract_v3_formal_user_authorized
+authorized_job_ids:
+  - full__G__Full-support__am_evrptw__Cus50__seed1234
+  - full__G__Full-support__evrptw_rl__Cus50__seed1234
+  - full__G__Full-support__drl_ts__Cus50__seed1234
+  - full__G__Full-support__terran__Cus50__seed1234
+  - full__G__Coverage-10%-support__terran__Cus100__seed1234
+  - full__E__Full-support__am_evrptw__Cus100__seed1234
+  - full__E__Full-support__evrptw_rl__Cus100__seed1234
+  - full__E__Full-support__drl_ts__Cus100__seed1234
+  - full__G__Full-support__am_evrptw__Cus100__seed1234
+  - full__G__Full-support__evrptw_rl__Cus100__seed1234
+  - full__G__Full-support__drl_ts__Cus100__seed1234
+  - full__G__Full-support__terran__Cus100__seed1234
+  - full__E__Full-support__terran__Cus100__seed1234
+  - full__G__Random-10%-support__am_evrptw__Cus100__seed1234
+  - full__G__Random-10%-support__terran__Cus100__seed1234
+  - full__G__Coverage-10%-support__am_evrptw__Cus100__seed1234
+  - full__G__Full-support__terran__Cus500__seed1234
+  - full__G__Full-support__terran__Cus1000__seed1234
+authorized_terran_training_profile_by_scale:
+  Cus500: {physical_batch_size: 74, effective_batch_size: 74, training_trajectory_count: 50}
+  Cus1000: {physical_batch_size: 4, effective_batch_size: 4, training_trajectory_count: 50}
+runtime_budget_id: drl_rq_runtime_budget_v15_ntraj50_maxbatch_warmstart
+supersedes_as_formal_candidate: drl_experiment_protocol_v1
+historical_evidence_relabelled: false
+objective_config_path: EVRPTW_Benchmark/Reinforcement_Learning/configs/rivian_energy_vehicle_cost_v2.json
+objective_revision: rivian_energy_vehicle_cost_v2
+reward_contract_config_path: EVRPTW_Benchmark/Reinforcement_Learning/configs/drl_reward_contract_energy_vehicle_v3.json
+reward_contract_revision: drl_energy_vehicle_reference_scale_v3
+training_stream_registry_path: EVRPTW_Benchmark/Reinforcement_Learning/configs/drl_training_stream_registry_v1.json
+training_stream_registry_sha256: 3cc81d4beb90c849f78bf8820d77edb1b1bb4a3a3192f6237f2a717b44b1a041
+# All four intended training scales have independent training-only reward
+# calibrations for objective v2. The user authorized all 16 RTX 2080 Ti
+# jobs plus the two fresh large-scale TERRAN jobs.
+reward_contract_calibrated_scales: [Cus50, Cus100, Cus500, Cus1000]
+reward_contract_launch_enabled_scales: [Cus50, Cus100, Cus500, Cus1000]
+reward_contract_blocked_scales: []
+reward_contract_blocked_reason: null
+method_auxiliary_profiles:
+  drl_ts: EVRPTW_Benchmark/Reinforcement_Learning/configs/drl_ts_soft_auxiliary_v1.json
+  evrptw_rl: EVRPTW_Benchmark/Reinforcement_Learning/configs/evrptw_rl_station_auxiliary_v1.json
+historical_distance_runs_are_cost_optimized: false
+training_optimizer:
+  name: adamw
+  weight_decay: 0.01
+
+methods: [am_evrptw, evrptw_rl, drl_ts, terran]
+seeds: [1234]
+training_scales: [Cus50, Cus100, Cus500, Cus1000]
+evaluation_only_scales: [Cus2000]
+training_rollout_steps:
+  Cus50: 65
+  Cus100: 120
+  Cus500: 580
+  Cus1000: 1200
+validation_rollout_step_limit:
+  relative_to: training_rollout_steps
+  numerator: 3
+  denominator: 2
+  rounding: ceiling
+validation_rollout_steps:
+  Cus50: 98
+  Cus100: 180
+  Cus500: 870
+  Cus1000: 1800
+# Method/scale exceptions are explicit so the common Cus1000 contract for
+# AM/EVRPTW-RL/DRL-TS remains 1200/1800.  Only the replacement TERRAN job uses
+# the longer horizon and completion reward below.
+training_overrides_by_method_scale:
+  terran:
+    Cus50:
+      terran_terminal_success_bonus: 0.0
+    Cus100:
+      terran_terminal_success_bonus: 0.0
+    Cus500:
+      training_rollout_steps: 580
+      validation_rollout_steps: 870
+      num_minibatches: 1
+      ppo_step_chunk_size: 36
+      terran_terminal_success_bonus: 0.0
+    Cus1000:
+      training_rollout_steps: 1250
+      validation_rollout_steps: 1875
+      num_minibatches: 1
+      ppo_step_chunk_size: 624
+      terran_terminal_success_bonus: 1.0
+
+research_questions:
+  RQ1:
+    title: Scale
+    main_training_runs: 16
+    same_scale: [Cus50, Cus100, Cus500, Cus1000]
+    cross_scale_to_cus2000: [Cus100, Cus500, Cus1000]
+    reference_title: Reference Availability and Stability of Best-Observed Solutions
+    canonical_lower_bound_available: false
+    canonical_optimality_gap_available: false
+    primary_quality_reference: verified_posthoc_bks
+    gurobi_bound_semantics: copy_limited_milp_diagnostic_only
+  RQ2:
+    title: Training-support coverage
+    scale: Cus100
+    methods: [am_evrptw, terran]
+    support_conditions:
+      - Random-10%-support
+      - Coverage-10%-support
+      - Full-support
+    optional_support_conditions: [Random-1%-support]
+    additional_core_training_runs: 4
+    support_unit: parent_family
+    selection_uses_validation_or_test: false
+  RQ3:
+    title: Euclidean-to-directed-road transfer
+    scale: Cus100
+    conditions: [E_to_G, G_to_G]
+    additional_core_training_runs: 4
+    graph_injection_enabled: false
+
+core_training_run_count: 24
+currently_launchable_core_training_run_count: 2
+train_cus2000: false
+energy_relaxed_directed_vrptw_model: excluded
+
+bks:
+  eligibility: common_verifier_complete_feasible_only
+  contributors: [gurobi, alns, vns_ts, am_evrptw, evrptw_rl, drl_ts, terran]
+  posthoc_only: true
+  checkpoint_selection_use: forbidden
+  provenance_fields: [instance_id, objective, method, seed, decoding_or_budget, solution_id]
+
+ev_integrity:
+  name: Route-level infinite-battery counterfactual
+  reoptimizes_routes: false
+  preserves_customer_order: true
+  removes_consecutive_charging_blocks: true
+  disables_battery_only_during_counterfactual_replay: true
+  prohibited_claims:
+    - infinite_battery_optimum
+    - optimal_battery_ablation
+    - globally_necessary_charging_visit
+
+training_budget:
+  primary: method_specific_device_utilization
+  exposure_matched_across_methods: false
+  sampling: prefix_stable_full_pool_shuffle_cycle_per_method
+  shared_stream_within_scale_seed: false
+  test_used_for_checkpoint_selection: false
+  statistical_unit: parent_family
+  wall_clock_checkpoints_h: [6, 12, 24]
+  logical_batch_by_method_scale:
+    am_evrptw: {Cus50: 2304, Cus100: 800, Cus500: 64, Cus1000: 2}
+    evrptw_rl: {Cus50: 336, Cus100: 96, Cus500: 64, Cus1000: 2}
+    drl_ts: {Cus50: 144, Cus100: 40, Cus500: 64, Cus1000: 2}
+    terran: {Cus50: 480, Cus100: 280, Cus500: 74, Cus1000: 4}
+  customer_exposure_budget_by_method_scale:
+    am_evrptw: {Cus50: 1152000000, Cus100: 800000000, Cus500: 320000000, Cus1000: 20000000}
+    evrptw_rl: {Cus50: 168000000, Cus100: 96000000, Cus500: 320000000, Cus1000: 20000000}
+    drl_ts: {Cus50: 72000000, Cus100: 40000000, Cus500: 320000000, Cus1000: 20000000}
+    terran: {Cus50: 240000000, Cus100: 280000000, Cus500: 370000000, Cus1000: 40000000}
+  physical_microbatch_by_method_scale:
+    am_evrptw: {Cus50: 2304, Cus100: 800, Cus500: 8, Cus1000: 2}
+    evrptw_rl: {Cus50: 336, Cus100: 96, Cus500: 16, Cus1000: 2}
+    drl_ts: {Cus50: 144, Cus100: 40, Cus500: 8, Cus1000: 2}
+    terran: {Cus50: 480, Cus100: 280, Cus500: 74, Cus1000: 4}
+  rtx2080ti_calibration: two_epochs_plus_500_views_x_50_candidates_all_16_jobs_passed
+  a6000_batches: terran_final_cus500_ntraj50_b74_cus1000_ntraj50_b4
+
+model_selection:
+  validation_views: 500
+  validation_decode_type: sampling
+  validation_candidate_count: 100
+  candidate_selection: independent_verifier_feasible_then_min_total_cost_usd
+  minimum_training_epochs: 5000
+  maximum_training_epochs: 10000
+  validation_every_epochs_through_minimum: 100
+  validation_every_epochs_after_minimum: 100
+  primary_metric: independent_verifier_feasibility_rate
+  secondary_metric: mean_verified_cost_usd
+  early_stopping: enabled_after_minimum_budget
+  early_stop_patience_validation_checks: 5
+  early_stop_no_improvement_epochs_equivalent: 500
+  early_stop_start_epoch_exclusive: 5000
+  earliest_possible_early_stop_epoch: 5500
+  primary_checkpoint: best_overall.ckpt
+  minimum_budget_checkpoint: best_within_5000.ckpt
+  extended_checkpoint: best_overall.ckpt
+  validation_seed_rule: fixed_training_seed_plus_910000000
+  test_used_for_selection: false
+
+test_inference:
+  decode_type: sampling
+  candidate_count: 100
+  candidate_selection: independent_verifier_feasible_then_min_total_cost_usd
+  note: common benchmark budget; paper-supported but not paper-exact candidate counts
+
+training_stage_boundaries:
+  am_ema_warmup_end_update: 2500
+  evrptw_rl_ema_warmup_end_update: 1000
+  drl_ts_soft_stage_end_update: 2500
+  boundaries_independent_of_maximum_epochs: true
+
+training_trajectories_per_instance:
+  am_evrptw: 5
+  evrptw_rl: 1
+  drl_ts: 1
+  terran: 50
+training_trajectories_per_instance_by_method_scale: {}
+
+warm_start:
+  source_commit: ""
+  checkpoint_name: best.ckpt
+  scope: exact_job_only
+  missing_exact_job: fresh
+  inherited_state: model_weights_only
+  optimizer_state: reset
+  epoch_counter: reset_to_zero
+  validation_and_early_stop_state: reset
+
+euclidean:
+  distance: symmetric_straight_line_from_fixed_coordinates
+  energy: same_rho_times_euclidean_distance
+  speed_groups: [weekday, weekend]
+  speed_calibration: aggregate_ratio_on_preregistered_training_only_od_pairs
+  shared_across_training_cities: true
+  validation_or_test_calibration: forbidden
+  manifest_required: true
+
+formal_launch_gates:
+  G1:
+    requirement: explicit_customer_exposure_budget_for_every_method_and_scale
+    status: PILOT_WAIVED_BY_USER
+  G2:
+    requirement: deterministic_method_specific_stratified_shuffle_cycle_id_stream
+    status: IMPLEMENTED_UNIT_TESTED
+  G3:
+    requirement: exposure_and_gpu_hour_checkpoints
+    status: PILOT_WAIVED_BY_USER
+  G4:
+    requirement: calibrated_method_specific_logical_batch_for_every_scale
+    status: PILOT_WAIVED_BY_USER
+  G5:
+    requirement: per_method_physical_microbatch_and_oom_policy
+    status: PILOT_WAIVED_BY_USER
+  G6:
+    requirement: cross_hardware_same_config_runtime_and_memory_pilot
+    status: PILOT_WAIVED_BY_USER
+  G7:
+    requirement: euclidean_distance_time_energy_generation_manifest
+    status: IMPLEMENTED_UNIT_TESTED
+  G8:
+    requirement: parent_family_clustered_paired_bootstrap_aggregation
+    status: IMPLEMENTED_UNIT_TESTED

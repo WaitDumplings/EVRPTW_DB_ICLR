@@ -1,0 +1,9 @@
+{
+  "schema": "evrptw_generation_demo_config_v1",
+  "master_seed": 20260925,
+  "customers": 8,
+  "stations": 2,
+  "families": 2,
+  "profile": "generation_profile.json",
+  "scope": "engineering_demo_not_benchmark_cohort"
+}

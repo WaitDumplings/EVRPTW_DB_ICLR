@@ -107,3 +107,13 @@ Follow [full Stage 1 and Stage 2](docs/GENERATION.md#full-stage-1-and-full-stage
 [Data and format](docs/DATASET.md) · [Eight solvers](docs/BASELINES.md) · [Running tests](docs/TESTING.md) · [Data availability](docs/DATA_AVAILABILITY.md) · [Licensing and attribution](docs/LICENSING.md)
 
 The delivery contains source, review materials and genuine weights. Full historical experiment records are excluded. Detailed reproduction boundaries and pending publication checks remain in the linked documentation.
+
+## License
+
+Project-original code and documentation, and the authors' applicable rights
+in supplied model weights and evaluation records, use **CC BY-NC 4.0**.
+Third-party software and source-derived data retain their respective terms,
+including upstream MIT/Apache-2.0 software, ODbL geographic databases, and
+Amazon CC BY-NC 4.0 delivery material. See [component licensing](docs/LICENSING.md)
+and [attribution](THIRD_PARTY_NOTICES.md). This is not a blanket
+relicensing of third-party material or a new clearance for combined-data redistribution.

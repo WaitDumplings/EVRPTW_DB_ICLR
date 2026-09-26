@@ -4,6 +4,7 @@ build-backend = "setuptools.build_meta"
 [project]
 name = "evrptw-db"
 version = "0.1.0"
+license = {text = "CC-BY-NC-4.0 for project-original contributions; third-party components retain their licenses"}
 description = "Anonymous EVRP-TW-D/B research and review distribution"
 requires-python = ">=3.11,<3.13"
 dependencies = ["numpy==2.3.5", "pandas==3.0.5", "pyarrow==24.0.0", "scipy==1.17.0", "networkx==3.6.1", "PyYAML==6.0.2", "tqdm==4.67.1"]

@@ -1,28 +1,25 @@
-MIT License
+Creative Commons Attribution-NonCommercial 4.0 International
+SPDX-License-Identifier: CC-BY-NC-4.0
 
 Copyright (c) 2026 Anonymous EVRP-TW-D/B Authors
 
-Permission is hereby granted, free of charge, to any person obtaining a copy
-of this software and associated documentation files (the "Software"), to deal
-in the Software without restriction, including without limitation the rights
-to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
-copies of the Software, and to permit persons to whom the Software is
-furnished to do so, subject to the following conditions:
+Project-original code and documentation in this distribution, together with
+the authors' applicable rights in supplied project-trained model weights and
+evaluation records, are licensed under CC BY-NC 4.0 unless identified otherwise.
+The complete, unmodified legal terms are in licenses/CC_BY_NC_4_0.txt:
+https://creativecommons.org/licenses/by-nc/4.0/legalcode
 
-The above copyright notice and this permission notice shall be included in all
-copies or substantial portions of the Software.
+For attribution, retain "Anonymous EVRP-TW-D/B Authors", the artifact identifier,
+this notice, and the license link; indicate modifications. CC BY-NC 4.0 permits
+noncommercial sharing and adaptation under its terms; it is not research-only.
 
-THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
-IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
-FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
-AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
-LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
-OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
-SOFTWARE.
+This grant applies only to rights the authors can license. Third-party code,
+data, and applicable derivative/database rights retain their respective
+licenses and notices. In particular, MIT and Apache-2.0 upstream software,
+ODbL geographic databases, and source-specific data terms are not replaced
+by this license or made subject to an additional noncommercial restriction.
+See docs/LICENSING.md and THIRD_PARTY_NOTICES.md for the component mapping.
+No proprietary Gurobi license, credential, or third-party entitlement is granted.
 
-Scope: this grant covers project-original software and documentation only.
-Third-party software retains its identified licenses and notices. Source and
-derived datasets, pretrained model tensors, and source-derived result records
-are separate materials, not Software under this grant. Their terms and
-attribution are specified in docs/LICENSING.md and THIRD_PARTY_NOTICES.md.
-No Gurobi license, credential, or third-party data entitlement is included.
+This distribution's license notice does not revoke rights previously granted
+in versions lawfully obtained under another license.

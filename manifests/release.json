@@ -48,5 +48,8 @@
     "status": "planned; not yet publicly hosted",
     "hosting_url": null,
     "persistent_identifier": null
-  }
+  },
+  "licensing_revision": "cc-by-nc-20260926",
+  "project_original_license": "CC-BY-NC-4.0",
+  "component_licensing": "docs/LICENSING.md"
 }

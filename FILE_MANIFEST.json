@@ -2321,13 +2321,13 @@
     },
     {
       "path": "LICENSE",
-      "bytes": 1539,
-      "sha256": "be630af31b5a3188e8777867a099c773b65240e3bd6a5ac88a9729b66ad6a5ef"
+      "bytes": 1419,
+      "sha256": "e28f2536cd5431835f2a5d76b7ff5d048f64be4ce1545aea3fe922c1443ef655"
     },
     {
       "path": "README.md",
-      "bytes": 7399,
-      "sha256": "cd4e55f9160ebba0fc7db0eaf17c18564a8134d3e0445b7dcd2bc9bbcfa4bf45"
+      "bytes": 7949,
+      "sha256": "984a00eb521b452bb333f7dbbc803d26d11cc14baf3593ca89f4fbaea824bf25"
     },
     {
       "path": "REVIEW.md",
@@ -2336,8 +2336,8 @@
     },
     {
       "path": "THIRD_PARTY_NOTICES.md",
-      "bytes": 5896,
-      "sha256": "31e418c6881fc12031d93d296ddcaf2d4ad8d0f004ec4d01e6dd87e5bbd702f1"
+      "bytes": 5931,
+      "sha256": "71f322e9370b66797d3e7ac0fdf8dc9fee9e739479133e6321f4d414c76fe2b1"
     },
     {
       "path": "configs/demo/generation.json",
@@ -2501,8 +2501,8 @@
     },
     {
       "path": "docs/LICENSING.md",
-      "bytes": 8885,
-      "sha256": "19dda53ddb6bc43c4deb3f12b1567dece6130b4e4052b539ebf19de2ae3680e1"
+      "bytes": 9801,
+      "sha256": "4a615c28eeaff2f895c774cb0811859c1fcc7f1587e0b221f13fcbf1482dff3a"
     },
     {
       "path": "docs/QUICKSTART.md",
@@ -2651,8 +2651,8 @@
     },
     {
       "path": "examples/quick_train/README.md",
-      "bytes": 1306,
-      "sha256": "b91e6ffff3039f4c4c217c72c18cf4dd5196ebcdf2703c3c48d3c0e5860bd7da"
+      "bytes": 1376,
+      "sha256": "c2ccc47757513be635d6249a40c389870e1be986012d19d12dfc47fd90b86680"
     },
     {
       "path": "examples/quick_train/families/demo_family_train_000/family_manifest.json",
@@ -2760,6 +2760,11 @@
       "sha256": "4ee6e5692a7626c7186e0f58d8af8e3c859931634f7aeda4318071ed32a1dacb"
     },
     {
+      "path": "licenses/CC_BY_NC_4_0.txt",
+      "bytes": 19347,
+      "sha256": "41003d4a74749c0220e33dd415042164b5a1093ed401f36277234f772d22d3d0"
+    },
+    {
       "path": "licenses/PROJECT_WEIGHTS_CC_BY_NC_4_0.txt",
       "bytes": 19347,
       "sha256": "41003d4a74749c0220e33dd415042164b5a1093ed401f36277234f772d22d3d0"
@@ -2781,13 +2786,13 @@
     },
     {
       "path": "manifests/release.json",
-      "bytes": 2353,
-      "sha256": "b4c32a628a13cc9daab1124127870bd06627a0995686ca210cd8cb6fdbaa8619"
+      "bytes": 2490,
+      "sha256": "ee2a19f8945f13fd0bb5a58395fafcdd01e583fcaeeb655e8b2264d8a9e0e718"
     },
     {
       "path": "pyproject.toml",
-      "bytes": 916,
-      "sha256": "474564f5fc55f87ac64d0ebf229f609cf54673a1b8df895f733346c2f0fcaa1e"
+      "bytes": 1031,
+      "sha256": "08aeaefd5ddfe3e9e5e70344f3bfa6e7379b6e28de813d7a5614f1653f46edcb"
     },
     {
       "path": "requirements/core.txt",
@@ -2909,5 +2914,6 @@
       "bytes": 22941,
       "sha256": "fa8664af075756cfa9b577a9741eeee06cd5566fa97caebbd1de419d9a010477"
     }
-  ]
+  ],
+  "licensing_revision": "cc-by-nc-20260926"
 }
